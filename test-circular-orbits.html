@@ -1,0 +1,234 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test circular orbits</title>
+<meta name="identifier" content="g529255191e5d857ac7cee4fcfdbd920a"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+    
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+        <details style="margin: 0;">
+            <summary style="cursor: pointer; color: #2d3b45; ">Quick Navigation ▾</summary>
+            <div style="padding-top: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div>
+                        <a href="#introduction" style="color: #0077cc; text-decoration: none; display: block;">Introduction</a>
+                        <a href="#newton-thought" style="color: #0077cc; text-decoration: none; display: block;">Newton's Thought Experiment</a>
+                        <a href="#circular-motion" style="color: #0077cc; text-decoration: none; display: block;">Circular Motion Analysis</a>
+                    </div>
+                    <div>
+                        <div style="margin-bottom: 5px;">Examples:</div>
+                        <a href="#example1" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">1: Mass Comparison</a>
+                        <a href="#example2" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">2: Distance Effect</a>
+                        <a href="#example3" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">3: ISS Speed Calculation</a>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    
+    <div id="introduction" style="margin-bottom: 30px;">
+        <h1 style="color: #2d3b45; border-bottom: 3px solid #2d3b45; padding-bottom: 10px;">Circular Orbits</h1>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">Consider a satellite that is in a circular orbit around the Earth. Most orbits are elliptical (which we'll discuss in more detail later) but we can <em>approximate</em> a standard orbit by examining a circular orbit. Many elliptical orbits are NEARLY circular so it's not a bad approximation to make.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">What keeps the satellite in orbit? Why doesn't the satellite fall down or fly away?</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">Let's start by analyzing the forces acting on the satellite. The only force on the satellite is gravity. There's no air in space and nothing else is in physical contact with the satellite. Some satellites have small thrusters on them for occasional orbital corrections but most satellites do not.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">If gravity is the only force on the satellite, shouldn't the satellite just accelerate downward to the Earth?</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">Yes!</p>
+        </div>
+    </div>
+
+    
+    <div id="newton-thought" style="margin-bottom: 30px;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #2d3b45; padding-bottom: 8px;">Newton's Thought Experiment</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">Isaac Newton proposed the following thought experiment:</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">Consider the motion of a canonball fired from a canon at the "top" of the Earth (obviously "top" is relative). The canonball will experience projectile motion and will eventually hit the ground. If the canon is VERY powerful, the canonball can travel pretty far before it hits the ground. What if the canon was SO powerful that the cannonball "missed" the ground entirely? Newton basically described an orbit as an object that is falling around the Earth.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">Cannonballs A and B in the picture below have parallel velocity components that are too small - the downward acceleration will cause these two cannonballs to eventually hit the ground. Cannonball C is launched with enough parallel velocity so that the ball will have traveled beyond the curve of the earth so that when the ball falls, the ball will keep "missing" the Earth. Cannonballs D and E have so much velocity that the orbital path becomes elliptical rather than circular.</p>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="https://tempeunion.instructure.com/courses/232/files/237593/preview" alt="Newton's Cannon Thought Experiment" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="circular-motion" style="margin-bottom: 30px;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #2d3b45; padding-bottom: 8px;">Circular Motion Analysis</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">Another way to think about circular orbits is that the net force (gravity) acting on the object in orbit is always directed perpendicular to the object's instantaneous velocity (the velocity at any given moment in time). This means that the gravity force will change the DIRECTION of the motion but NOT the speed!</p>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="https://tempeunion.instructure.com/courses/232/files/237603/preview" alt="Circular Motion Diagram" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="example1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Example 1: Mass Comparison</h3>
+        <p style="font-size: 14px; line-height: 1.6;">Satellite A has a mass of 200 kg while Satellite B has a mass of 400 kg. Both satellites orbit the same distance from Earth's surface. Which one has the largest speed?</p>
+        
+        <details style="margin-top: 15px;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <p style="font-size: 14px; line-height: 1.6;">There are two ways to approach this problem:</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">1. Remember that an orbit is basically an object "falling" around the Earth and that the mass of an object has never affected its motion so the two satellites must have the same speed.</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">2. The mathematical proof:</p>
+                <ul style="font-size: 14px; line-height: 1.6;">
+                    <li>Assume both objects are in a circular orbit and the only force is gravity</li>
+                    <li>Net force = mass × acceleration</li>
+                    <li>Force of gravity = mass × centripetal acceleration</li>
+                </ul>
+                
+                \[\frac{GMm}{r^2}=m\left(\frac{v^2}{r}\right)\]
+                \[v^2=\frac{GM}{r}\]
+                
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 4px; margin-top: 15px;">
+                    <p style="font-size: 14px; line-height: 1.6;">where:</p>
+                    <ul style="font-size: 14px; line-height: 1.6;">
+                        <li>G is the universal gravity constant</li>
+                        <li>M is the mass of the planet</li>
+                        <li>r is the distance between the center of the planet and the center of the satellite</li>
+                    </ul>
+                </div>
+                
+                <p style="font-size: 14px; line-height: 1.6; margin-top: 15px;">The mass of the satellite doesn't matter! All objects that orbit at the same distance around the same planet will orbit at the same speed!</p>
+            </div>
+        </details>
+    </div>
+
+    
+    <div id="example2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Example 2: Distance Effect</h3>
+        <p style="font-size: 14px; line-height: 1.6;">Two identical satellites are in a circular orbit around the Earth. Satellite A is closer to the Earth than Satellite B. Which one is faster?</p>
+        
+        <details style="margin-top: 15px;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <p style="font-size: 14px; line-height: 1.6;">Using the same equation from the previous example:</p>
+
+                \[v^2=\frac{GM}{r}\]
+                
+                <p style="font-size: 14px; line-height: 1.6;">The larger the distance from the Earth, the SMALLER the orbital speed. The satellite that is closest to the Earth will experience the largest speed.</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">This is also why it takes the moon an entire month to orbit the Earth - the moon is pretty far away from the Earth!</p>
+            </div>
+        </details>
+    </div>
+
+    
+    <div id="example3" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Example 3: ISS Speed Calculation</h3>
+        <p style="font-size: 14px; line-height: 1.6;">Calculate the speed of the ISS. The international space station is located roughly 408 km above the surface of the Earth. The Earth has a radius of 6563 km and a mass of 5.97×10<sup>24</sup> kg.</p>
+        
+        <details style="margin-top: 15px;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <p style="font-size: 14px; line-height: 1.6;">Net force = mass × acceleration</p>
+                <p style="font-size: 14px; line-height: 1.6;">Assume that gravity is the only force (no active rocket engines, etc) and that the orbit is circular:</p>
+                
+                GMmr2=m(v2r)\frac{GMm}{r^2}=m\left(\frac{v^2}{r}\right)
+                v2=GMrv^2=\frac{GM}{r}
+                
+                <p style="font-size: 14px; line-height: 1.6;">Calculate total radius:</p>
+                <p style="font-size: 14px; line-height: 1.6;">r = 6563 + 408 = 6971 km = 6.971×10<sup>6</sup> m</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">Plug in the values:</p>
+
+                v2=(6.67×10−11N⋅m2/kg2)(5.97×1024kg)6.971×106mv^2=\frac{(6.67\times10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2)(5.97\times10^{24}\,\text{kg})}{6.971\times10^6\,\text{m}}
+
+                <p style="font-size: 14px; line-height: 1.6;">v = 7558 m/s</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">That's almost 17000 miles per hour!</p>
+            </div>
+        </details>
+    </div>
+</div> 
+</body>
+</html>

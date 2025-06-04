@@ -1,0 +1,199 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Newton&#39;s First Law with Angles</title>
+<meta name="identifier" content="gecc15d9c391d728878e44a435f933ceb"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#ex1" style="color:#fff; text-decoration:underline; margin-right:18px;">Pushing Downward</a>
+      <a href="#ex2" style="color:#fff; text-decoration:underline; margin-right:18px;">Pulling Upward</a>
+      <a href="#ex3" style="color:#fff; text-decoration:underline; margin-right:18px;">Tension &amp; Ropes</a>
+      <a href="#videos" style="color:#fff; text-decoration:underline;">Practice Videos</a>
+    </div>
+  </div>
+
+  
+  <div id="ex1" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Example 1: Pushing with a Downward Angle</h2>
+    <div style="font-size:1.07em;">
+      A student applies a force of 200 N at an angle of 30° below the horizontal to a 25 kg box, causing it to slide at a constant 2.5 m/s. What is the normal force? What is the friction force?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/232/files/239017/preview" alt="force diagram" style="max-width:180px; margin:10px 0;" loading="lazy">
+        <br>
+        <strong>Step 1: Draw and label the force diagram.</strong>
+        <img src="https://tempeunion.instructure.com/courses/232/files/239021/preview" alt="labeled diagram" style="max-width:180px; margin:10px 0;" loading="lazy">
+        <br>
+        <strong>Step 2: Resolve the student's force into components:</strong><br>
+        \[ F_{y,\text{student}} = 200\sin 30^\circ = -100\,\text{N} \]
+        <br>
+        (Negative because it's downward.)<br>
+        \[ F_{x,\text{student}} = 200\cos 30^\circ = 173\,\text{N} \]
+        <br>
+        <strong>Step 3: Find the normal force (vertical direction):</strong><br>
+        \[ \Sigma F_y = 0 \]
+        \[ N + W + F_{y,\text{student}} = 0 \]
+        \[ N + (-245) + (-100) = 0 \]
+        \[ N = 345\,\text{N} \]
+        <br>
+        <strong>Step 4: Find the friction force (horizontal direction):</strong><br>
+        \[ \Sigma F_x = 0 \]
+        \[ f + F_{x,\text{student}} = 0 \]
+        \[ f + 173 = 0 \]
+        \[ f = -173\,\text{N} \]
+        <br>
+        <strong>The normal force is 345 N. The friction force is 173 N to the left.</strong>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="ex2" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Example 2: Pulling with an Upward Angle</h2>
+    <div style="font-size:1.07em;">
+      A student pulls a 200 kg desk along the floor with a force of 200 N at an angle of 30° above the horizontal. The desk moves at constant velocity. What is the normal force? What is the friction force?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/232/files/239028/preview" alt="force diagram" style="max-width:180px; margin:10px 0;" loading="lazy">
+        <br>
+        <strong>Step 1: Resolve the student's force:</strong><br>
+        \[ F_{y,\text{student}} = 200\sin 30^\circ = 100\,\text{N} \]
+        <br>
+        \[ F_{x,\text{student}} = 200\cos 30^\circ = 173\,\text{N} \]
+        <br>
+        <strong>Step 2: Find the normal force (vertical direction):</strong><br>
+        \[ \Sigma F_y = 0 \]
+        \[ N + F_{y,\text{student}} + W = 0 \]
+        \[ N + 100 + (-1960) = 0 \]
+        \[ N = 1860\,\text{N} \]
+        <br>
+        <strong>Step 3: Find the friction force (horizontal direction):</strong><br>
+        \[ \Sigma F_x = 0 \]
+        \[ f + F_{x,\text{student}} = 0 \]
+        \[ f + 173 = 0 \]
+        \[ f = -173\,\text{N} \]
+        <br>
+        <strong>The normal force is 1860 N. The friction force is 173 N to the left.</strong>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="ex3" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Example 3: Tension in Ropes</h2>
+    <div style="font-size:1.07em;">
+      A student suspends a 5.0 kg box from several ropes as shown. The tension in the horizontal rope is -30 N. What is the magnitude of the tension in the rope connected to the ceiling?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/232/files/239032/preview" alt="rope diagram" style="max-width:180px; margin:10px 0;" loading="lazy">
+        <br>
+        <strong>Step 1: Draw and label the force diagram.</strong>
+        <img src="https://tempeunion.instructure.com/courses/232/files/239041/preview" alt="labeled rope diagram" style="max-width:180px; margin:10px 0;" loading="lazy">
+        <br>
+        <strong>Step 2: Find components of T<sub>2</sub>:</strong><br>
+        - Horizontal: T1=30N T_1 = 30\,\text{N} 
+        - Vertical: W=5.0×9.8=49N W = 5.0 \times 9.8 = 49\,\text{N} 
+        <br>
+        <strong>Step 3: Use Pythagorean theorem:</strong><br>
+        (30)2+(49)2=(T2)2 (30)^2 + (49)^2 = (T_2)^2 
+        T2=57.5N T_2 = 57.5\,\text{N} 
+        <br>
+        <strong>If the ceiling rope can't supply at least 57.5 N, it will break and the box will fall.</strong>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="videos" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">Additional Practice / Review Videos</h3>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/rn_C25fPOVw" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>

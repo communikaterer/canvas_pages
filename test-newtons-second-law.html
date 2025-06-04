@@ -1,0 +1,207 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test Newton&#39;s Second Law</title>
+<meta name="identifier" content="g457a2fde71b6999763ece2756911f071"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#intro" style="color:#fff; text-decoration:underline; margin-right:18px;">Introduction</a>
+      <a href="#ex1" style="color:#fff; text-decoration:underline; margin-right:18px;">Example 1</a>
+      <a href="#ex2" style="color:#fff; text-decoration:underline; margin-right:18px;">Example 2</a>
+      <a href="#gravity" style="color:#fff; text-decoration:underline;">Gravity &amp; Units</a>
+    </div>
+  </div>
+
+  
+  <div id="intro" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.5em; margin-top:0;">Newton's Second Law</h2>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      Experimentation has shown that the net force acting on an object is directly proportional to the resulting acceleration.
+      If you double the net force, you double the acceleration:
+    </p>
+    <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
+      \[ \Sigma F \propto a \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      To turn this into an equation, we need a constant. That constant is the object's inertia (mass):
+    </p>
+    <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
+      \[ \Sigma F = ma \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      Where <strong>ΣF</strong> is the sum of forces, <strong>m</strong> is mass, and <strong>a</strong> is acceleration. The acceleration is always in the same direction as the net force.
+    </p>
+  </div>
+
+  
+  <div id="ex1" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 1:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A student pushes a 15 kg box with a horizontal force of 20 N. The friction force on the box is 10 N. What is the normal force on the box? What is the acceleration of the box?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          <strong>Step 1: Draw and label the force diagram</strong><br>
+          <img src="https://tempeunion.instructure.com/courses/232/files/236213/preview" alt="force diagram" style="max-width:180px; margin:10px 0;" loading="lazy">
+          <br>
+          <strong>Step 2: Find the normal force (vertical direction)</strong><br>
+          The box is not accelerating vertically, so vertical forces must cancel:
+          <br>
+          \[ \Sigma F_y = 0 \]
+          \[ N + W = 0 \]
+          \[ N + (-147) = 0 \]
+          \[ N = 147\,\text{N} \]
+          <br>
+          <strong>Step 3: Find the acceleration (horizontal direction)</strong><br>
+          The box is accelerating horizontally:
+          <br>
+          \[ \Sigma F = ma \]
+          \[ F_{student} + f = ma \]
+          \[ 20 + (-10) = 15a \]
+          \[ 10 = 15a \]
+          \[ a = 0.67\,\text{m/s}^2 \]
+          <br>
+          <strong>The normal force is 147 N. The acceleration is 0.67 m/s².</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="ex2" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 2:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A 60 kg student accelerates upwards in an elevator at a rate of 2.0 m/s². What is the normal force on the student?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          <strong>Step 1: Draw and label the force diagram</strong><br>
+          <img src="https://tempeunion.instructure.com/courses/232/files/236221/preview" alt="elevator diagram" style="max-width:180px; margin:10px 0;" loading="lazy">
+          <br>
+          <strong>Step 2: Set up Newton's Second Law (vertical)</strong><br>
+          ΣFy=ma \Sigma F_y = ma 
+          \[ N + W = ma \]
+          \[ N + (-588) = 60 \times 2.0 \]
+          \[ N - 588 = 120 \]
+          \[ N = 708\,\text{N} \]
+          <br>
+          <strong>The normal force is 708 N.</strong>
+          <br>
+          This makes sense: the normal force must be greater than the student's weight to accelerate upward.
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="gravity" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">Gravity, Acceleration, and Units</h3>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      Newton's Second Law also explains why the acceleration due to gravity (gg) has the same value as the gravitational field strength.
+    </p>
+    <div style="font-size:1.1em; margin-bottom:14px;">
+      <ul style="margin-left:18px;">
+        <li>Drop a ball: only force is gravity (WW).</li>
+        <li>ΣFy=ma \Sigma F_y = ma </li>
+        <li>W=ma W = ma </li>
+        <li>But W=mg W = mg </li>
+        <li>So mg=ma mg = ma </li>
+        <li>g=a g = a </li>
+      </ul>
+    </div>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      If the only force acting on a falling object is gravity, its acceleration equals the gravitational field strength of the planet.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      The units for gravitational field strength (N/kgN/kg) are the same as for acceleration (m/s2m/s^2), because:
+      <br>
+      1N=1kg⋅m/s2 1\,N = 1\,kg \cdot m/s^2 
+      <br>
+      Nkg=kg⋅m/s2kg=m/s2 \frac{N}{kg} = \frac{kg \cdot m/s^2}{kg} = m/s^2 
+    </p>
+  </div>
+</div>
+</body>
+</html>

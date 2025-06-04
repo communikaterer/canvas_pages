@@ -1,0 +1,345 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test momentum and impulse</title>
+<meta name="identifier" content="g033f273d74c0d0ca2ccb29e514fb9007"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#momentum" style="color:#fff; text-decoration:underline; margin-right:18px;">Momentum</a>
+      <a href="#impulse" style="color:#fff; text-decoration:underline; margin-right:18px;">Impulse</a>
+      <a href="#theorem" style="color:#fff; text-decoration:underline; margin-right:18px;">Impulse-Momentum Theorem</a>
+      <a href="#examples" style="color:#fff; text-decoration:underline;">Examples</a>
+    </div>
+  </div>
+
+  
+  <div id="momentum" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <h2 style="color:#2d3b45; font-size:1.6em; margin-top:0;">Momentum</h2>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      Momentum is a measurement of how difficult it is to stop a moving object. It depends on both mass (inertia) and velocity:
+    </p>
+    <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
+      \[ p = mv \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      Where <strong>p</strong> is momentum, <strong>m</strong> is mass, and <strong>v</strong> is velocity. Units: <strong>kg·m/s</strong>. Momentum is a vector (same direction as velocity).
+    </p>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      Change in momentum:
+      <br>
+      \[ \Delta p = p_{final} - p_{initial} \]
+      <br>
+      For constant mass: \[ \Delta p = m\Delta v \]
+    </p>
+  </div>
+
+  
+  <div id="examples" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 1:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      Sphere A has a mass of 2.0 kg and moves at 5 m/s. Sphere B has a mass of 1.0 kg and moves at 7 m/s. Which sphere has more momentum?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          \[ p_A = (2.0\,\text{kg})(5\,\text{m/s}) = 10\,\text{kg·m/s} \]
+          <br>
+          \[ p_B = (1.0\,\text{kg})(7\,\text{m/s}) = 7\,\text{kg·m/s} \]
+          <br>
+          <strong>Sphere A has more momentum.</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 2:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A 5.0 kg box moving at 3.0 m/s slows to 1.0 m/s due to friction. What was the box’s change in momentum?
+    </div>
+    <div style="margin-top:8px; font-size:1.07em;">
+      Note: For constant mass, you can use \[ \Delta p = m\Delta v \].
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          \[ \Delta p = (5.0\,\text{kg})(1.0\,\text{m/s}) - (5.0\,\text{kg})(3.0\,\text{m/s}) = -10\,\text{kg·m/s} \]
+        </p>
+      </div>
+    </details>
+    <div style="margin-top:8px; font-size:1.07em;">
+      In this course, we only consider constant mass systems.
+    </div>
+  </div>
+
+  
+  <div id="impulse" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <h2 style="color:#2d3b45; font-size:1.3em; margin-top:0;">Impulse</h2>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      Impulse is the product of force and time. It measures how much effort is put into making something speed up or slow down.
+    </p>
+    <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
+      \[ J = Ft \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      Where <strong>J</strong> is impulse, <strong>F</strong> is force, <strong>t</strong> is time. Units: <strong>N·s</strong>.
+      <br>
+      For multiple forces: \[ \Sigma J = \Sigma Ft \]
+    </p>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 3:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A 20 kg rocket experiences an engine thrust of 300 N for 5.0 s. What is the impulse provided by the engine? What is the net impulse on the rocket?
+    </div>
+    <div style="margin-top:8px; font-size:1.07em;">
+      The net impulse determines the rocket’s motion.
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          \[ J_{engine} = (300\,\text{N})(5.0\,\text{s}) = 1500\,\text{N·s} \]
+          <br>
+          \[ \Sigma J = (300\,\text{N} - 196\,\text{N})(5.0\,\text{s}) = 520\,\text{N·s} \]
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="theorem" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <h2 style="color:#2d3b45; font-size:1.3em; margin-top:0;">Impulse-Momentum Theorem</h2>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      Newton’s Second Law: \[ \Sigma F = ma \]
+      <br>
+      Acceleration: \[ a = \frac{\Delta v}{\Delta t} \]
+      <br>
+      \[ \Sigma F = m\frac{\Delta v}{\Delta t} \]
+      <br>
+      \[ \Delta p = m\Delta v \]
+      <br>
+      \[ \Sigma F = \frac{\Delta p}{t} \]
+      <br>
+      Rearranged: \[ \Sigma Ft = m\Delta v \]
+      <br>
+      Net impulse equals change in momentum. This is the impulse-momentum theorem.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      Especially useful for analyzing collisions.
+    </p>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 4:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A 0.145 kg baseball approaches a batter at 30 m/s. The batter hits the ball and it leaves in the opposite direction at 20 m/s. If the ball and bat were in contact for 0.01 s, what was the force of the bat on the ball?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          \[ \Delta v = -20\,\text{m/s} - 30\,\text{m/s} = -50\,\text{m/s} \]
+          <br>
+          \[ \Sigma F t = m\Delta v \]
+          <br>
+          \[ \Sigma F (0.01\,\text{s}) = (0.145\,\text{kg})(-50\,\text{m/s}) \]
+          <br>
+          \[ \Sigma F = -725\,\text{N} \]
+        </p>
+      </div>
+    </details>
+    <div style="margin-top:8px; font-size:1.07em;">
+      The net force (from the bat) is <strong>-725 N</strong>.
+    </div>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 5:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A 30 kg rocket is initially at rest. The rocket experiences an upward 400 N of force for 6.0 s. What is the final speed of the rocket? (Neglect fuel mass.)
+    </div>
+    <div style="margin-top:8px; font-size:1.07em;">
+      Model rocket engines are rated by impulse and burn time. The engine thrust must be greater than the rocket's weight for launch.
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          \[ (400 - 294)(6.0) = 30(v_{final}) \]
+          <br>
+          \[ v_{final} = 21.2\,\text{m/s} \]
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 6:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      Class B model rocket engines can apply 5.0 N·s of impulse. If a class B engine with a burn time of 1.2 s is attached to a 0.15 kg rocket, what maximum speed will the rocket reach? (Ignore air resistance.)
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          \[ F = \frac{5.0}{1.2} = 4.2\,\text{N} \]
+          <br>
+          \[ ((4.2) - (0.15)(9.8))(1.2) = 0.15(\Delta v) \]
+          <br>
+          \[ \Delta v = 21.8\,\text{m/s} \]
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 7:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A 0.02 kg ball falling at 10 m/s bounces off the ground. The final speed is 5 m/s upwards. If the ball was in contact with the ground for 0.003 s, what was the normal force on the ball?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          \[ (N - 0.196)(0.003) = 0.02(10 - (-5)) \]
+          <br>
+          \[ N = 100\,\text{N} \]
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 8:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      In the original Superman movie, Lois Lane falls off a skyscraper and is caught by Superman, going from falling to moving upward in less than one second. In terms of momentum and impulse, explain why this is not good for Lois.
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          Lois’s change in velocity is large (from large downward to upward). Since this occurs over a very short time, the force is extremely large, which is not good for Lois.<br>
+          <br>
+          Estimate: \[ v^2 = 2a\Delta y \], \[ v \approx -49\,\text{m/s} \].<br>
+          Assume final upward speed 2.2 m/s, \[ \Delta v \approx 50\,\text{m/s} \], mass ≈ 54 kg.<br>
+          \[ (F_{superman} - 529)(1.0) = 2700 \]
+          <br>
+          \[ F \approx 3229\,\text{N} \]
+          <br>
+          This is a very large force, likely to cause injury.
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px 0; max-width: 900px; margin-left:auto; margin-right:auto;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">Additional Examples and Discussion:</h3>
+    <p style="font-size:1.1em;">
+      From the OpenStax AP Physics textbook:<br>
+      <a href="https://openstax.org/books/college-physics-ap-courses/pages/8-1-linear-momentum-and-force" style="color:#0077CC;">Chapter 8.1 - Linear Momentum and Force</a><br>
+      <a href="https://openstax.org/books/college-physics-ap-courses/pages/8-2-impulse" style="color:#0077CC;">Chapter 8.2 - Impulse</a>
+    </p>
+    <p style="font-size:1.1em;">Videos:</p>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/XFhntPxow0U" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/uMYAc04D0ak" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  
+  
+</div>
+</body>
+</html>

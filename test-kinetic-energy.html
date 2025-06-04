@@ -1,0 +1,293 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test Kinetic Energy</title>
+<meta name="identifier" content="g54b93f88e7c76ab83a54eeb41153ae3a"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#summary" style="color:#fff; text-decoration:underline; margin-right:18px;">Summary of Results</a>
+      <a href="#keq" style="color:#fff; text-decoration:underline; margin-right:18px;">Kinetic Energy Equation</a>
+      <a href="#examples" style="color:#fff; text-decoration:underline; margin-right:18px;">Examples</a>
+      <a href="#energyconservation" style="color:#fff; text-decoration:underline;">Energy Conservation</a>
+    </div>
+  </div>
+
+  
+  <div id="summary" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h2 style="color:#2d3b45; font-size:1.6em; margin-top:0; margin-bottom:18px;">Summary of Results</h2>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      From the class data, we can see that kinetic energy is proportional to speed squared. This means that the original kinetic energy vs speed graph forms an upward opening parabola, implying a \[y\] vs \[x^2\] (or in this case, \[K\] vs \[v^2\]) relationship.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      We can test this relationship by squaring all of the velocity data and then creating a graph of \[K\] vs \[v^2\]. For most students, the test graph formed a straight line. This means that the \[K\] vs \[v^2\] relationship is correct. We can then use the linear test graph to create the final equation for the lab data.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Upward parabolas have the general form:
+      <br>
+      \[ y = mx^2 + b \]
+      <br>
+      where \[m\] and \[b\] are the slope and y-intercept from the linear test graph.
+    </p>
+    <details>
+      <summary>
+        <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Significance of y-intercept and slope
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          <strong>Y-intercept:</strong> The y-intercept is the amount of kinetic energy when the object's speed is zero. Since kinetic energy is defined as the energy stored in an object's motion, zero speed means zero kinetic energy. The y-intercept should be zero by definition! If you get a significant y-intercept, this indicates significant error in the data.
+        </p>
+        <p style="font-size:1.1em;">
+          <strong>Slope:</strong> The units of the slope are J/(m/s)<sup>2</sup>. Breaking this down:
+          <br>
+          1 Joule = 1 N·m = 1 (kg·m/s<sup>2</sup>)·m = kg·m<sup>2</sup>/s<sup>2</sup>
+          <br>
+          So, slope units: (kg·m<sup>2</sup>/s<sup>2</sup>)/(m<sup>2</sup>/s<sup>2</sup>) = kg
+        </p>
+        <p style="font-size:1.1em;">
+          This tells us the slope is related to mass. In most cases, the slope value is about half the mass of the object. The slope of the linear test graph represents half the mass of the moving object.
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="keq" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Kinetic Energy Equation</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      The final equation should take the form:
+      <br>
+      \[ y = mx^2 + b \]
+      <br>
+      For kinetic energy:
+      <br>
+      \[ K = \frac{1}{2}mv^2 \]
+      <br>
+      where \[K\] is kinetic energy, \[m\] is mass, and \[v\] is speed.
+    </p>
+  </div>
+
+  
+  <div id="examples" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Examples</h3>
+    <details>
+      <summary>
+        <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example 1
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          An object moving at 4 m/s has 300 J of kinetic energy. What is the kinetic energy when the object's speed is 8 m/s?
+        </p>
+        <details>
+          <summary>
+            <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              Since kinetic energy is proportional to speed squared, doubling the speed means four times more kinetic energy.
+              <br>
+              \[ (300\,\text{J}) \times 4 = 1200\,\text{J} \]
+              <br>
+              When this object has a speed of 8 m/s, it has a kinetic energy of 1200 J.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+    <details>
+      <summary>
+        <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example 2
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          What is the kinetic energy stored in a 60 kg student running at a speed of 2 m/s?
+        </p>
+        <details>
+          <summary>
+            <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              \[ K = \frac{1}{2}mv^2 \]
+              <br>
+              \[ K = \frac{1}{2} (60\,\text{kg})(2\,\text{m/s})^2 \]
+              <br>
+              \[ K = 120\,\text{J} \]
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+    <details>
+      <summary>
+        <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example 3
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          A student drops a 25 kg box from a height of 8.0 m. What is the speed of the box just before it hits the ground? (Neglect air resistance.)
+        </p>
+        <details>
+          <summary>
+            <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              Use conservation of energy:
+              <br>
+              \[ U_g = K \]
+              <br>
+              \[ mgy = \frac{1}{2}mv^2 \]
+              <br>
+              Mass cancels:
+              <br>
+              \[ gy = \frac{1}{2}v^2 \]
+              <br>
+              \[ v^2 = 2gy \]
+              <br>
+              \[ v^2 = 2(10\,\text{N/kg})(8.0\,\text{m}) \]
+              <br>
+              \[ v = 12.6\,\text{m/s} \]
+              <br>
+              The speed is 12.6 m/s. The velocity would be -12.6 m/s since the box is moving downward.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="energyconservation" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Energy Conservation</h3>
+    <details>
+      <summary>
+        <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example: Spring and Box
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          A student pushes a 0.5 kg box up against a spring (k = 100 N/m) compressing the spring by 0.10 m in the horizontal direction. What is the final speed of the box once the student lets go? (Assume a frictionless surface.)
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/238445/preview" alt="Spring and Box Energy Bar Graph" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <details>
+          <summary>
+            <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              All of the mechanical energy is stored in the spring at the start. All of the energy is transferred to the box as kinetic energy.
+              <br>
+              Us=K U_s = K 
+              <br>
+              12kΔx2=12mv2 \frac{1}{2}k\Delta x^2 = \frac{1}{2}mv^2 
+              <br>
+              12(100N/m)(0.10m)2=12(0.5kg)v2 \frac{1}{2}(100\,\text{N/m})(0.10\,\text{m})^2 = \frac{1}{2}(0.5\,\text{kg})v^2 
+              <br>
+              v=1.4m/s v = 1.4\,\text{m/s} 
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
+
+  
+  
+</div>
+</body>
+</html>

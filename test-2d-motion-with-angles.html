@@ -1,0 +1,227 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test 2D motion with angles</title>
+<meta name="identifier" content="g928b2bc31f6bada12ed8c0eec4490320"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#intro" style="color:#fff; text-decoration:underline; margin-right:18px;">Introduction</a>
+      <a href="#ex1" style="color:#fff; text-decoration:underline; margin-right:18px;">Example 1</a>
+      <a href="#ex2" style="color:#fff; text-decoration:underline; margin-right:18px;">Example 2</a>
+      <a href="#ex3" style="color:#fff; text-decoration:underline; margin-right:18px;">Example 3</a>
+      <a href="#more" style="color:#fff; text-decoration:underline;">More Examples</a>
+    </div>
+  </div>
+
+  
+  <div id="intro" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.5em; margin-top:0;">Projectile Motion with Angles</h2>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      When the starting velocity is not entirely horizontal, such as kicking a ball at 15 m/s at a 60° angle, the initial motion is both horizontal and vertical. Which equation do you use?
+    </p>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      <strong style="color:#0077CC;">No vertical motion can be used in the horizontal equation and no horizontal motion belongs in the vertical equation.</strong>
+    </p>
+    <p style="font-size:1.1em; margin-bottom:14px;">
+      Instead, break the initial velocity vector into its horizontal and vertical components. Use these components in their respective equations:
+    </p>
+    <div style="font-size:1.1em; margin-bottom:0;">
+      <ul style="margin-left:18px;">
+        <li>Horizontal: \[ v_x = v \cos\theta \]</li>
+        <li>Vertical: \[ v_y = v \sin\theta \]</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <div id="ex1" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 1:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A student kicks a ball on the ground so that the ball has an initial speed of 15 m/s at an angle of 60°. What is the horizontal distance traveled by the ball while it’s in the air?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          <strong>Step 1: Break velocity into components</strong><br>
+          <img src="https://tempeunion.instructure.com/courses/232/files/240616/preview" alt="velocity components" style="max-width:180px; margin:10px 0;" loading="lazy">
+          <br>
+          \[ v_x = 15\cos 60^\circ = 7.5\,\text{m/s} \]
+          <br>
+          \[ v_y = 15\sin 60^\circ = 13\,\text{m/s} \]
+          <br><br>
+          <strong>Step 2: Find time in the air (vertical motion)</strong><br>
+          \[ 0 = \frac{1}{2}(-9.8)t^2 + (13)t \]
+          <br>
+          \[ 0 = t(-4.9t + 13) \]
+          <br>
+          \[ t = 0 \text{ or } t = 2.7\,\text{s} \]
+          <br>
+          (Ignore t = 0; total time in air is 2.7 s)
+          <br><br>
+          <strong>Step 3: Find horizontal distance</strong><br>
+          \[ x = v_x t = (7.5\,\text{m/s})(2.7\,\text{s}) = 20.3\,\text{m} \]
+          <br>
+          <strong>The ball will land 20.3 m to the right of where it started.</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="ex2" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 2:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A student kicks a ball off the ground at an angle of 35°. The ball travels 8.5 meters horizontally in 0.8 seconds. What was the initial velocity of the ball? What was the maximum height of the ball?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          <strong>Step 1: Find horizontal velocity</strong><br>
+          \[ x = v_{x} t \]
+          \[ 8.5 = v_{x}(0.8) \implies v_{x} = 10.6\,\text{m/s} \]
+          <br>
+          <strong>Step 2: Find initial velocity (hypotenuse)</strong><br>
+          \[ v_{x} = v \cos 35^\circ \]
+          \[ v = \frac{10.6}{\cos 35^\circ} = 13\,\text{m/s} \]
+          <img src="https://tempeunion.instructure.com/courses/232/files/240623/preview" alt="velocity triangle" style="max-width:180px; margin:10px 0;" loading="lazy">
+          <br>
+          <strong>Step 3: Find max height (vertical motion)</strong><br>
+          \[ v_{y} = v \sin 35^\circ = 13 \times 0.574 = 7.46\,\text{m/s} \]
+          <br>
+          At max height, vertical velocity = 0:
+          \[ v^2 = v_{0y}^2 + 2a y \]
+          \[ 0 = (7.46)^2 + 2(-9.8)y \]
+          \[ y = \frac{-(7.46)^2}{2(-9.8)} = 2.8\,\text{m} \]
+          <br>
+          <strong>Initial velocity: 13 m/s. Max height: 2.8 m.</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="ex3" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 3:</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A student standing on top of a 20 m tall building throws a rock off the roof with an initial velocity of 12 m/s at an angle of 50°. What is the horizontal distance traveled by the rock? (Neglect air resistance.)
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="margin: 0;">
+          <strong>Step 1: Find vertical velocity component</strong><br>
+          \[ v_{y} = 12\sin 50^\circ = 9.2\,\text{m/s} \]
+          <br>
+          <strong>Step 2: Use vertical motion to solve for time in air</strong><br>
+          \[ y = \frac{1}{2} a t^2 + v_{0y} t + y_0 \]
+          \[ 0 = -4.9 t^2 + 9.2 t + 20 \]
+          <br>
+          Use quadratic formula:
+          \[ t = \frac{-9.2 \pm \sqrt{(9.2)^2 - 4(-4.9)(20)}}{2(-4.9)} \]
+          t=3.2s t = 3.2\,\text{s} 
+          <br>
+          <strong>Step 3: Find horizontal velocity component</strong><br>
+          vx=12cos50∘=7.7m/s v_{x} = 12\cos 50^\circ = 7.7\,\text{m/s} 
+          <br>
+          <strong>Step 4: Find horizontal distance</strong><br>
+          x=vxt=(7.7)(3.2)=24.7m x = v_{x} t = (7.7)(3.2) = 24.7\,\text{m} 
+          <br>
+          <strong>The rock lands 24.7 m from the base of the building.</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="more" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">Additional Examples</h3>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/w3BhzYI6zXU" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  
+  
+</div>
+</body>
+</html>

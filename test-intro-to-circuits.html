@@ -1,0 +1,372 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test intro to circuits</title>
+<meta name="identifier" content="ged112e74c25ed020d920860bd1225be8"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+    
+    
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+        <h1 style="color: #2d3b45; margin-top: 0; text-align: center;">Introduction to Circuits</h1>
+        <p style="color: #666; text-align: center; font-style: italic;">Virtual Lab Experience for Absent Students</p>
+    </div>
+
+    
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+        <details style="margin: 0;">
+            <summary style="cursor: pointer; color: #2d3b45; ">Lab Navigation ▾</summary>
+            <div style="padding-top: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div>
+                        <strong>Lab Sections:</strong>
+                        <a href="#part1" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">Part 1: What is a circuit?</a>
+                        <a href="#part2" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">Part 2: Circuit Materials</a>
+                        <a href="#part3" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">Part 3: Light Bulb Connections</a>
+                    </div>
+                    <div>
+                        <strong>Resources:</strong>
+                        <a href="https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc" target="_blank" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">PhET Circuit Simulation</a>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    
+    <div id="part1" style="margin-bottom: 40px;">
+        <div style="background: #2d3b45; color: white; padding: 10px 20px; border-radius: 8px 8px 0 0;">
+            <h2 style="margin: 0;">Part 1: What is a circuit?</h2>
+        </div>
+        
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 0 0 8px 8px; padding: 20px;">
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">🤔 Make Your Predictions</h3>
+                <img src="$IMS-CC-FILEBASE$/ccres0000270/circuit1_604fe88f35ed9.JPG" alt="Circuit diagram" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 4px;" loading="lazy">
+                <p>Examine the circuit above with two light bulbs (Top Bulb and Bottom Bulb). Before using the simulation, predict:</p>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Prediction Questions</summary>
+                    <div style="margin-top: 10px;">
+                        <p>What will happen to BOTH bulbs when the circuit is disconnected at:</p>
+                        <ol style="margin-left: 20px;">
+                            <li>Point A (between battery and top bulb)?</li>
+                            <li>Point B (between the two bulbs)?</li>
+                            <li>Point C (between bottom bulb and battery)?</li>
+                        </ol>
+                        <div style="background: #e8f4ff; padding: 15px; border-radius: 4px; margin-top: 10px;">
+                            <p style="margin: 0;"><strong>📝 Record your predictions</strong> before continuing!</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">🔍 Investigation Steps</h3>
+                <ol style="margin-left: 20px;">
+                    <li>Open the <a href="https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc" target="_blank" style="color: #0077cc;">PhET Circuit Construction Kit</a></li>
+                    <li>Select the "Intro" option</li>
+                    <li>Uncheck "Show Current"</li>
+                    <li>Build the circuit shown above</li>
+                    <li>Test each disconnect point and observe both bulbs</li>
+                </ol>
+                <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin-top: 10px;">
+                    <p style="margin: 0;"><strong>💡 Tip:</strong> Click the dashed circle and use the yellow scissors to disconnect the circuit.</p>
+                </div>
+            </div>
+
+            
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">📊 Record Your Results</h3>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Data Table Template</summary>
+                    <div style="margin-top: 10px; overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: #f8f9fa;">
+                                    <th style="padding: 10px; border: 1px solid #ddd;">Disconnect Location</th>
+                                    <th style="padding: 10px; border: 1px solid #ddd;">Top Bulb</th>
+                                    <th style="padding: 10px; border: 1px solid #ddd;">Bottom Bulb</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Point A</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Point B</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Point C</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+            </div>
+
+            
+            <div>
+                <h3 style="color: #0077cc;">🧪 Understanding the Results</h3>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Explanation (after completing your observations!)</summary>
+                    <div style="margin-top: 10px;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                            <p><strong>Key Finding:</strong> If there is a break anywhere in the loop, NEITHER bulb will light.</p>
+                            <p><strong>Why?</strong> The word "circuit" comes from Latin, meaning "going around." A circuit must be a complete, unbroken loop for electricity to flow.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="part2" style="margin-bottom: 40px;">
+        <div style="background: #2d3b45; color: white; padding: 10px 20px; border-radius: 8px 8px 0 0;">
+            <h2 style="margin: 0;">Part 2: What Materials Complete a Circuit?</h2>
+        </div>
+
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 0 0 8px 8px; padding: 20px;">
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">🤔 Make Your Predictions</h3>
+                <img src="$IMS-CC-FILEBASE$/ccres0000270/circuit2_604fea7d3e72f.JPG" alt="Circuit with gap" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 4px;" loading="lazy">
+                <p>Which objects do you think will allow the bulbs to light when placed in the gap?</p>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Available Objects</summary>
+                    <div style="margin-top: 10px;">
+                        <ul style=" margin-left: 20px;">
+                            <li>Dollar bill</li>
+                            <li>Paperclip</li>
+                            <li>Coin</li>
+                            <li>Eraser</li>
+                            <li>Pencil</li>
+                            <li>Hand</li>
+                            <li>Dog</li>
+                        </ul>
+                        <div style="background: #e8f4ff; padding: 15px; border-radius: 4px; margin-top: 10px;">
+                            <p style="margin: 0;"><strong>📝 Choose 5 objects and predict whether each will complete the circuit!</strong></p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">🔍 Investigation Steps</h3>
+                <ol style="margin-left: 20px;">
+                    <li>Modify your circuit to match the image above</li>
+                    <li>Click the down arrow in the "Objects" panel</li>
+                    <li>Test each of your chosen objects</li>
+                    <li>Record whether the bulbs light or not</li>
+                </ol>
+            </div>
+
+            
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">📊 Record Your Results</h3>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Data Table Template</summary>
+                    <div style="margin-top: 10px; overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: #f8f9fa;">
+                                    <th style="padding: 10px; border: 1px solid #ddd;">Object</th>
+                                    <th style="padding: 10px; border: 1px solid #ddd;">Prediction</th>
+                                    <th style="padding: 10px; border: 1px solid #ddd;">Actual Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">1.</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">2.</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">3.</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">4.</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; border: 1px solid #ddd;">5.</td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                    <td style="padding: 10px; border: 1px solid #ddd;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+            </div>
+
+            
+            <div>
+                <h3 style="color: #0077cc;">🧪 Understanding the Results</h3>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Explanation (after completing your observations!)</summary>
+                    <div style="margin-top: 10px;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                            <p><strong>Key Finding:</strong> Only metal objects allow the bulbs to light.</p>
+                            <p><strong>Why?</strong> Metals are conductors - they allow electrical charge to move easily through them. Non-metal objects act like breaks in the circuit because they block the flow of charge.</p>
+                            <p><strong>Important:</strong> This means electrical circuits must be made ENTIRELY from conductors (metals) to function!</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="part3" style="margin-bottom: 40px;">
+        <div style="background: #2d3b45; color: white; padding: 10px 20px; border-radius: 8px 8px 0 0;">
+            <h2 style="margin: 0;">Part 3: How Must a Light Bulb Be Connected?</h2>
+        </div>
+
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 0 0 8px 8px; padding: 20px;">
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">🔍 Careful Observation</h3>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0;">
+                    <img src="$IMS-CC-FILEBASE$/ccres0000270/bulb1_604fedc70dcf0.jpg" alt="Unlit bulb" style="max-width: 45%; height: auto; border-radius: 4px;" loading="lazy">
+                    <img src="$IMS-CC-FILEBASE$/ccres0000270/bulb2_604fef7509070.png" alt="Lit bulb" style="max-width: 45%; height: auto; border-radius: 4px;" loading="lazy">
+                </div>
+                <p>Study the images above showing an unlit and lit incandescent light bulb. Focus on:</p>
+                <ul style="margin-left: 20px;">
+                    <li>The thin wire (filament) inside the bulb</li>
+                    <li>The connection points at the bottom and side</li>
+                    <li>The supporting wires inside the bulb</li>
+                </ul>
+            </div>
+
+            
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #0077cc;">🤔 Think It Through</h3>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Guiding Questions</summary>
+                    <div style="margin-top: 10px;">
+                        <ol style="margin-left: 20px;">
+                            <li>What is the purpose of the thin wire (filament) in the middle?</li>
+                            <li>Why are there two connection points (bottom and side)?</li>
+                            <li>What would happen if you only connected one point?</li>
+                            <li>What would happen if you connected only to the metal bands on the side?</li>
+                        </ol>
+                    </div>
+                </details>
+            </div>
+
+            
+            <div>
+                <h3 style="color: #0077cc;">🧪 Understanding Light Bulb Design</h3>
+                <details style="margin: 10px 0; background: white; padding: 15px; border-radius: 4px;">
+                    <summary style="cursor: pointer; color: #0077cc; ">Click to Show Explanation (after completing your analysis!)</summary>
+                    <div style="margin-top: 10px;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                            <h4 style="color: #2d3b45; margin-top: 0;">The Path of Electricity</h4>
+                            <ol style="margin-left: 20px;">
+                                <li>The filament is the thin wire that actually produces light</li>
+                                <li>Two thicker support wires connect the filament to the bulb's contact points</li>
+                                <li>One wire connects to the bottom tip</li>
+                                <li>One wire connects to the side of the bulb</li>
+                            </ol>
+                            <p><strong>Key Understanding:</strong> The bulb must be connected at BOTH points (tip AND side) to include the filament in the circuit!</p>
+                            <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin-top: 10px;">
+                                <p style="margin: 0;"><strong>Important Note:</strong> It's possible to have a complete conducting loop through the metal parts of the bulb without including the filament (for example, by connecting only to the metal bands). While electricity would flow, the bulb wouldn't light because the filament isn't part of the circuit!</p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

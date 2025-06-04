@@ -1,0 +1,251 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test Intro to Energy</title>
+<meta name="identifier" content="g7c62042dcc6cfdf703027c62b1f10386"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+    
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+        <details style="margin: 0;">
+            <summary style="cursor: pointer; color: #2d3b45; ">Quick Navigation ▾</summary>
+            <div style="padding-top: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div>
+                        <a href="#introduction" style="color: #0077cc; text-decoration: none; display: block;">Introduction to Energy</a>
+                        <a href="#mechanical-storage" style="color: #0077cc; text-decoration: none; display: block;">Mechanical Energy Storage</a>
+                        <a href="#energy-graphs" style="color: #0077cc; text-decoration: none; display: block;">Energy Bar Graphs</a>
+                    </div>
+                    <div>
+                        <div style="margin-bottom: 5px;">Examples:</div>
+                        <a href="#example1" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">1: Spring Box Launch</a>
+                        <a href="#example2" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">2: Car Crash</a>
+                        <a href="#example3" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">3: Bungee Jump</a>
+                        <a href="#example4" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">4: Box on Rough Surface</a>
+                    </div>
+                    <div>
+                        <a href="#additional-examples" style="color: #0077cc; text-decoration: none; display: block;">Video Examples</a>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    
+    <div id="introduction" style="margin-bottom: 30px;">
+        <h1 style="color: #2d3b45; border-bottom: 3px solid #2d3b45; padding-bottom: 10px; margin-bottom: 20px;">Introduction to Energy</h1>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">The official definition of energy is that energy is the ability to do work. Which begs the question: what is the scientific definition of work? Unfortunately, the scientific definition of work involves the term "energy" which means we've got a confusing circular set of definitions. A more <em>practical</em> definition of energy is that energy is a substance-like quantity that can be transferred between objects and is responsible for all system changes.</p>
+
+            <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+                <h3 style="color: #2d3b45; margin-top: 0;">Helpful Analogies</h3>
+                <p style="font-size: 14px; line-height: 1.6;"><strong>Energy is like information:</strong> It doesn't have mass and it doesn't take up space but it can be stored and transferred. The method in which information is stored will determine how that information can be used.</p>
+                <p style="font-size: 14px; line-height: 1.6;"><strong>Energy is like money in a bank:</strong> There are different types of accounts (savings, checking, business, etc). Money can be transferred between accounts and there are specific rules about how money stored in those accounts can be used.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="mechanical-storage" style="margin: 30px 0;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Mechanical Ways to Store Energy</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">There are three main mechanical methods of energy storage:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div style="background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #ddd;">
+                    <h3 style="color: #2d3b45; margin-top: 0;">Kinetic Energy (K)</h3>
+                    <p style="font-size: 14px; line-height: 1.6;">Related to the motion of the object. The more kinetic energy an object stores, the faster that object can move. Also related to mass - it takes more energy to move larger masses.</p>
+                </div>
+                
+                <div style="background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #ddd;">
+                    <h3 style="color: #2d3b45; margin-top: 0;">Gravitational Potential (U<sub>g</sub>)</h3>
+                    <p style="font-size: 14px; line-height: 1.6;">Related to the object's height in a gravitational field. The higher up an object is, the more gravitational potential energy is stored. Also related to mass.</p>
+                </div>
+                
+                <div style="background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #ddd;">
+                    <h3 style="color: #2d3b45; margin-top: 0;">Spring/Elastic Potential (U<sub>s</sub>)</h3>
+                    <p style="font-size: 14px; line-height: 1.6;">Related to the amount of stretch or compression experienced by an elastic material. The further stretched or compressed, the more energy stored. Related to material elasticity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="energy-graphs" style="margin: 30px 0;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Energy Bar Graphs (LOL Graphs)</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">An energy bar graph is a qualitative way to keep track of how a system stores energy and account for energy changes. It shows how the system stores energy before and after any system changes occur, as well as any energy transferred in or out of the system during the change.</p>
+            
+            <div style="margin: 20px 0;">
+                <img src="$IMS-CC-FILEBASE$/ccres0000191/energy_bar_graph_5dbbc00f53806.PNG" alt="Energy Bar Graph Example" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" loading="lazy">
+            </div>
+
+            <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+                <p style="font-size: 14px; line-height: 1.6;"><strong>Important:</strong> Energy is conserved - it cannot be created or destroyed. The bar graphs can be used to set up a conservation of energy relationship.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="examples" style="margin: 30px 0;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Practice Examples</h2>
+
+        
+        <div id="example1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 1: Spring Box Launch</h3>
+            <p style="font-size: 14px; line-height: 1.6;">A box is pressed down against a large spring. The spring is released and the box is projected upward to some maximum height.</p>
+            
+            <div style="margin: 20px 0;">
+                <img src="$IMS-CC-FILEBASE$/ccres0000191/lol1_6181b6fa09b1d.JPG" alt="Spring Box Example" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+
+            <div style="background: #fff; padding: 15px; border-radius: 4px; margin-top: 15px;">
+                <p style="font-size: 14px; line-height: 1.6;">Conservation of energy equation:</p>
+                <p style="font-size: 14px; line-height: 1.6;">\[U_s = U_g\]</p>
+            </div>
+        </div>
+
+        
+        <div id="example2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 2: Car Crash</h3>
+            <p style="font-size: 14px; line-height: 1.6;">A moving car crashes into a wall and comes to a stop.</p>
+            
+            <div style="margin: 20px 0;">
+                <img src="$IMS-CC-FILEBASE$/ccres0000191/bar_graph_2_5dbbd0521abb6.PNG" alt="Car Crash Example" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+
+            <div style="background: #fff; padding: 15px; border-radius: 4px; margin-top: 15px;">
+                <p style="font-size: 14px; line-height: 1.6;">Conservation of energy equation:</p>
+                <p style="font-size: 14px; line-height: 1.6;">\[K - W = 0\]</p>
+            </div>
+        </div>
+
+        
+        <div id="example3" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 3: Bungee Jump</h3>
+            <p style="font-size: 14px; line-height: 1.6;">A bungee jumper stands on a tall platform. The student jumps off the platform and falls until the bungee cord is fully stretched out with the student several feet about the ground.</p>
+            
+            <div style="margin: 20px 0;">
+                <img src="$IMS-CC-FILEBASE$/ccres0000191/lol2_6181b82753864.JPG" alt="Bungee Jump Example" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+
+            <div style="background: #fff; padding: 15px; border-radius: 4px; margin-top: 15px;">
+                <p style="font-size: 14px; line-height: 1.6;">Conservation of energy equation:</p>
+                <p style="font-size: 14px; line-height: 1.6;">\[U_g = U_s + U_g\]</p>
+            </div>
+        </div>
+
+        
+        <div id="example4" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 4: Box on Rough Surface</h3>
+            <p style="font-size: 14px; line-height: 1.6;">A box moving across a rough surface slows due to friction.</p>
+            
+            <div style="margin: 20px 0;">
+                <img src="$IMS-CC-FILEBASE$/ccres0000191/lol8_619436b81760f.png" alt="Box on Rough Surface Example 1" style="max-width: 100%; height: auto; margin-bottom: 20px;" loading="lazy">
+                <img src="$IMS-CC-FILEBASE$/ccres0000191/lol9_61943b40ae93a.png" alt="Box on Rough Surface Example 2" style="max-width: 100%; height: auto;" loading="lazy">
+            </div>
+
+            <div style="background: #fff; padding: 15px; border-radius: 4px; margin-top: 15px;">
+                <p style="font-size: 14px; line-height: 1.6;">Conservation of energy equations:</p>
+                <p style="font-size: 14px; line-height: 1.6;">Option 1: Kstart=Kend+UintK_{start} = K_{end} + U_{int}</p>
+                <p style="font-size: 14px; line-height: 1.6;">Option 2: Kstart−W=KendK_{start} - W = K_{end}</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="additional-examples" style="margin: 30px 0;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Additional Video Examples</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr; gap: 30px; margin: 20px 0;">
+            <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/nQMrmPSamUo" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/t8ZqoLxc1Ps" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

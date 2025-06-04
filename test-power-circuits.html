@@ -1,0 +1,215 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test Power (circuits)</title>
+<meta name="identifier" content="g0ef4800168f47440fe039d4c60c7bb79"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#intro" style="color:#fff; text-decoration:underline; margin-right:18px;">Power Basics</a>
+      <a href="#ex1" style="color:#fff; text-decoration:underline; margin-right:18px;">Bulb Brightness</a>
+      <a href="#ex2" style="color:#fff; text-decoration:underline; margin-right:18px;">Series Circuit Power</a>
+      <a href="#ex3" style="color:#fff; text-decoration:underline;">Energy Cost Example</a>
+    </div>
+  </div>
+
+  
+  <div id="intro" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.5em; margin-top:0;">Power in Circuits</h2>
+    <p style="font-size:1.1em;">
+      Power is the rate at which energy is transferred in or out of a system:
+    </p>
+    <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
+      \[ P = \frac{W}{t} \]
+    </div>
+    <p style="font-size:1.1em;">
+      - <strong>P</strong> is power (watts, W)<br>
+      - <strong>W</strong> is work (energy, joules)<br>
+      - <strong>t</strong> is time (seconds)
+    </p>
+    <p style="font-size:1.1em;">
+      In circuits, power can also be calculated as:
+    </p>
+    <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
+      \[ P = IV \]
+    </div>
+    <p style="font-size:1.1em;">
+      Where <strong>I</strong> is current (amps) and <strong>V</strong> is voltage (volts).
+    </p>
+    <p style="font-size:1.1em;">
+      Using Ohm's Law (\[V = IR\]), we get other forms:
+    </p>
+    <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
+      \[ P = IV = I^2R = \frac{V^2}{R} \]
+    </div>
+    <p style="font-size:1.1em;">
+      <strong>Series:</strong> Same current, so \[P \propto R\] (higher resistance = more power).<br>
+      <strong>Parallel:</strong> Same voltage, so \[P \propto \frac{1}{R}\] (lower resistance = more power).
+    </p>
+  </div>
+
+  
+  <div id="ex1" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 1: Bulb Brightness</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      Houses in the US are wired to provide 120 V. Which bulb is brighter: one with 144 Ω or one with 240 Ω?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          The brightest bulb emits the most energy per second (highest power).<br>
+          Both bulbs have the same voltage, so use:
+          \[ P = \frac{V^2}{R} \]
+          <br>
+          For 144 Ω:
+          \[ P = \frac{(120)^2}{144} = 100\,\text{W} \]
+          <br>
+          For 240 Ω:
+          \[ P = \frac{(120)^2}{240} = 60\,\text{W} \]
+          <br>
+          <strong>The 144 Ω bulb is brighter.</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="ex2" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 2: Series Circuit Power</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      A student wires a 3 Ω resistor in series with a 10 Ω resistor and a 9 V battery. What is the power rating for each resistor and the total circuit?
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          <strong>Step 1: Find total resistance</strong><br>
+          \[ R = 3 + 10 = 13\,\Omega \]
+          <br>
+          <strong>Step 2: Find current</strong><br>
+          \[ V = IR \implies I = \frac{9}{13} = 0.69\,\text{A} \]
+          <br>
+          <strong>Step 3: Find total power</strong><br>
+          \[ P = IV = 0.69 \times 9 = 6.2\,\text{W} \]
+          <br>
+          <strong>Step 4: Find power for each resistor</strong><br>
+          \[ P = I^2R \]
+          <br>
+          For 3 Ω: \[ P = (0.69)^2 \times 3 = 1.43\,\text{W} \]
+          <br>
+          For 10 Ω: \[ P = (0.69)^2 \times 10 = 4.76\,\text{W} \]
+          <br>
+          \[ 1.43 + 4.76 = 6.2\,\text{W} \]
+          <br>
+          <strong>The sum of the power ratings equals the total circuit power.</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="ex3" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <strong style="color:#2d3b45; font-size:1.15em;">Example 3: Energy Cost</strong>
+    <div style="margin-top:8px; font-size:1.07em;">
+      Use the following product label to determine the cost of running the device for 4 weeks straight if energy costs 12¢ per kilowatt-hour.
+      <br>
+      <img src="https://tempeunion.instructure.com/courses/232/files/242892/preview" alt="product label" style="max-width:220px; margin:10px 0;" loading="lazy">
+    </div>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Answer</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          P=IV=2.37A×19V=45W P = IV = 2.37\,\text{A} \times 19\,\text{V} = 45\,\text{W} 
+          <br>
+          4 weeks = 28 days = 672 hours
+          <br>
+          Cost=(45W)(1kW1000W)(0.12$/kWh)(672h) \text{Cost} = (45\,\text{W}) \left(\frac{1\,\text{kW}}{1000\,\text{W}}\right) (0.12\,\$/\text{kWh}) (672\,\text{h}) 
+          <br>
+          Cost=$3.62 \text{Cost} = \$3.62 
+          <br>
+          <strong>It will cost $3.62 to run this computer for 4 weeks straight.</strong>
+        </p>
+      </div>
+    </details>
+  </div>
+</div>
+</body>
+</html>

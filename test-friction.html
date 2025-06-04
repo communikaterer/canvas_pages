@@ -1,0 +1,240 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test Friction</title>
+<meta name="identifier" content="gc2c2ce3f24b9f9927ac008e98ee94e8c"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#intro" style="color:#fff; text-decoration:underline; margin-right:18px;">Introduction</a>
+      <a href="#factors" style="color:#fff; text-decoration:underline; margin-right:18px;">Friction Factors</a>
+      <a href="#equation" style="color:#fff; text-decoration:underline; margin-right:18px;">Friction Equation</a>
+      <a href="#examples" style="color:#fff; text-decoration:underline;">Examples</a>
+    </div>
+  </div>
+
+  
+  <div id="intro" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h2 style="color:#2d3b45; font-size:1.6em; margin-top:0; margin-bottom:18px;">Kinetic vs Static Friction</h2>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Find a large, heavy piece of furniture. Apply a steady, horizontal push to the furniture. Increase your force until the furniture starts to move. Push just enough to keep the furniture moving. Did you apply the same amount of force? Was it easier to get the furniture to start moving or easier to keep the furniture moving?
+    </p>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Hopefully you noticed that you had to apply a larger force to get the furniture to start moving. Once the furniture was moving, you could apply less force to keep it moving. This is because there are two types of friction: <span style="color:#0077CC;">static</span> and <span style="color:#0077CC;">kinetic</span> friction.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      <strong style="color:#2d3b45;">Static friction</strong> is the friction that an object experiences when it is at rest. Static friction is actually a range of friction forces. When you applied a small force to your furniture, the furniture did not move because your force was canceled by the static friction force (Newton’s First Law). If you increase your applied force, the static friction force increases to match. It’s not until you apply a force that exceeds the maximum static friction force that the furniture starts to move.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      <strong style="color:#2d3b45;">Kinetic friction</strong> is the friction an object experiences while in motion. As noted above, it is almost always smaller than the maximum static friction force.
+    </p>
+  </div>
+
+  
+  <div id="factors" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">What determines the amount of friction?</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Rub your hands together while pressing very lightly. Then rub your hands together while pushing them together with a lot of force. What do you notice? The amount of force pressing the two objects together is one factor in determining the amount of friction. This force is the <span style="color:#0077CC;">normal force</span>.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Think about it this way: when dragging heavy objects across a carpeted surface, it is often easier to lift up slightly on the object while dragging. Why is this? By holding some of the object’s weight, you are decreasing the normal force between the object and the ground, which then causes a decrease in friction and makes it easier to drag the object.
+    </p>
+    <div style="text-align:center; margin:18px 0;">
+      <img src="https://tempeunion.instructure.com/courses/232/files/240187/preview" alt="Friction Example" style="max-width:100%; border-radius:6px; " loading="lazy">
+    </div>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      The other factor that will determine the magnitude of a friction force is the relative roughness of the two surfaces that are rubbing against each other. Run your hand against a smooth desk and then run your hand against sandpaper. Even with the same normal force, you’ll notice a difference in friction. The relative roughness of the two surfaces is given by a constant called the <span style="color:#0077CC;">coefficient of friction</span> (\[\mu_s\] for static friction, \[\mu_k\] for kinetic friction). It is an experimentally determined ratio of forces (friction and normal), which means that it has no units.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      The greater the roughness of both materials, the larger the coefficient of friction. That said, most coefficients have values that are less than 1.
+    </p>
+  </div>
+
+  
+  <div id="equation" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Friction Equation</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      When all of these factors are combined, friction is:
+    </p>
+    <div style="text-align:center; font-size:1.2em; margin-bottom:16px;">
+      \[ F_f = \mu F_N \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Where <span style="color:#0077CC;">\[F_f\]</span> is the friction force (either maximum static or kinetic), <span style="color:#0077CC;">\[\mu\]</span> is the coefficient of friction (either static or kinetic), and <span style="color:#0077CC;">\[F_N\]</span> is the normal force. This is one of the easiest equations to remember: friction is “fun” or “\[f = \mu N\]”.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      <em>Note:</em> This equation only indicates the magnitude (number value) of the friction force. You will need to determine the direction of the force from your force vector diagram.
+    </p>
+  </div>
+
+  
+  <div id="examples" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Example 1</h3>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      A student applies a horizontal 20.0 N force to a 4.0 kg box. The coefficient of kinetic friction is 0.4. What is the acceleration of the box?
+    </p>
+    <details style="margin-bottom:0;">
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Show/Hide Answer
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <em style="color:#0077CC;">Answer:</em>
+        <p style="font-size:1.1em; margin-bottom:10px;">
+          Use Newton’s First Law in the vertical direction to determine the normal force (the normal force cancels with the weight of the object). Then solve for the friction force.
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/240193/preview" alt="Box Example" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          <div>Use Newton’s Second Law in the horizontal direction:</div>
+          <div>\[ \Sigma F_x = ma \]</div>
+          <div>\[ f + F_{student} = ma \]</div>
+          <div>\[ (-15.7\,N) + (20.0\,N) = (4.0\,kg)(a) \]</div>
+          <div>\[ a = 1.1\,m/s^2 \]</div>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Example 2 (with angles)</h3>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      A student can apply up to 200 N force to a 15.0 kg box at an angle 30° below the horizontal before the box starts to move. What is the coefficient of static friction?
+    </p>
+    <details style="margin-bottom:0;">
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Show/Hide Answer
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <em style="color:#0077CC;">Answer:</em>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/240199/preview" alt="Angle Example" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          <div>\[ W = mg \]</div>
+          <div>\[ W = (15.0\,kg)(9.8\,N/kg) = -147\,N \]</div>
+          <div>\[ F_x = (200\,N)\cos 30^\circ = 173\,N \]</div>
+          <div>\[ F_y = (200\,N)\sin 30^\circ = -100\,N \]</div>
+          <div>Vertical forces cancel (Newton’s First Law):</div>
+          <div>\[ \Sigma F_y = 0 \]</div>
+          <div>\[ N + F_y + W = 0 \]</div>
+          <div>\[ N + (-100\,N) + (-147\,N) = 0 \]</div>
+          <div>\[ N = 247\,N \]</div>
+          <div>Horizontal forces cancel:</div>
+          <div>ΣFx=0 \Sigma F_x = 0 </div>
+          <div>\[ f + F_x = 0 \]</div>
+          <div>\[ f + (173\,N) = 0 \]</div>
+          <div>\[ f = -173\,N \]</div>
+          <div>Solve for the coefficient of static friction:</div>
+          <div>\[ f = \mu_s N \]</div>
+          <div>\[ 173\,N = \mu_s (247\,N) \]</div>
+          <div>\[ \mu_s = 0.7 \]</div>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Additional Examples and Discussion</h3>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      Open Stax AP College Physics Textbook:
+      <strong><a href="https://openstax.org/books/college-physics-ap-courses/pages/5-1-friction" style="color:#0077CC;">Chapter 5.1 - Friction</a></strong>
+    </p>
+    <div style="margin:18px 0;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/ZA_D4O6l1lo" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <div style="margin:18px 0;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/J9BWNiOSGlc" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <div style="margin:18px 0;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/fo_pmp5rtzo" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  
+  
+</div>
+</body>
+</html>

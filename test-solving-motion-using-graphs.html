@@ -1,0 +1,202 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>test solving motion using graphs</title>
+<meta name="identifier" content="gb3368a9533a1fc94ca0ba03b5a111496"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#graphintro" style="color:#fff; text-decoration:underline; margin-right:18px;">Velocity Graphs</a>
+      <a href="#easy" style="color:#fff; text-decoration:underline; margin-right:18px;">Example (Easy)</a>
+      <a href="#medium" style="color:#fff; text-decoration:underline; margin-right:18px;">Example (Medium)</a>
+      <a href="#hard" style="color:#fff; text-decoration:underline; margin-right:18px;">Example (Hard)</a>
+      <a href="#resources" style="color:#fff; text-decoration:underline;">Resources &amp; Videos</a>
+    </div>
+  </div>
+
+  
+  <div id="graphintro" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Solving Motion Problems Using Velocity Graphs</h2>
+    <p style="font-size:1.1em;">
+      You can answer almost all questions involving motion with constant acceleration using velocity vs. time graphs. Remember, velocity graphs do not provide position data directly, but you can find displacement by calculating the area under the curve. Your sketch does not need to be highly detailed or perfectly scaled—just label the important points!
+    </p>
+  </div>
+
+  
+  <div id="easy" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.15em;">Example (Easy)</h3>
+    <p style="font-size:1.1em;">
+      <strong>Problem:</strong> A student starts from rest and travels forwards for 10 seconds. Their final velocity is 3.0 m/s.<br>
+      a) What is the student's acceleration?<br>
+      b) How far did the student travel?
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>Solution:</strong> Sketch and label a simple velocity vs time graph.
+    </p>
+    <img src="https://tempeunion.instructure.com/courses/232/files/240642/preview" alt="velocity vs time graph easy" style="max-width:350px; margin:10px 0;" loading="lazy">
+    <p style="font-size:1.1em;">
+      a) <strong>Acceleration</strong> is the slope of the velocity vs time graph:<br>
+      \[ a = \frac{3 - 0}{10 - 0} = 0.3\,\text{m/s}^2 \]
+    </p>
+    <p style="font-size:1.1em;">
+      b) <strong>Distance traveled</strong> is the area under the graph (a triangle):<br>
+      \[ \Delta x = \frac{1}{2} \times 10\,\text{s} \times 3\,\text{m/s} = 15\,\text{m} \]
+    </p>
+  </div>
+
+  
+  <div id="medium" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.15em;">Example (Medium)</h3>
+    <p style="font-size:1.1em;">
+      <strong>Problem:</strong> A car moving at a velocity of 30 m/s travels 50 m while braking. The final velocity is 20 m/s.<br>
+      a) How much time did the car brake for?<br>
+      b) What was the acceleration?
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>Solution:</strong> Sketch and label a velocity vs time graph.
+    </p>
+    <img src="https://tempeunion.instructure.com/courses/232/files/240650/preview" alt="velocity vs time graph medium" style="max-width:350px; margin:10px 0;" loading="lazy">
+    <p style="font-size:1.1em;">
+      a) The area under the line is the displacement. The area is a rectangle plus a triangle. Let t be the unknown time:<br>
+      \[ 50 = \frac{1}{2} t (30 - 20) + t (20) \]
+      \[ 50 = 5t + 20t \]
+      \[ 50 = 25t \]
+      \[ t = 2\,\text{s} \]
+    </p>
+    <p style="font-size:1.1em;">
+      b) <strong>Acceleration</strong> is the slope of the line:<br>
+      \[ a = \frac{20 - 30}{2 - 0} = -5\,\text{m/s}^2 \]
+    </p>
+  </div>
+
+  
+  <div id="hard" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.15em;">Example (Hard)</h3>
+    <p style="font-size:1.1em;">
+      <strong>Problem:</strong> An object accelerates from rest at a rate of 8 m/s² for a distance of 40 m.<br>
+      a) What is the time traveled?<br>
+      b) What is the final velocity?
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>Solution:</strong> Start by sketching and labeling a velocity vs time graph.
+    </p>
+    <img src="https://tempeunion.instructure.com/courses/232/files/240659/preview" alt="velocity vs time graph hard" style="max-width:350px; margin:10px 0;" loading="lazy">
+    <p style="font-size:1.1em;">
+      This is the trickiest type of question to solve using the graph, since we don't know any values on the axes except the starting velocity. (For these, using equations is often easier, but let's solve graphically!)
+    </p>
+    <p style="font-size:1.1em;">
+      The slope is acceleration:<br>
+      \[ 8 = \frac{v}{t} \implies v = 8t \]
+      <br>
+      The area under the graph (a triangle) is the displacement:<br>
+      \[ 40 = \frac{1}{2} t v \]
+      Substitute for v:<br>
+      \[ 40 = \frac{1}{2} t (8t) \]
+      40=4t2 40 = 4t^2 
+      t=3.2s t = 3.2\,\text{s} 
+      <br>
+      Now plug that time into the velocity equation:<br>
+      v=8×3.2=25.6m/s v = 8 \times 3.2 = 25.6\,\text{m/s} 
+    </p>
+  </div>
+
+  
+  <div id="resources" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">From the Textbook &amp; Video Review</h3>
+    <p style="font-size:1.1em;">
+      OpenStax AP Physics:<br>
+      <a href="https://openstax.org/books/college-physics-ap-courses/pages/2-8-graphical-analysis-of-one-dimensional-motion" style="color:#0077CC;">Ch 2.8 - Graphical Analysis of One Dimensional Motion</a><br>
+      (The AP textbook does a better job explaining and showing examples of graphical solutions than the standard high school textbook.)
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>Video Review:</strong>
+    </p>
+    <p style="font-size:1.1em;">Khan Academy: How to get acceleration from a velocity vs time graph</p>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/b1Zd8hUWpw0" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <p style="font-size:1.1em;">Khan Academy: Calculating displacement using velocity vs time graph</p>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/E-uhIncJmKM" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>

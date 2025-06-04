@@ -1,0 +1,156 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>test wavelength vs frequency</title>
+<meta name="identifier" content="g279c15438d5266ec0f8004ae86139f06"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#results" style="color:#fff; text-decoration:underline; margin-right:18px;">Lab Results</a>
+      <a href="#relationship" style="color:#fff; text-decoration:underline; margin-right:18px;">Wavelength-Frequency Relationship</a>
+      <a href="#examples" style="color:#fff; text-decoration:underline;">Examples</a>
+    </div>
+  </div>
+
+  
+  <div id="results" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Wavelength vs Frequency Lab Results</h2>
+    <p style="font-size:1.1em;">
+      When a student oscillates a rope faster, the <strong>frequency</strong> increases and the <strong>wavelength</strong> decreases. This shows an inverse relationship between wavelength and frequency.
+    </p>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/232/files/239207/preview" alt="wavelength vs frequency graph" style="max-width:200px; margin:10px 0;" loading="lazy">
+    </div>
+    <p style="font-size:1.1em;">
+      To test this, we graph wavelength vs the inverse of frequency (1/f):
+    </p>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/232/files/239210/preview" alt="wavelength vs 1/f graph" style="max-width:200px; margin:10px 0;" loading="lazy">
+    </div>
+  </div>
+
+  
+  <div id="relationship" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.15em;">Wavelength-Frequency Relationship</h3>
+    <p style="font-size:1.1em;">
+      The graph of wavelength (λ) vs 1/frequency (1/f) is linear:
+      <br>
+      \[ \lambda = (\text{slope}) \cdot \frac{1}{f} \]
+      <br>
+      Since 1/f is the period (T), this is:
+      <br>
+      \[ \lambda = (\text{slope}) \cdot T \]
+      <br>
+      The slope has units of m/s, which are the units of velocity (v):
+      <br>
+      λ=vT \lambda = vT 
+      <br>
+      Rearranged:
+      <br>
+      v=λf v = \lambda f 
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>Key point:</strong> The velocity of the traveling wave is constant and independent of both wavelength and frequency.
+    </p>
+  </div>
+
+  
+  <div id="examples" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.15em;">Examples</h3>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Examples</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          <strong>Example 1:</strong> A student doubles the frequency (from f to 2f).<br>
+          <strong>a) Wavelength:</strong> Halves (since v = λf and v is constant).<br>
+          <strong>b) Period:</strong> Halves (period and frequency are inverses).<br>
+          <strong>c) Wave speed:</strong> Remains unchanged.
+        </p>
+        <p>
+          <strong>Example 2:</strong> A student creates 15 waves in 3.0 s; wavelength is 1.2 m.<br>
+          f=153.0=5Hz f = \frac{15}{3.0} = 5\,\text{Hz} 
+          v=λf=1.2m×5Hz=6.0m/s v = \lambda f = 1.2\,\text{m} \times 5\,\text{Hz} = 6.0\,\text{m/s} 
+        </p>
+      </div>
+    </details>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>TEST distance and displacement</title>
+<meta name="identifier" content="g9a3b7629a0ec6ac9742fa22547456306"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+    
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+        <details style="margin: 0;">
+            <summary style="cursor: pointer; color: #2d3b45; ">Quick Navigation ▾</summary>
+            <div style="padding-top: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div>
+                        <a href="#basics" style="color: #0077cc; text-decoration: none; display: block;">Scalars vs. Vectors</a>
+                        <a href="#distance" style="color: #0077cc; text-decoration: none; display: block;">Distance vs. Displacement</a>
+                        <a href="#speed" style="color: #0077cc; text-decoration: none; display: block;">Speed vs. Velocity</a>
+                    </div>
+                    <div>
+                        <div style="margin-bottom: 5px;">Analysis &amp; Examples:</div>
+                        <a href="#velocity-graphs" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">Velocity Graphs</a>
+                        <a href="#example1" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">Example 1: Basic Motion</a>
+                        <a href="#example2" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">Example 2: Graph Analysis</a>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <h1 style="color: #2d3b45; border-bottom: 3px solid #2d3b45; padding-bottom: 10px; margin-bottom: 30px;">Scalars and Vectors in Motion</h1>
+    
+    
+    <div id="basics" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: #2d3b45; margin-top: 0; text-align: center;">Scalar Quantities</h3>
+                <div style="text-align: center;">
+                    <img style="max-width: 100%; height: auto; border-radius: 4px; margin: 10px auto;" src="$IMS-CC-FILEBASE$/Uploaded%20Media%202/scalars.PNG" alt="Scalar quantities diagram" loading="lazy">
+                    <p style="font-size: 14px; line-height: 1.6;">A scalar measurement is any measurement that includes ONLY a magnitude (a number value).</p>
+                    <p style="font-size: 14px; line-height: 1.6;">Examples include: distance, speed, time, mass, volume, etc.</p>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: #2d3b45; margin-top: 0; text-align: center;">Vector Quantities</h3>
+                <div style="text-align: center;">
+                    <img style="max-width: 100%; height: auto; border-radius: 4px; margin: 10px auto;" src="$IMS-CC-FILEBASE$/Uploaded%20Media%202/vectors.PNG" alt="Vector quantities diagram" loading="lazy">
+                    <p style="font-size: 14px; line-height: 1.6;">A vector measurement is any measurement that includes both a magnitude (a number value) and a direction.</p>
+                    <p style="font-size: 14px; line-height: 1.6;">Examples include: displacement and velocity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="distance" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0; text-align: center;">Distance vs. Displacement</h2>
+        <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; align-items: center;">
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <h3 style="color: #2d3b45; text-align: center;">Distance</h3>
+                <p style="font-size: 14px; line-height: 1.6;">Is equal to the total amount of travel, regardless of the direction</p>
+            </div>
+            <div style="flex: 0 0 auto; text-align: center;">
+                <img style="max-width: 110px; height: auto; margin: 10px;" src="$IMS-CC-FILEBASE$/Uploaded%20Media%202/image.png" alt="Distance vs Displacement illustration" loading="lazy">
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <h3 style="color: #2d3b45; text-align: center;">Displacement</h3>
+                <p style="font-size: 14px; line-height: 1.6;">Is the difference between the final position and the starting position</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="speed" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0; text-align: center;">Speed vs. Velocity</h2>
+        <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; align-items: center;">
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <h3 style="color: #2d3b45; text-align: center;">Speed</h3>
+                <p style="font-size: 14px; line-height: 1.6;">Describes how fast an object moves</p>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <h3 style="color: #2d3b45; text-align: center;">Velocity</h3>
+                <p style="font-size: 14px; line-height: 1.6;">Describes how fast <strong>AND</strong> the direction of movement</p>
+            </div>
+        </div>
+
+        
+        <div style="margin-top: 30px;">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <p style="text-align: center; font-size: 14px; line-height: 1.6;">Examine the following position vs time graph and describe both the <em>speed</em> and <em>velocity</em></p>
+                    <img style="width: 100%; max-width: 394px; height: auto; margin: 10px auto; display: block;" src="$IMS-CC-FILEBASE$/ccres0000628/x_v_t_1_611c17595fdc0.JPG" alt="Position vs Time Graph" loading="lazy">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <details style="margin: 10px 0;">
+                        <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Velocity Analysis</summary>
+                        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                            <p style="font-size: 14px; line-height: 1.6;">Remember, the slope of a position vs time graph is equal to the velocity of the object. The slope is <strong>-</strong>5 m/s. This means that the<strong> velocity of the object is -5 m/s </strong>(or 5 m/s <em>to the left</em>).</p>
+                        </div>
+                    </details>
+                    <details style="margin: 10px 0;">
+                        <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Speed Analysis</summary>
+                        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                            <p style="font-size: 14px; line-height: 1.6;">The speed is equal to the number value of the slope without the forward or backward direction. The <strong>speed is equal to 5 m/s</strong>.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="example1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0;">Example 1: Basic Motion</h2>
+        <div style="background: #fff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+            <p style="font-size: 14px; line-height: 1.6;">A person moves forwards 10 m and then backwards 4 m. What is the <em>displacement</em> and the <em>distance</em>?</p>
+            
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <p style="font-size: 14px; line-height: 1.6;"><strong>Distance:</strong> The direction doesn't matter - just add up all the traveling that occurred.</p>
+                    <p style="font-size: 14px; line-height: 1.6; padding-left: 20px;">Distance = 10 + 4 = <strong>14 m</strong></p>
+                    
+                    <p style="font-size: 14px; line-height: 1.6; margin-top: 15px;"><strong>Displacement:</strong> The direction DOES matter. Forward motion is positive and backward motion is negative.</p>
+                    <p style="font-size: 14px; line-height: 1.6; padding-left: 20px;">Displacement = (+10 m) + (-4 m) = <strong>6 m, to the right</strong></p>
+                    <p style="font-size: 14px; line-height: 1.6; padding-left: 20px;">In other words, the person ended 6 m in front of their starting position.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    
+    <div id="velocity-graphs" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0;">Using Velocity Graphs</h2>
+        
+        <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+            <p style="font-size: 14px; line-height: 1.6;"><strong>Important Note:</strong></p>
+            <ul style="font-size: 14px; line-height: 1.6;">
+                <li>Scientists refer to any line on a graph as a "curve" even if it's straight</li>
+                <li>"Area under the curve" means the area between the line and the horizontal axis</li>
+                <li>For lines in the fourth quadrant, this means finding the area ABOVE the line</li>
+            </ul>
+        </div>
+
+        
+        <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <p style="font-size: 14px; line-height: 1.6;">Here is the velocity graph for an object that started at a position of 5 m and then moved forwards at a rate of 3 meters every second.</p>
+                <img style="width: 100%; height: auto; border-radius: 4px;" src="$IMS-CC-FILEBASE$/ccres0000628/area_5f3c2c52674a7.JPG" alt="Velocity Graph Example 1" loading="lazy">
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <div style="background: #fff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                    <p style="font-size: 14px; line-height: 1.6;">The area takes the shape of a rectangle:</p>
+                    <div style="padding-left: 20px;">
+                        <p style="font-size: 14px; line-height: 1.6;">\[ A = \text{base} \times \text{height} \]</p>
+                        <p style="font-size: 14px; line-height: 1.6;">\[ A = (6 \text{ s})(3 \text{ m/s}) \]</p>
+                        <p style="font-size: 14px; line-height: 1.6;">\[ A = 18 \text{ m} \]</p>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.6; margin-top: 10px;">This is both the distance and displacement of the object!</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <p style="font-size: 14px; line-height: 1.6;">Here's a velocity graph for an object that moved left at 5 m/s for 2 seconds, then right at 5 m/s for 4 seconds:</p>
+                <img style="width: 100%; height: auto; border-radius: 4px;" src="$IMS-CC-FILEBASE$/ccres0000628/velocity2_5f3c36b640256.jpg" alt="Velocity Graph Example 2" loading="lazy">
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <div style="background: #fff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                    <p style="font-size: 14px; line-height: 1.6;">Finding the total area with two rectangles:</p>
+                    <div style="padding-left: 20px;">
+                        <p style="font-size: 14px; line-height: 1.6;">\[ A = (2 \text{ s})(-3 \text{ m/s}) + (4 \text{ s})(+3 \text{ m/s}) \]</p>
+                        <p style="font-size: 14px; line-height: 1.6;">\[ A = (-6 \text{ m}) + (12 \text{ m}) \]</p>
+                        <p style="font-size: 14px; line-height: 1.6;">\[ A = 6 \text{ m} \]</p>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.6; margin-top: 10px;">This is the displacement - the object ends up 6 m past its starting point.</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+            <p style="font-size: 14px; line-height: 1.6;"><strong>Fun Fact:</strong> The physics symbol for horizontal displacement is \(\Delta x\) where:</p>
+            <ul style="font-size: 14px; line-height: 1.6;">
+                <li>\(\Delta\) (delta) represents "final - initial"</li>
+                <li>\(\Delta x\) means "displacement = final position - initial position"</li>
+            </ul>
+        </div>
+
+        
+        <div style="background: #fff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Key Points:</h3>
+            <ul style="font-size: 14px; line-height: 1.6;">
+                <li><strong>Distance</strong> = total area under velocity curve (ignore negative values)</li>
+                <li><strong>Displacement</strong> = total area under velocity curve (include negative values)</li>
+                <li>Velocity graphs don't show starting position</li>
+                <li>If no starting position is given, assume zero</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="example2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0;">Example 2: Velocity Graph Analysis</h2>
+        
+        <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <p style="font-size: 14px; line-height: 1.6;">Examine the velocity graph and:</p>
+                <ol style="font-size: 14px; line-height: 1.6;">
+                    <li>Describe the motion of the object</li>
+                    <li>Determine the distance and displacement</li>
+                    <li>Sketch a matching position vs time graph</li>
+                </ol>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img style="width: 100%; height: auto; border-radius: 4px;" src="$IMS-CC-FILEBASE$/ccres0000628/vel2_5f3c471448746.JPG" alt="Example 2 Velocity Graph" loading="lazy">
+            </div>
+        </div>
+
+        <details style="margin: 15px 0;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Part A</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <p style="font-size: 14px; line-height: 1.6;">The object:</p>
+                <ul style="font-size: 14px; line-height: 1.6;">
+                    <li>Moves forward at 5 meters/second for 6 seconds</li>
+                    <li>Then moves backwards at 2 meters/second for 4 seconds</li>
+                </ul>
+                <p style="font-size: 14px; line-height: 1.6;">(Remember: +velocity = forwards, -velocity = backwards)</p>
+            </div>
+        </details>
+
+        <details style="margin: 15px 0;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Part B</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <h4 style="color: #2d3b45; margin-top: 0;">Displacement:</h4>
+                <div style="padding-left: 20px;">
+                    <p style="font-size: 14px; line-height: 1.6;">\[ \Delta x = (6 \text{ s})(+5 \text{ m/s}) + (4 \text{ s})(-2 \text{ m/s}) \]</p>
+                    <p style="font-size: 14px; line-height: 1.6;">\[ \Delta x = (+30 \text{ m}) + (-8 \text{ m}) \]</p>
+                    <p style="font-size: 14px; line-height: 1.6;">\[ \Delta x = 22 \text{ m} \]</p>
+                </div>
+
+                <h4 style="color: #2d3b45; margin-top: 15px;">Distance:</h4>
+                <div style="padding-left: 20px;">
+                    <p style="font-size: 14px; line-height: 1.6;">\[ d = (6 \text{ s})(5 \text{ m/s}) + (4 \text{ s})(2 \text{ m/s}) \]</p>
+                    <p style="font-size: 14px; line-height: 1.6;">\[ d = (30 \text{ m}) + (8 \text{ m}) \]</p>
+                    <p style="font-size: 14px; line-height: 1.6;">\[ d = 38 \text{ m} \]</p>
+                </div>
+            </div>
+        </details>
+
+        <details style="margin: 15px 0;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Part C</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <p style="font-size: 14px; line-height: 1.6;">Since no starting position was given, we'll assume a starting position of zero.</p>
+                <ul style="font-size: 14px; line-height: 1.6;">
+                    <li>First 6 seconds: slope = +5 m/s</li>
+                    <li>Next 4 seconds: slope = -2 m/s</li>
+                </ul>
+                <p style="font-size: 14px; line-height: 1.6;">Remember: slope of a position vs time graph = velocity!</p>
+                <img style="width: 100%; max-width: 500px; height: auto; margin: 15px auto; display: block;" src="$IMS-CC-FILEBASE$/ccres0000628/position_5f3c47854d621.JPG" alt="Position vs Time Graph Solution" loading="lazy">
+                
+                <div style="background: #f5f5f5; padding: 15px; margin-top: 15px; border-radius: 4px;">
+                    <p style="font-size: 14px; line-height: 1.6;"><strong>Alternative Thinking:</strong></p>
+                    <ul style="font-size: 14px; line-height: 1.6;">
+                        <li>First 6 seconds: moves forward 30 meters</li>
+                        <li>Next 4 seconds: moves backward 8 meters</li>
+                        <li>Final position: 22 meters from start</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </div>
+</div>
+</body>
+</html>

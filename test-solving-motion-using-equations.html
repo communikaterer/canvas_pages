@@ -1,0 +1,194 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>test solving motion using equations</title>
+<meta name="identifier" content="g6ea1f7e52aad83661d4e4ad8ee7a36b1"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#kinematics" style="color:#fff; text-decoration:underline; margin-right:18px;">Kinematic Equations</a>
+      <a href="#medium" style="color:#fff; text-decoration:underline; margin-right:18px;">Example (Medium)</a>
+      <a href="#hard" style="color:#fff; text-decoration:underline; margin-right:18px;">Example (Hard)</a>
+      <a href="#practice" style="color:#fff; text-decoration:underline; margin-right:18px;">Practice &amp; Resources</a>
+    </div>
+  </div>
+
+  
+  <div id="kinematics" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Solving Motion Problems Using Kinematic Equations</h2>
+    <p style="font-size:1.1em;">
+      If you prefer algebraic number crunching over a graph, then you are a rare person, but let's work through a few examples anyway!
+    </p>
+    <p style="font-size:1.1em;">
+      The three kinematic equations (for constant acceleration) that relate the variables of motion are:
+    </p>
+    <ul style="font-size:1.1em; margin-left:18px;">
+      <li>\[ \Delta x = \frac{1}{2} a t^2 + v_0 t \]</li>
+      <li>\[ v = a t + v_0 \]</li>
+      <li>\[ v^2 = 2a \Delta x + v_0^2 \]</li>
+    </ul>
+    <p style="font-size:1.1em;">
+      <strong>How to solve algebraically:</strong>
+      </p><ul style="margin-left:18px;">
+        <li>Identify the variables you are given.</li>
+        <li>Identify the variable you are solving for.</li>
+        <li>Pick an equation that allows you to solve for the unknown based on what you know.</li>
+      </ul>
+    <p></p>
+  </div>
+
+  
+  <div id="medium" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.15em;">Example: (Medium)</h3>
+    <p style="font-size:1.1em;">
+      <strong>Problem:</strong> A car accelerates from rest at a rate of 15 m/s² for a distance of 20.0 m.<br>
+      a) How much time is spent accelerating?<br>
+      b) What is the final velocity of the car?
+    </p>
+    <img src="https://tempeunion.instructure.com/courses/232/files/241504/preview" alt="kinematics example" style="max-width:400px; margin:10px 0;" loading="lazy">
+    <p style="font-size:1.1em;">
+      <strong>a) To solve for time,</strong> we need an equation that includes t. Since we don't know the final velocity (v), use:<br>
+      \[ \Delta x = \frac{1}{2} a t^2 + v_0 t \]
+      \[ 20 = 0.5 \times 15 \times t^2 \]
+      \[ 20 = 7.5 t^2 \]
+      \[ t = 1.6\,\text{s} \]
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>b) To solve for final velocity,</strong> use an equation that includes v. We'll use:<br>
+      \[ v = a t + v_0 \]
+      \[ v = 15 \times 1.6 + 0 = 24\,\text{m/s} \]
+      <br>
+      <em>Note:</em> This equation uses the answer from part (a). If you make a mistake in part (a), it will affect part (b).
+    </p>
+  </div>
+
+  
+  <div id="hard" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.15em;">Example: (Hard)</h3>
+    <p style="font-size:1.1em;">
+      <strong>Problem:</strong> An object traveling at 30 m/s slows to a stop over a distance of 100 m. How much time does it take for the object to stop?
+    </p>
+    <p style="font-size:1.1em;">
+      We know initial velocity (30 m/s), final velocity (0 m/s), and displacement (100 m). We need time. However, all of the kinematic equations require us to know the acceleration before we can solve for anything else. This will be a two-part problem: first find acceleration, then solve for time.
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>Step 1: Find acceleration.</strong><br>
+      \[ v^2 = 2a \Delta x + v_0^2 \]
+      \[ 0 = 2a(100) + (30)^2 \]
+      \[ 0 = 200a + 900 \]
+      \[ a = -4.5\,\text{m/s}^2 \]
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>Step 2: Find time.</strong><br>
+      Use either of the remaining equations. We'll use:<br>
+      v=at+v0 v = a t + v_0 
+      \[ 0 = -4.5 t + 30 \]
+      \[ t = 6.7\,\text{s} \]
+    </p>
+    <p style="font-size:1.1em;">
+      <em>Tip:</em> For multi-step problems, always solve for acceleration first if it's not given, then use it to find the desired variable.
+    </p>
+  </div>
+
+  
+  <div id="practice" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">Additional Algebraic Examples (Optional Practice)</h3>
+    <p style="font-size:1.1em;">
+      For more practice, try these videos and textbook sections:
+    </p>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/P3jCdsWJa38" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/RsxzKYVhxK0" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <p style="font-size:1.1em;">
+      <strong>From the textbook:</strong><br>
+      OpenStax AP Physics<br>
+      <a href="https://openstax.org/books/college-physics-ap-courses/pages/2-5-motion-equations-for-constant-acceleration-in-one-dimension" style="color:#0077CC;">Ch 2.5 - Motion Equations for Constant Acceleration in One Dimension</a><br>
+      <a href="https://openstax.org/books/college-physics-ap-courses/pages/2-6-problem-solving-basics-for-one-dimensional-kinematics" style="color:#0077CC;">Ch 2.6 - Problem Solving Basics for One Dimensional Kinematics</a>
+    </p>
+    <p style="font-size:1.1em; color:#2d3b45;">
+      (The AP textbook provides especially clear explanations and examples for this topic.)
+    </p>
+  </div>
+</div>
+</body>
+</html>

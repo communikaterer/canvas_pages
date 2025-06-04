@@ -1,0 +1,208 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>📝 Notes - coulomb&#39;s law</title>
+<meta name="identifier" content="ga2f87a97236cda35b99127e36d5a1149"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+<div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;"><details style="margin: 0;">
+<summary style="cursor: pointer; color: #2d3b45;">Quick Navigation ▾</summary>
+<div style="padding-top: 10px;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+<div><a style="color: #0077cc; text-decoration: none; display: block;" href="#introduction">Introduction</a> <a style="color: #0077cc; text-decoration: none; display: block;" href="#coulombs-law">Coulomb's Law Equation</a></div>
+<div>
+<div style="margin-bottom: 5px;">Examples:</div>
+<a style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;" href="#example1">1: Distance Effect</a> <a style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;" href="#example2">2: Force Calculation</a> <a style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;" href="#example3">3: Three Particles</a> <a style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;" href="#example4">4: Four Particles</a></div>
+</div>
+</div>
+</details></div>
+<div id="introduction" style="margin-bottom: 30px;">
+<h1 style="color: #2d3b45; border-bottom: 3px solid #2d3b45; padding-bottom: 10px; margin-bottom: 20px;">Coulomb's Law</h1>
+<div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<p style="font-size: 14px; line-height: 1.6;">We've discussed the presence of electrostatic forces: two objects with the same type of net charge will repel while two objects with different types of net charge will attract. Extensive experimentation has shown that this static electric force is:</p>
+<ul style="font-size: 14px; line-height: 1.6; margin-left: 20px;">
+<li>Proportional to the quantity of net charge on both objects</li>
+<li>Proportional to the inverse-square of the distance between the two charged objects</li>
+</ul>
+<p style="font-size: 14px; line-height: 1.6;">In other words:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_e \propto \frac{q_1q_2}{r^2}\]</p>
+<div style="background: #fff; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e0e0e0;">
+<div style="display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center;">
+<div style="font-size: 16px; text-align: center;"><span style="font-size: 10pt;">\[F_e\]</span></div>
+<div style="font-size: 16px; text-align: center;"><span style="font-size: 10pt;">electrostatic force,</span></div>
+<div style="font-size: 16px; text-align: center;"><span style="font-size: 10pt;">\[q_1, q_2\]</span></div>
+<div style="font-size: 16px; text-align: center;"><span style="font-size: 10pt;">net charge of objects 1 and 2,</span></div>
+<div style="font-size: 16px; text-align: center;"><span style="font-size: 10pt;">\[r\]</span></div>
+<div style="font-size: 16px; text-align: center;"><span style="font-size: 10pt;">distance between the two obje</span>cts</div>
+</div>
+</div>
+</div>
+</div>
+<div id="example1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<h3 style="color: #2d3b45; margin-top: 0;">Example 1: Distance Effect</h3>
+<p style="font-size: 14px; line-height: 1.6;">The distance d between two positively charged particles is measured. The distance between the two particles is increased to 2d. If the original electrostatic force between the objects was F, what is the new force?</p>
+<details style="margin-top: 15px;">
+<summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Click to Show/Hide Solution</summary>
+<div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+<p style="font-size: 14px; line-height: 1.6;">Force has an inverse-squared relationship with distance. If the distance is doubled then the force will change by a factor of: \[(\frac{1}{2})^2 = \frac{1}{4}\] In other words, the new force will be four times smaller.</p>
+<p style="font-size: 14px; line-height: 1.6;">Since the two particles are both positive, the force will be a repelling force.</p>
+</div>
+</details></div>
+<div id="coulombs-law" style="margin: 30px 0;">
+<div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<p style="font-size: 14px; line-height: 1.6;">In order to turn this relationship into a full equation, a constant of proportionality must be added. This constant is called the coulomb's law constant and has a value of \[9 \times 10^9 \frac{\text{ N-m}^2}{\text{C}^2}\].</p>
+<div style="margin: 20px 0; text-align: center;"><img style="max-width: 200px;" src="$IMS-CC-FILEBASE$/ccres0000548/l10_8_5e5ed186c9ed9.PNG" alt="Coulomb's Law Equation" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/2138/files/2355700" data-api-returntype="File" loading="lazy"></div>
+<p style="font-size: 14px; line-height: 1.6;">This equation should look a little familiar – it's the same format as the universal law of gravitation.</p>
+</div>
+</div>
+<div id="example2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<h3 style="color: #2d3b45; margin-top: 0;">Example 2: Force Calculation</h3>
+<p style="font-size: 14px; line-height: 1.6;">What is the static electric force between a -3.0 μC charge and a +6 μC charge if they are 2.0 cm apart? Also, which is larger, the force of the negative particle on the positive or the force of the positive particle on the negative?</p>
+<details style="margin-top: 15px;">
+<summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Click to Show/Hide Solution</summary>
+<div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+<p style="font-size: 14px; line-height: 1.6;">\[F = \frac{k \cdot q_1q_2}{r^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F = \frac{(9 \times 10^9 \frac{\text{ N-m}^2}{\text{C}^2})(3 \times 10^{-6} \text{ C})(6 \times 10^{-6} \text{ C})}{(0.02 \text{ m})^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F = 405 \text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">Remember that the signs on the charges have no mathematical meaning so they should not be included in the math. The different types of net charge does mean that the force is an attractive force.</p>
+<p style="font-size: 14px; line-height: 1.6;">Newton's third law notes that any two objects pushing or pulling on each other will push/pull with equal but opposite forces. Each applies the same 405 N of attractive force on the other.</p>
+</div>
+</details></div>
+<div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<h3 style="color: #2d3b45; margin-top: 0;">Multiple Particle Analysis</h3>
+<p style="font-size: 14px; line-height: 1.6;">What if we have more than two charged particles? The same as we've always done:</p>
+<ol style="font-size: 14px; line-height: 1.6;">
+<li>Sketch the system if a drawing is not provided</li>
+<li>Draw and label a free body diagram</li>
+<li>Calculate all the forces</li>
+<li>Solve for any x and y force components</li>
+<li>Add all the x direction forces together and then add all the y direction forces together</li>
+<li>Use the Pythagorean theorem to combine the components into their vector form</li>
+<li>Use arctangent to solve for the direction of the final vector form</li>
+</ol>
+</div>
+<div id="example3" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<h3 style="color: #2d3b45; margin-top: 0;">Example 3: Three Particles</h3>
+<p style="font-size: 14px; line-height: 1.6;">Particle A has a net charge of +4 mC and is located at coordinate position (0, 2) m. Particle B has a net charge of -2 mC and is located at coordinate position (0, 0) m. Particle C has a net charge of +6 mC and is located at position (3, 0) m. What is the net force on particle B? Ignore any gravity effects.</p>
+<details style="margin-top: 15px;">
+<summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Click to Show/Hide Solution</summary>
+<div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+<p style="font-size: 14px; line-height: 1.6;">First, let's look at the system diagram and free body diagram:</p>
+<img style="max-width: 100%; height: auto; margin: 15px 0;" src="$IMS-CC-FILEBASE$/ccres0000548/l10_9_5e5ed234189d1.PNG" alt="Three Particle System" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/2138/files/2355701" data-api-returntype="File" loading="lazy">
+<p style="font-size: 14px; line-height: 1.6;">Calculate the forces:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F = \frac{k \cdot q_1 \cdot q_2}{r^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{A \text{ on } B} = \frac{(9 \times 10^9 \frac{\text{ N-m}^2}{\text{C}^2})(4 \times 10^{-3} \text{ C})(2 \times 10^{-3} \text{ C})}{(2 \text{ m})^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{A \text{ on } B} = 18000 \text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{C \text{ on } B} = \frac{(9 \times 10^9 \frac{\text{ N-m}^2}{\text{C}^2})(6 \times 10^{-3} \text{ C})(2 \times 10^{-3} \text{ C})}{(3 \text{ m})^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{C \text{ on } B} = 12000 \text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">Find the net force magnitude:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\Sigma F^2 = F_y^2 + F_x^2\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[(\Sigma F)^2 = (18000\text{ N})^2 + (12000\text{ N})^2\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\Sigma F = 21633\text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">Find the direction:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\tan \theta = \frac{18000\text{ N}}{12000\text{ N}}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\theta = 56.3°\]</p>
+</div>
+</details></div>
+<div id="example4" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<h3 style="color: #2d3b45; margin-top: 0;">Example 4: Four Particles</h3>
+<p style="font-size: 14px; line-height: 1.6;">Particles A and B have charges of +6 μC and are located at positions (0, 4) m and (4, 4) m, respectively. Particles C and D have charges of -6 μC and are located at positions (0, 0) m and (4, 0) m, respectively. Solve for the net force on particle C.</p>
+<details style="margin-top: 15px;">
+<summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show to Show/Hide Solution</summary>
+<div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+<p style="font-size: 14px; line-height: 1.6;">System diagram and free body diagram:</p>
+<img style="max-width: 100%; height: auto; margin: 15px 0;" src="$IMS-CC-FILEBASE$/ccres0000548/l10_10_5e5ed29858bd1.PNG" alt="Four Particle System" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/2138/files/2355703" data-api-returntype="File" loading="lazy">
+<p style="font-size: 14px; line-height: 1.6;">Calculate individual forces:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_e = \frac{k \cdot q_1\cdot q_2}{r^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{A \text{ on } C} = \frac{(9 \times 10^9 \frac{\text{ N-m}^2}{\text{C}^2})(6 \times 10^{-6} \text{ C})(6 \times 10^{-6} \text{ C})}{ (4 \text{ m})^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{A \text{ on } C} = 0.0203 \text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{B \text{ on } C} = \frac{(9 \times 10^9 \text{ N-m}^2\text{/C}^2)(6 \times 10^{-6} \text{ C})(6 \times 10^{-6} \text{ C})}{(5.66 \text{ m})^2}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_{B \text{ on } C} = 0.0101 \text{ N}\]</p>
+<img style="max-width: 100%; height: auto; margin: 15px 0;" src="$IMS-CC-FILEBASE$/ccres0000548/l10_11_5e5ed2da568e3.PNG" alt="Force Components" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/2138/files/2355702" data-api-returntype="File" loading="lazy">
+<p style="font-size: 14px; line-height: 1.6;">Component analysis:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_x = (0.0101 \text{ N})(\cos 45°) = 0.00716 \text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[F_x = (0.00716 \text{ N}) + (-0.0203 \text{ N}) = -0.0131 \text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\Sigma F_y = (0.00716 \text{ N}) + (0.0203 \text{ N}) = 0.0275 \text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">Net force magnitude:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\Sigma F^2 = (0.0275\text{ N})^2 + (-0.0131\text{ N})^2\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\Sigma F = 0.0305\text{ N}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">Direction:</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\tan \theta = \frac{0.0275\text{ N}}{-0.0131\text{ N}}\]</p>
+<p style="font-size: 14px; line-height: 1.6;">\[\theta = 115.5°\]</p>
+</div>
+</details></div>
+</div>
+</body>
+</html>

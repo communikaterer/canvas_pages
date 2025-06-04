@@ -1,0 +1,203 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>test Work (Energy Transfer)</title>
+<meta name="identifier" content="gfcf334db1a0c146826ca489741f4d61d"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#work" style="color:#fff; text-decoration:underline; margin-right:18px;">Work</a>
+      <a href="#network" style="color:#fff; text-decoration:underline; margin-right:18px;">Work vs Net Work</a>
+      <a href="#together" style="color:#fff; text-decoration:underline; margin-right:18px;">Putting It All Together</a>
+      <a href="#resources" style="color:#fff; text-decoration:underline;">More Examples</a>
+    </div>
+  </div>
+
+  
+  <div id="work" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Work</h2>
+    <p style="font-size:1.1em;">
+      <strong>Work</strong> is the transfer of energy by applying a force over a distance. If the force is constant:
+    </p>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/232/files/239864/preview" alt="force vs displacement graph" style="max-width:300px; margin:10px 0;" loading="lazy">
+    </div>
+    <p style="font-size:1.1em;">
+      Only the component of force <strong>parallel</strong> to the displacement does work:
+      <br>
+      \[ F_{//} = F \cos\theta \]
+      <br>
+      <strong>Work equation:</strong>
+      <br>
+      \[ W = Fd\cos\theta \]
+      <br>
+      (where d is displacement, θ is the angle between force and displacement)
+    </p>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Examples</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          <strong>Example 1:</strong> A student applies a 200 N force horizontally to a box for 3.0 m.<br>
+          \[ W = (200\,\text{N})(3.0\,\text{m}) = 600\,\text{J} \]
+        </p>
+        <p>
+          <strong>Example 2:</strong> A 200 N force at 30° below horizontal for 3.0 m.<br>
+          \[ W = (200\,\text{N})\cos(30^\circ)(3.0\,\text{m}) = 520\,\text{J} \]
+        </p>
+      </div>
+    </details>
+    <p style="font-size:1em; color:#2d3b45;">
+      Only the force component in the direction of motion does work. The mass of the object is not needed unless you are asked about energy or acceleration.
+    </p>
+  </div>
+
+  
+  <div id="network" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Work vs Net Work</h2>
+    <p style="font-size:1.1em;">
+      When multiple forces act, be clear if you need the work done by one force or the <strong>net work</strong> (total energy change).
+    </p>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Example</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          <strong>Example:</strong> A 200 N force pushes a 30 kg box 5 m; friction is 25 N.<br>
+          <strong>a) Work by student:</strong>
+          \[ W = (200\,\text{N})(5\,\text{m}) = 1000\,\text{J} \]
+          <br>
+          <strong>b) Work by ground (friction):</strong>
+          \[ W = (25\,\text{N})(5\,\text{m}) = 125\,\text{J} \]
+          <br>
+          <strong>c) Net work:</strong>
+          \[ 1000\,\text{J} - 125\,\text{J} = 875\,\text{J} \]
+          <br>
+          <strong>d) Final speed:</strong>
+          \[ W = \frac{1}{2}mv^2 \]
+          \[ 875 = 0.5 \times 30 \times v^2 \]
+          \[ v = 7.6\,\text{m/s} \]
+        </p>
+      </div>
+    </details>
+    <p style="font-size:1em; color:#2d3b45;">
+      Conservation of energy can be used even when net force is not constant, unlike kinematics.
+    </p>
+  </div>
+
+  
+  <div id="together" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Putting It All Together</h2>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Example</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          <strong>Example:</strong> A 5.0 kg box starts at rest. A 40 N force pushes it up a 6.0 m hill (distance traveled: 15 m). What is its speed at the top? (Neglect friction.)
+          <br>
+          <img src="https://tempeunion.instructure.com/courses/232/files/239871/preview" alt="energy bar graph" style="max-width:250px; margin:10px 0;" loading="lazy">
+          <br>
+          <strong>Energy equation:</strong>
+          0+W=Ug+K 0 + W = U_g + K 
+          (40)(15)=(5)(10)(6)+0.5(5)v2 (40)(15) = (5)(10)(6) + 0.5(5)v^2 
+          600=300+2.5v2 600 = 300 + 2.5v^2 
+          v=11m/s v = 11\,\text{m/s} 
+        </p>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="resources" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">Additional Discussion and Examples</h3>
+    <p style="font-size:1.1em;">
+      OpenStax Physics Textbook:<br>
+      <a href="https://openstax.org/books/college-physics/pages/7-1-work-the-scientific-definition" style="color:#0077CC;">Chapter 7.1 - Work: The Scientific Definition</a>
+    </p>
+    <p style="font-size:1.1em;">
+      Review / Example Videos:
+    </p>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/2WS1sG9fhOk" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <div style="margin-bottom:24px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/z01om-Qk2xM" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>

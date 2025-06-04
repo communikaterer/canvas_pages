@@ -1,0 +1,440 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test intro to forces and force diagrams</title>
+<meta name="identifier" content="g49dd0c7e089130ba796f363285c120da"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#intro" style="color:#fff; text-decoration:underline; margin-right:18px;">Introduction</a>
+      <a href="#noncontact" style="color:#fff; text-decoration:underline; margin-right:18px;">Non-contact Forces</a>
+      <a href="#diagrams" style="color:#fff; text-decoration:underline; margin-right:18px;">Force Diagrams</a>
+      <a href="#newton1" style="color:#fff; text-decoration:underline; margin-right:18px;">Newton's First Law</a>
+      <a href="#newton2" style="color:#fff; text-decoration:underline; margin-right:18px;">Newton's Second Law</a>
+      <a href="#moreexamples" style="color:#fff; text-decoration:underline;">More Examples</a>
+    </div>
+  </div>
+
+  
+  <div id="intro" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h2 style="color:#2d3b45; font-size:1.6em; margin-top:0; margin-bottom:18px;">Intro to Forces</h2>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      A force is a push or a pull. The symbol used to represent forces varies somewhat depending on the source. The most common symbol is <strong>F</strong> with subscripts that identify the source of the force. Some textbooks forgo the F and use the subscripts symbols instead.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      The SI unit of force is the Newton (N). Another common unit of measurement is the pound (lb). The conversion factor between newtons and pounds is:
+    </p>
+    <div style="font-size:1.1em; margin-bottom:16px; color:#0077CC;">
+      4.4 N = 1 lb
+    </div>
+  </div>
+
+  
+  <div id="noncontact" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Non-contact Forces</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      In order for one object to push or pull a second object, there must be physical contact between the objects. There are four exceptions to this rule, called "ranged" or "action at a distance" forces:
+    </p>
+    <ul style="font-size:1.1em; margin-bottom:16px; padding-left:22px;">
+      <li><strong>Gravity</strong> – the earth can apply a downward pull on an object without the need for physical contact. This is commonly referred to as the object’s “weight”.</li>
+      <li><strong>Electromagnetism</strong> – Electricity and magnetism are two sides of the same force. Static electricity and magnets can attract or repel without physical contact.</li>
+      <li><strong>Nuclear strong force</strong> – holds protons and neutrons together in the nucleus of an atom.</li>
+      <li><strong>Nuclear weak force</strong> – responsible for certain types of nuclear decay.</li>
+    </ul>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      All other forces MUST be applied through physical contact.
+    </p>
+  </div>
+
+  
+  <div id="diagrams" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Force Diagrams (aka Free Body Diagrams)</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      In most cases, objects will experience multiple forces at the same time. To analyze how all of these forces work together, physicists create vector diagrams that show the magnitude and direction of all of the forces acting on an object. These are called "free body diagrams".
+    </p>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example: Book on Hand
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          Hold out your hand with your palm up and place a book on it. Keep the book motionless. Now, consider the forces acting on the book.
+        </p>
+        <p style="font-size:1.1em;">
+          There is a downward force of the earth on the book (the weight of the book). The book is also in physical contact with your hand. Your hand is applying an upward force equal to the force of gravity.
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235928/preview" alt="Book on Hand" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+      </div>
+    </details>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          What if your hand applies more or less force?
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">If your hand applies an upward force greater than gravity:</p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235933/preview" alt="Hand Upward Force Greater" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <p style="font-size:1.1em;">If your hand applies an upward force less than gravity:</p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235941/preview" alt="Hand Upward Force Less" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+      </div>
+    </details>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          What if you hold two books? What if the books are on a table?
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">If you hold two books, the upward force must increase to match the weight of both books:</p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235947/preview" alt="Two Books" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <p style="font-size:1.1em;">If the books are on a table, the table supplies the upward force (the "normal" force):</p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235955/preview" alt="Books on Table" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <p style="font-size:1.1em;">
+          If more books are added, the table must supply a greater upward force. If the table can't supply enough force, it breaks and the books fall.
+        </p>
+        <p style="font-size:1.1em;">
+          The perpendicular force applied by a surface is called the <span style="color:#0077CC;">normal force</span> (N or \[F_N\]).
+        </p>
+      </div>
+    </details>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          What if you push the book horizontally?
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          If a student applies a small, steady horizontal push to a book on a table and the book remains motionless, the forces are: weight, normal force, horizontal push, and friction (which equals the push).
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235959/preview" alt="Book with Friction" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <p style="font-size:1.1em;">
+          If the student applies a force greater than friction, the book will move:
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235967/preview" alt="Book Moves" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="newton1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Newton's First Law of Motion</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Watch the following video. How would you describe the motion of the ice as it slides across the table?
+    </p>
+    <div style="margin:18px 0;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/IZQOzBzrriw" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      In all of the examples of the ice moving across the table, the ice is moving with a constant velocity motion.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      Once the person is no longer in contact with the ice, there are NO sideways forces acting on the ice. All we have are two equally sized vertical forces.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      This is the same as the force diagram for a block of dry ice sitting motionless on a table. If the forces on an object are zero in any direction (or if the forces cancel out), the object will experience constant velocity motion in that direction. Zero velocity is just a special case of constant velocity.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      Newton's First Law: <strong>“A body at rest remains at rest, or, if in motion, remains in motion at a constant velocity unless acted on by a net external force.”</strong> (Law of inertia)
+    </p>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example: Rope and Box
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          A student attaches a rope to a box and pulls on the rope. The following force vector diagram shows all the forces on the box. Describe the motion of the box.
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235973/preview" alt="Rope and Box" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <details>
+          <summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              The upward normal force and the downward force of the Earth on the box cancel out. The leftward force of the rope on the box cancels with the force of friction. Since all the forces cancel, the box must experience a constant velocity. This means that the box may be motionless (v = 0 m/s) or the box may be moving (v = constant non-zero value). The only thing we can be sure of is that the velocity is not changing.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="newton2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Newton's Second Law of Motion</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Newton’s second law is usually written in an equation form which we will explore in the next lesson. Qualitatively, Newton’s Second Law notes that if the forces do NOT cancel, the object will accelerate (the velocity will change). When the forces do not cancel, the leftover force is called the net force. In other words, net forces cause acceleration to occur.
+    </p>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example: Ball at Maximum Height
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          A student throws a ball. Draw a force vector diagram for the ball at the moment when the ball is at its maximum height. Air resistance is negligible.
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235981/preview" alt="Ball at Max Height" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <details>
+          <summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              The force of the Earth on the ball is the only ranged force. Air resistance is negligible so we do not need to add a force of air on the ball. The ball is not in physical contact with any other objects so the vector diagram will be:
+            </p>
+            <div style="text-align:center; margin:14px 0;">
+              <img src="https://tempeunion.instructure.com/courses/232/files/235987/preview" alt="Ball at Max Height Diagram" style="max-width:100%; border-radius:6px; " loading="lazy">
+            </div>
+            <p style="font-size:1.1em;">
+              When an object experiences projectile motion, that motion is constant in the horizontal direction and accelerating in the vertical direction. The motion is constant in the sideways direction because there are NO net horizontal forces. The motion accelerates in the vertical direction because the force of gravity is not canceled out by any other forces.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example: Rope and Box Accelerating Upwards
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          A student attaches a rope to a box and throws the other end of the rope over a tree branch. The student then pulls on the rope causing the box to accelerate upwards. Draw and label an appropriate force vector diagram for the box.
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/235993/preview" alt="Box Accelerating Upwards" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <details>
+          <summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              Since the box is accelerating upwards, the upward force of the rope must be larger than the downward pull of the Earth. Since the rope is not a surface, we do not describe the force of the rope on the box as a normal force. It may be tempting to add an arrow for the force of the student but since the student is not in physical contact with the box, the student is not applying a force on the box.
+            </p>
+            <p style="font-size:1.1em;">
+              Since there are no horizontal forces on the ball, the ball must experience a constant horizontal velocity. There is a net vertical force on the ball which means the ball must experience acceleration in the vertical direction.
+            </p>
+            <p style="font-size:1.1em;">
+              Pulling forces applied by ropes, cables, etc, are sometimes called tension forces. A common symbol used to represent tension forces is T. Instead of writing \[F_{rope}\] we could have used T.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+  </div>
+
+  
+  <div id="moreexamples" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Additional Examples</h3>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example: Box on a Ramp (Motionless)
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          A box sits motionless on a ramp as shown below. Draw and label the force vector diagram for the box.
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/236001/preview" alt="Box on Ramp" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <details>
+          <summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              Draw a dot to represent the box. Draw a downward arrow for the force of the earth on the box (weight). The ramp will supply a perpendicular surface force (normal force). Since the ramp is at an angle, the normal force will also be at an angle.
+            </p>
+            <p style="font-size:1.1em;">
+              According to Newton’s First Law, the motionless box must experience no net forces. This means that there must be some force that cancels out the horizontal component of the normal force. This will be the resistive friction force between the ramp and the box. The friction force must always be parallel to the surface.
+            </p>
+            <div style="text-align:center; margin:14px 0;">
+              <img src="https://tempeunion.instructure.com/courses/232/files/236008/preview" alt="Box on Ramp Diagram" style="max-width:100%; border-radius:6px; " loading="lazy">
+            </div>
+            <p style="font-size:1.1em;">
+              The two upward vertical components of friction and normal force will cancel the downward weight force. The horizontal component of the friction force will cancel the horizontal component of the normal force.
+            </p>
+            <p style="font-size:1.1em;">
+              Note that if the box was sliding down the ramp at a constant speed, the force vector diagram would be exactly the same.
+            </p>
+            <p style="font-size:1.1em;">
+              Another commonly used symbol for frictional forces is f. We can replace \[F_{friction}\] with f.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+    <details>
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Example: Box Pulled Up a Ramp
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <p style="font-size:1.1em;">
+          A student attaches a rope to a box on a ramp and pulls the box up the ramp causing the box to accelerate.
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/236014/preview" alt="Box Pulled Up Ramp" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <details>
+          <summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+              Show/Hide Answer
+            </div>
+          </summary>
+          <div style="margin-top:10px;">
+            <p style="font-size:1.1em;">
+              The only ranged force on the box is the force of the Earth on the box. There is also a normal force, a friction force, and the force of the rope on the box (a tension force). Ropes always pull in a direction along the rope.
+            </p>
+            <p style="font-size:1.1em;">
+              According to Newton’s Second Law, in order for the box to accelerate up and to the left along the ramp, there must be more up force than down force and more left force than right.
+            </p>
+            <div style="text-align:center; margin:14px 0;">
+              <img src="https://tempeunion.instructure.com/courses/232/files/236017/preview" alt="Box Pulled Up Ramp Diagram" style="max-width:100%; border-radius:6px; " loading="lazy">
+            </div>
+            <p style="font-size:1.1em;">
+              The horizontal component of the tension force must be larger than the sum of the horizontal components of the normal and frictional forces. The sum of the vertical components of the tension and normal forces must be larger than the sum of the vertical components of the weight and the friction force.
+            </p>
+          </div>
+        </details>
+      </div>
+    </details>
+    <div style="margin-top:24px;">
+      <h4 style="color:#2d3b45; font-size:1.1em; margin-bottom:8px;">Even more examples:</h4>
+      <p style="font-size:1.1em; margin-bottom:6px;">Open Stax AP Physics book:</p>
+      <ul style="font-size:1.1em; margin-bottom:10px; padding-left:22px;">
+        <li><a href="https://openstax.org/books/college-physics-ap-courses@29.3/pages/4-1-development-of-force-concept" style="color:#0077CC;">Chapter 4.1 - Development of Force Concept</a></li>
+        <li><a href="https://openstax.org/books/college-physics-ap-courses@29.3/pages/4-2-newtons-first-law-of-motion-inertia" style="color:#0077CC;">Chapter 4.2 - Newton's First Law of Motion: Inertia</a></li>
+      </ul>
+      <div style="margin:18px 0;">
+        <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/CQYELiTtUs8" loading="lazy" allowfullscreen=""></iframe>
+      </div>
+      <div style="margin:18px 0;">
+        <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/D1NubiWCpQg" loading="lazy" allowfullscreen=""></iframe>
+      </div>
+      <div style="margin:18px 0;">
+        <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/MaabUHLIIXA" loading="lazy" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</div>
+</body>
+</html>

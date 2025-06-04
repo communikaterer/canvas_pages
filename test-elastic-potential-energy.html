@@ -1,0 +1,221 @@
+<html>
+<head>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test Elastic Potential Energy</title>
+<meta name="identifier" content="g7586a7f7de24a4c357a94fa25b38d25b"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  
+  <div class="menu-toggle">☰ Menu</div>
+<div class="menu-links" style="display:none;">
+      <a href="#intro" style="color:#fff; text-decoration:underline; margin-right:18px;">Introduction</a>
+      <a href="#hooke" style="color:#fff; text-decoration:underline; margin-right:18px;">Hooke's Law</a>
+      <a href="#energy" style="color:#fff; text-decoration:underline; margin-right:18px;">Spring Energy</a>
+      <a href="#example" style="color:#fff; text-decoration:underline;">Example</a>
+    </div>
+  </div>
+
+  
+  <div id="intro" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h2 style="color:#2d3b45; font-size:1.6em; margin-top:0; margin-bottom:18px;">Hooke's Law</h2>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      Energy stored as spring energy is energy related to the amount of stretch or compression experienced by an elastic material. The further a spring or elastic type of material is stretched or compressed, the more spring energy is stored in the object. Spring energy is also related to the elasticity or "stretchiness" of the material. The symbol for spring energy is \[U_s\].
+    </p>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      A key element of energy stored as spring energy is that the object that has been stretched or compressed must be able to return to its original shape. For example, if we crash a car into a wall and the front end of the car crumples, this is not elastic energy because the car will not restore itself to its original shape when we pull it away from the wall. Rubber bands, springs, bungee cords, etc. are good examples of objects that can store elastic or spring potential energy.
+    </p>
+  </div>
+
+  
+  <div id="hooke" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">What is Hooke's Law?</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      In order to stretch or compress a spring, a force must be applied to the spring. A <span style="color:#0077CC;">Hookian spring</span> is one in which the amount of force applied to the spring is directly proportional to the amount of stretch or compression experienced by the spring.
+    </p>
+    <div style="text-align:center; margin:18px 0;">
+      <img src="https://tempeunion.instructure.com/courses/232/files/236404/preview" alt="Hooke's Law Graph" style="max-width:100%; border-radius:6px; " loading="lazy">
+    </div>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      The slope of the graph is the amount of force required to stretch or compress the spring by one meter, also called the <span style="color:#0077CC;">spring constant</span>. The variable symbol for the spring constant is <strong>k</strong>. The steeper the slope, the stiffer the spring, the larger the constant.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      The equation that relates the force on a spring to the amount of stretch or compression of a spring is then:
+    </p>
+    <div style="text-align:center; font-size:1.2em; margin-bottom:16px;">
+      \[ F = k\Delta x \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      where <strong>F</strong> is the force on the spring, <strong>k</strong> is the spring constant, and <strong>\[\Delta x\]</strong> is the spring's change in length as either a compression or stretch. This relationship is also called <span style="color:#0077CC;">Hooke's Law</span>.
+    </p>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      A "hookian" spring has a change in spring length value that is proportional to the force. Not all springs are "hookian" springs. Some springs are "preloaded". This means that there is a minimum force that must be applied to the spring before any stretching or compression can happen. The graph for a non-hookian spring is still linear but there is a y-intercept value that is equal to the amount of preloading. In this class, we will only consider hookian springs.
+    </p>
+  </div>
+
+  
+  <div id="energy" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Elastic (Spring) Energy</h3>
+    <p style="font-size:1.1em; margin-bottom:16px;">
+      The area under the graph is the amount of energy that is stored in the spring for any given amount of spring stretch or compression. Since the area is a triangle, this means the energy can be calculated as:
+    </p>
+    <div style="text-align:center; font-size:1.1em; margin-bottom:10px;">
+      \[ A = \frac{1}{2}(\text{base})(\text{height}) \]
+    </div>
+    <div style="text-align:center; font-size:1.1em; margin-bottom:10px;">
+      \[ U_s = \frac{1}{2} (\Delta x) F \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      The equation for the force on a spring can be substituted in for the force:
+    </p>
+    <div style="text-align:center; font-size:1.1em; margin-bottom:10px;">
+      \[ U_s = \frac{1}{2} (\Delta x) (k\Delta x) \]
+    </div>
+    <div style="text-align:center; font-size:1.2em; margin-bottom:16px;">
+      \[ U_s = \frac{1}{2} k \Delta x^2 \]
+    </div>
+    <p style="font-size:1.1em; margin-bottom:0;">
+      Notice that spring energy is proportional to the square of the spring stretch. In order to double the distance a spring is stretched, four times the amount of work must be done on the spring. In order to triple the spring stretch, nine times the amount of work must be done. (Remember that work is the amount of energy that is added or removed from a system.)
+    </p>
+  </div>
+
+  
+  <div id="example" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Example</h3>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      A spring with a spring constant of 200 N/m is stretched 25 cm. How much spring energy is stored in the spring? How much work was done on the spring?
+    </p>
+    <details style="margin-bottom:0;">
+      <summary>
+        <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
+          Show/Hide Answer
+        </div>
+      </summary>
+      <div style="margin-top:10px;">
+        <em style="color:#0077CC;">Answer:</em>
+        <p style="font-size:1.1em; margin-bottom:10px;">
+          Don’t forget to convert cm to m.
+        </p>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          \[ U_s = \frac{1}{2} k \Delta x^2 \]
+        </div>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          \[ U_s = \frac{1}{2} (200\,\text{N/m}) (0.25\,\text{m})^2 \]
+        </div>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          \[ U_s = 6.25\,\text{J} \]
+        </div>
+        <p style="font-size:1.1em; margin-bottom:10px;">
+          Before answering the second part of the question, sketch out an LOL diagram. The spring was not storing any mechanical energy at the start. When the student pulls on the spring, the student transfers their energy into the spring. The spring stores this energy as spring energy.
+        </p>
+        <p style="font-size:1.1em; margin-bottom:10px;">
+          How does the energy transferred from the student (work) compare to the energy stored in the spring?
+        </p>
+        <div style="text-align:center; margin:14px 0;">
+          <img src="https://tempeunion.instructure.com/courses/232/files/236415/preview" alt="LOL Diagram" style="max-width:100%; border-radius:6px; " loading="lazy">
+        </div>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          energy start + energy transferred into the system = energy end
+        </div>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          \[ 0 + W = U_s \]
+        </div>
+        <div style="font-size:1.1em; margin-bottom:10px;">
+          \[ W = 6.25\,\text{J} \]
+        </div>
+      </div>
+    </details>
+  </div>
+
+  
+  <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+    <h3 style="color:#2d3b45; font-size:1.3em; margin-top:0; margin-bottom:14px;">Additional Discussion and Examples</h3>
+    <div style="margin:18px 0;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/ZzwuHS9ldbY" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+    <p style="font-size:1.1em; margin-bottom:10px;">
+      (Note: the discussion of work in this video is slightly more complicated than it really needs to be. Just remember that work = energy transferred in or out of a system. In the case of a spring system, all the energy transferred into the spring is (for now) stored as spring energy so work = spring energy.)
+    </p>
+    <div style="margin:18px 0;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/eVl5zs6Lqy0" loading="lazy" allowfullscreen=""></iframe>
+    </div>
+  </div>
+
+  
+  
+</div>
+</body>
+</html>
