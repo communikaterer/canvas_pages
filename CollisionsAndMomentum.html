@@ -1,0 +1,215 @@
+<!-- Start with the main content -->
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+    <!-- Navigation menu -->
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+        <details style="margin: 0;">
+            <summary style="cursor: pointer; color: #2d3b45; font-weight: bold;">Quick Navigation ▾</summary>
+            <div style="padding-top: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div>
+                        <a href="#introduction" style="color: #0077cc; text-decoration: none; display: block;">Introduction</a>
+                        <a href="#conservation-momentum" style="color: #0077cc; text-decoration: none; display: block;">Conservation of Momentum</a>
+                        <a href="#collision-types" style="color: #0077cc; text-decoration: none; display: block;">Types of Collisions</a>
+                    </div>
+                    <div>
+                        <div style="margin-bottom: 5px;">Examples:</div>
+                        <a href="#example1" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">1: Head-On Collision</a>
+                        <a href="#example2" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">2: Astronaut in Space</a>
+                        <a href="#example3" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">3: Toy Cars</a>
+                        <a href="#example4" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">4: Elastic Collision</a>
+                        <a href="#example5" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">5: Truck and Car</a>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- Introduction Section -->
+    <div id="introduction" style="margin-bottom: 30px;">
+        <h1 style="color: #2d3b45; border-bottom: 3px solid #2d3b45; padding-bottom: 10px;">Collisions and Momentum</h1>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">Imagine a large cart moving along a frictionless track at a constant speed. This, of course, means that there are no net forces on the cart.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">Next, we'll run this cart into a second, smaller cart that is initially at rest on the track.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">Which applies the greater force: the force of the large cart on the small one or the force of the small cart on the large one? Careful... remember Newton's Third Law? They apply the same force on one another.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">They also apply these equal but opposite reaction forces on each other for the same amount of time.</p>
+        </div>
+    </div>
+
+    <!-- Conservation of Momentum Section -->
+    <div id="conservation-momentum" style="margin-bottom: 30px;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #2d3b45; padding-bottom: 8px;">Conservation of Momentum</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">This means that both cars MUST experience the same impulse. (same horizontal net force and same time)</p>
+            
+            $$\sum J = \sum Ft$$
+            
+            <p style="font-size: 14px; line-height: 1.6;">Since impulse is the same as the change in momentum, this means that both cars must also experience the same changes to their momentum during the collision.</p>
+            
+            $$\sum Ft = m\Delta v$$
+            
+            <p style="font-size: 14px; line-height: 1.6;">Since the forces are in opposite directions, the changes in the momentum will also be in opposite directions. This means that however much momentum one object loses during a collision, the other object must gain an equal amount of momentum.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">In other words, as long as there no external forces acting on a system, the total momentum in the system must stay constant; the total momentum before a collision will equal the total momentum after the collision.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">Or, in slightly more mathematical terms:</p>
+            
+            $$\sum p_{\text{initial}} = \sum p_{\text{final}}$$
+        </div>
+    </div>
+
+    <!-- Example 1 -->
+    <div id="example1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Example 1: Head-On Collision</h3>
+        <p style="font-size: 14px; line-height: 1.6;">Two identical cars travel towards each other with equal speeds. The two cars collide and stick together. What is the final velocity of the cars?</p>
+        
+        <details style="margin-top: 15px;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <p style="font-size: 14px; line-height: 1.6;">The total momentum before the collision must equal the total momentum after the collision.</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">Total momentum before collision = momentum of car 1 + momentum of car 2</p>
+                
+                $$\sum p_{\text{before}} = mv_1 + mv_2$$
+                
+                <p style="font-size: 14px; line-height: 1.6;">The cars have the same mass and speed BUT they are traveling towards each other, so one will have a positive velocity and the other will have a negative velocity. The two momentums will cancel out! The total momentum before the collision is zero.</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">Since the cars are stuck together after collision:</p>
+                
+                $$\sum p_{\text{after}} = (m+m)v$$
+                $$0 = 2mv$$
+                $$v = 0$$
+            </div>
+        </details>
+    </div>
+
+    <!-- Example 2 -->
+    <div id="example2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Example 2: Astronaut in Space</h3>
+        <p style="font-size: 14px; line-height: 1.6;">An astronaut on a space-walk has become untethered. The astronaut and her equipment come to a total mass of 150 kg. She is initially floating with zero velocity relative to her ship. In order to get to her ship, she throws some of her equipment in a direction away from the ship. The equipment has a mass of 5.0 kg and a velocity of 6 m/s. What is the resulting speed of the astronaut?</p>
+        
+        <details style="margin-top: 15px;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="https://tempeunion.instructure.com/courses/232/files/236989/preview" alt="Astronaut Problem Diagram" style="max-width: 100%; height: auto;">
+                </div>
+                
+                $$\sum p_{\text{initial}} = \sum p_{\text{final}}$$
+                $$\text{(150 kg)(0)} = \text{(145 kg)(v)} + \text{(5.0 kg)(6 m/s)}$$
+                $$v = -0.21\text{ m/s}$$
+                
+                <p style="font-size: 14px; line-height: 1.6;">The astronaut will move at a constant speed of about a fifth of a meter per second. It will take the astronaut approximately 5 seconds to travel one meter (3.3 ft). She will eventually reach her ship but it will take some time.</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;">If the astronaut had thrown a larger piece of equipment or if she had thrown it harder so that it had more velocity, then she would have also had a greater velocity.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Types of Collisions Section -->
+    <div id="collision-types" style="margin-bottom: 30px;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #2d3b45; padding-bottom: 8px;">Elastic vs Inelastic Collisions</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">All collisions can be classified as either elastic collisions or inelastic collisions.</p>
+            
+            <div style="background: #fff; padding: 15px; border-radius: 4px; margin: 15px 0;">
+                <h4 style="color: #2d3b45; margin-top: 0;">Elastic Collisions</h4>
+                <p style="font-size: 14px; line-height: 1.6;">In an elastic collision, the total kinetic energy of the system is conserved. This means that the total kinetic energy of the system remains constant; all the kinetic energy that the system has before a collision is equal to all the kinetic energy the system has after the collision.</p>
+            </div>
+            
+            <div style="background: #fff; padding: 15px; border-radius: 4px; margin: 15px 0;">
+                <h4 style="color: #2d3b45; margin-top: 0;">Inelastic Collisions</h4>
+                <p style="font-size: 14px; line-height: 1.6;">In an inelastic collision, the total kinetic energy of the system is NOT conserved. Some kinetic energy is lost during the collision. Usually the lost kinetic energy is the result of the objects becoming deformed, internal friction loses, external frictional loses, production of sound, etc.</p>
+            </div>
+            
+            <p style="font-size: 14px; line-height: 1.6;">It should be noted that a true elastic collision is an ideal; they don't actually exist. However, there are many examples of collisions that are so close to that ideal that we can treat them as such. The collision of gas particles is one example.</p>
+            
+            <p style="font-size: 14px; line-height: 1.6;">For purposes of this course (and the AP test) assume that "elastic collision" means 100% elastic and "inelastic collision" means 100% inelastic.</p>
+        </div>
+    </div>
+
+    <!-- Example 4 -->
+    <div id="example4" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Example 4: Elastic Collision</h3>
+        <p style="font-size: 14px; line-height: 1.6;">A 0.75 kg toy car travels to the right on a frictionless track with an initial speed of 6 m/s. The car collides with a 0.5 kg car traveling to the left on the same track with a speed of 6 m/s. The collision is elastic. What is the final velocity of both cars?</p>
+        
+        <details style="margin-top: 15px;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="https://tempeunion.instructure.com/courses/232/files/237008/preview" alt="Elastic Collision Diagram" style="max-width: 100%; height: auto;">
+                </div>
+                
+                <p style="font-size: 14px; line-height: 1.6;">Conservation of Momentum:</p>
+                $$\text{(0.75 kg)(6 m/s)} + \text{(0.5 kg)(-6 m/s)} = \text{(0.75 kg)}(v_1) + \text{(0.5 kg)}(v_2)$$
+                
+                <p style="font-size: 14px; line-height: 1.6;">Conservation of Kinetic Energy (elastic collision):</p>
+                $$\frac{1}{2}mv^2 + \frac{1}{2}mv^2 = \frac{1}{2}mv^2 + \frac{1}{2}mv^2$$
+                $$\frac{1}{2}\text{(0.75 kg)(6 m/s)}^2 + \frac{1}{2}\text{(0.5 kg)(6 m/s)}^2 = \frac{1}{2}\text{(0.75 kg)}(v_1)^2 + \frac{1}{2}\text{(0.5 kg)}(v_2)^2$$
+                
+                <p style="font-size: 14px; line-height: 1.6;">Solving these equations (using a calculator or computer):</p>
+                $$v_1 = -3.6\text{ m/s}$$
+                $$v_2 = 8.4\text{ m/s}$$
+            </div>
+        </details>
+    </div>
+
+    <!-- Mass and Velocity Changes -->
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Mass and Velocity Changes</h3>
+        <p style="font-size: 14px; line-height: 1.6;">Notice that the smaller car experienced a larger change to its velocity. This is because:</p>
+        
+        $$\Delta p_{\text{large}} = \Delta p_{\text{small}}$$
+        $$\text{(}m\Delta v\text{)}_{\text{large}} = \text{(}m\Delta v\text{)}_{\text{small}}$$
+        
+        <p style="font-size: 14px; line-height: 1.6;">In order for the change in momentum to be the same for objects (aka momentum is conserved), smaller masses must always experience larger changes in velocity.</p>
+    </div>
+
+    <!-- Example 5 -->
+    <div id="example5" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #2d3b45; margin-top: 0;">Example 5: Truck and Car Collision</h3>
+        <p style="font-size: 14px; line-height: 1.6;">A large truck collides with a small car that is initially at rest.</p>
+        
+        <details style="margin-top: 15px;">
+            <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+            <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                <p style="font-size: 14px; line-height: 1.6;"><strong>a) Which vehicle experiences the largest collision force?</strong><br>
+                The force of the truck on the car is equal to the force of the car on the truck. (Newton's Third Law)</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;"><strong>b) Which vehicle experiences the largest change in momentum?</strong><br>
+                The momentum lost by the truck is equal to the momentum gained by the car. (Conservation of momentum)</p>
+                
+                <p style="font-size: 14px; line-height: 1.6;"><strong>c) Which vehicle experiences the largest change in velocity?</strong><br>
+                The small car will experience the largest change in velocity. This is due to the conservation of momentum between two objects with unequal masses.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Additional Resources -->
+    <div style="margin: 30px 0;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #2d3b45; padding-bottom: 8px;">Additional Resources</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h4 style="color: #2d3b45; margin-top: 0;">Openstax AP Physics Textbook:</h4>
+            <ul style="font-size: 14px; line-height: 1.6;">
+                <li><a href="https://openstax.org/books/college-physics-ap-courses/pages/8-3-conservation-of-momentum" style="color: #0077cc; text-decoration: none;">Chapter 8.3 - Conservation of Momentum</a></li>
+                <li><a href="https://openstax.org/books/college-physics-ap-courses/pages/8-4-elastic-collisions-in-one-dimension" style="color: #0077cc; text-decoration: none;">Chapter 8.4 - Elastic Collisions in 1D</a></li>
+                <li><a href="https://openstax.org/books/college-physics-ap-courses/pages/8-5-inelastic-collisions-in-one-dimension" style="color: #0077cc; text-decoration: none;">Chapter 8.5 - Inelastic Collisions in 1D</a></li>
+            </ul>
+
+            <h4 style="color: #2d3b45; margin-top: 20px;">Video Resources:</h4>
+            <div style="margin: 20px 0;">
+                <iframe src="https://www.youtube.com/embed/1i8VMBvMQ_E" style="width: 100%; max-width: 560px; height: 315px; border: none;" allowfullscreen></iframe>
+            </div>
+            
+            <div style="margin: 20px 0;">
+                <iframe src="https://www.youtube.com/embed/8OB8eIPgEkQ" style="width: 100%; max-width: 560px; height: 315px; border: none;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div> 

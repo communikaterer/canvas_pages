@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservation of Energy</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .example {
+            background-color: #f5f5f5;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .note {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .equation {
+            margin: 20px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+            <details style="margin: 0;">
+                <summary style="cursor: pointer; color: #2d3b45; font-weight: bold;">Quick Navigation ▾</summary>
+                <div style="padding-top: 10px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                        <div>
+                            <a href="#introduction" style="color: #0077cc; text-decoration: none; display: block;">Introduction</a>
+                            <a href="#energy-equations" style="color: #0077cc; text-decoration: none; display: block;">Energy Equations</a>
+                        </div>
+                        <div>
+                            <div style="margin-bottom: 5px;">Practice Examples:</div>
+                            <a href="#example1" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">1: Falling Box</a>
+                            <a href="#example2" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">2: Spring-Launched Box</a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <h1 style="color: #2d3b45; border-bottom: 3px solid #2d3b45; padding-bottom: 10px; margin-bottom: 30px;">Conservation of Energy</h1>
+        <div style="font-size: 16px; color: #666; margin-top: 5px;">Understanding Energy Transfer and Conservation</div>
+
+        <div id="introduction" style="background: #f5f5f5; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h2 style="color: #2d3b45; margin-top: 0;">Introduction</h2>
+            <p style="font-size: 14px; line-height: 1.6;">The good news is that we've already done this lesson in parts - we just have to practice putting all the parts together!</p>
+            
+            <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+                <p style="font-size: 14px; line-height: 1.6;">Remember, the law of conservation of energy states that energy cannot be created or destroyed. In other words, all of the energy in the system at the start must equal all the energy in the system at the end.</p>
+                <p style="font-size: 14px; line-height: 1.6; font-weight: bold; text-align: center;">$$E_{total,initial} = E_{total,final}$$</p>
+            </div>
+
+            <p style="font-size: 14px; line-height: 1.6;">The tricky part is just identifying what energy is present in the system at the start and at the end. We practiced this in the intro to energy notes at the start of the unit - go back and look at those notes if you need a refresher. The only difference is that we will now USE the energy conservation equation along with the three energy equations that we figured out in the lab.</p>
+        </div>
+
+        <div id="energy-equations" style="margin: 30px 0;">
+            <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Energy Equations from Lab</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
+                <!-- Spring Energy Card -->
+                <div style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+                    <h3 style="color: #2d3b45; margin-top: 0; text-align: center;">Spring Energy</h3>
+                    <p style="font-size: 14px; line-height: 1.6; text-align: center;">Energy stored in a spring when it is stretched or compressed</p>
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 4px; margin: 15px 0; text-align: center;">
+                        <p style="font-size: 16px; margin: 10px 0;">$$E_s = \frac{1}{2}k\Delta x^2$$</p>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.6;">where:</p>
+                    <ul style="font-size: 14px; line-height: 1.6;">
+                        <li>$$k$$ is the spring constant</li>
+                        <li>$$\Delta x$$ is displacement from equilibrium</li>
+                    </ul>
+                </div>
+
+                <!-- Gravitational Potential Energy Card -->
+                <div style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+                    <h3 style="color: #2d3b45; margin-top: 0; text-align: center;">Gravitational Potential Energy</h3>
+                    <p style="font-size: 14px; line-height: 1.6; text-align: center;">Energy stored in an object when above zero height</p>
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 4px; margin: 15px 0; text-align: center;">
+                        <p style="font-size: 16px; margin: 10px 0;">$$E_g = mg\Delta y$$</p>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.6;">where:</p>
+                    <ul style="font-size: 14px; line-height: 1.6;">
+                        <li>$$m$$ is mass</li>
+                        <li>$$g$$ is gravitational acceleration</li>
+                        <li>$$\Delta y$$ is height change</li>
+                    </ul>
+                </div>
+
+                <!-- Kinetic Energy Card -->
+                <div style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+                    <h3 style="color: #2d3b45; margin-top: 0; text-align: center;">Kinetic Energy</h3>
+                    <p style="font-size: 14px; line-height: 1.6; text-align: center;">Energy stored in an object when it is moving</p>
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 4px; margin: 15px 0; text-align: center;">
+                        <p style="font-size: 16px; margin: 10px 0;">$$E_k = \frac{1}{2}mv^2$$</p>
+                    </div>
+                    <p style="font-size: 14px; line-height: 1.6;">where:</p>
+                    <ul style="font-size: 14px; line-height: 1.6;">
+                        <li>$$m$$ is mass</li>
+                        <li>$$v$$ is velocity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="examples" style="margin: 30px 0;">
+            <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Practice Examples</h2>
+            
+            <div id="example1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                <h3 style="color: #2d3b45; margin-top: 0;">Example 1: Falling Box</h3>
+                <p style="font-size: 14px; line-height: 1.6;">A 10 kg box starts at a height of 5 m and is allowed to fall. What is the speed of the box just before it hits the ground?</p>
+                
+                <details style="margin-top: 15px;">
+                    <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+                    <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                        <p style="font-size: 14px; line-height: 1.6;">We solved problems like this last semester using kinematic equations but we'll now use energy instead.</p>
+                        
+                        <p style="font-size: 14px; line-height: 1.6;">Start with an energy bar graph. At the beginning, the box is storing gravitational potential energy. There are not springs and nothing is moving so there is no spring or kinetic energy.</p>
+                        
+                        <p style="font-size: 14px; line-height: 1.6;">At the end, the box moving so it is storing kinetic energy. The box is about to hit the ground so there is no gravitational potential energy and there are no springs so there is no spring energy.</p>
+
+                        <img style="width: 100%; max-width: 341px; height: auto; display: block; margin: 20px auto;" src="https://tempeunion.instructure.com/courses/232/files/238769/preview" alt="Energy bar graph for falling box" />
+
+                        <p style="font-size: 14px; line-height: 1.6;">The conservation of energy equation is then:</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$E_g = E_k$$</p>
+                        <p style="font-size: 14px; line-height: 1.6;">Now substitute in the energy equations:</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$mg\Delta y = \frac{1}{2}mv^2$$</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$(10\text{ kg})(10\text{ N/kg})(5\text{ m}) = \frac{1}{2}(10\text{ kg})(v^2)$$</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$500 = 5v^2$$</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$v = 10\text{ m/s}$$</p>
+                        <p style="font-size: 14px; line-height: 1.6;">The box will have a speed of 10 m/s just before it hits the ground.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div id="example2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                <h3 style="color: #2d3b45; margin-top: 0;">Example 2: Spring-Launched Box</h3>
+                <p style="font-size: 14px; line-height: 1.6;">A 5.0 kg box is pushed against a spring causing the spring to compress 0.20 m. The spring constant is 100 N/m. What is the final speed of the box when the box is released?</p>
+                
+                <details style="margin-top: 15px;">
+                    <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+                    <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                        <p style="font-size: 14px; line-height: 1.6;">Again, start by drawing an energy bar graph.</p>
+                        
+                        <p style="font-size: 14px; line-height: 1.6;">At the start, the energy is stored in the spring as spring energy. There are no objects above zero height and nothing is moving so there is no gravitational energy and no kinetic energy.</p>
+                        
+                        <p style="font-size: 14px; line-height: 1.6;">At the end, the energy has transferred from the spring into the box. The box is moving but still on the ground so the box has kinetic energy but no gravitational energy.</p>
+
+                        <img style="width: 100%; max-width: 414px; height: auto; display: block; margin: 20px auto;" src="https://tempeunion.instructure.com/courses/232/files/238775/preview" alt="Energy bar graph for spring-launched box" />
+
+                        <p style="font-size: 14px; line-height: 1.6;">The conservation of energy equation is:</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$E_s = E_k$$</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$\frac{1}{2}k\Delta x^2 = \frac{1}{2}mv^2$$</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$\frac{1}{2}(100\text{ N/m})(0.20\text{ m})^2 = \frac{1}{2}(5\text{ kg})(v^2)$$</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$2 = 2.5v^2$$</p>
+                        <p style="font-size: 14px; line-height: 1.6; text-align: center;">$$v = 0.89\text{ m/s}$$</p>
+                        <p style="font-size: 14px; line-height: 1.6;">Once all of the energy has been transferred from the spring to the box, the box will have a velocity of 0.89 m/s.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

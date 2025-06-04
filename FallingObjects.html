@@ -1,0 +1,326 @@
+<!-- Start with the main content -->
+<div style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: georgia, palatino;">
+    <!-- More compact navigation menu -->
+    <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-size: 14px;">
+        <details style="margin: 0;">
+            <summary style="cursor: pointer; color: #2d3b45; font-weight: bold;">Quick Navigation ▾</summary>
+            <div style="padding-top: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    <div>
+                        <a href="#introduction" style="color: #0077cc; text-decoration: none; display: block;">Introduction</a>
+                        <a href="#analysis" style="color: #0077cc; text-decoration: none; display: block;">Video Analysis Results</a>
+                        <a href="#understanding" style="color: #0077cc; text-decoration: none; display: block;">Understanding Graphs</a>
+                    </div>
+                    <div>
+                        <div style="margin-bottom: 5px;">Practice Examples:</div>
+                        <a href="#example1" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">1: Maximum Height</a>
+                        <a href="#example2" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">2: Speed Comparison</a>
+                        <a href="#example3" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">3: Upward Launch</a>
+                        <a href="#example4" style="color: #0077cc; text-decoration: none; display: block; padding-left: 10px;">4: Bridge Problem</a>
+                    </div>
+                    <div>
+                        <a href="#resources" style="color: #0077cc; text-decoration: none; display: block;">Additional Resources</a>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <h1 style="color: #2d3b45; border-bottom: 3px solid #2d3b45; padding-bottom: 10px; margin-bottom: 30px;">Video Analysis of a Falling Object</h1>
+    <div style="font-size: 16px; color: #666; margin-top: 5px;">Position vs Time and Velocity vs Time</div>
+
+    <div id="introduction" style="background: #f5f5f5; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0;">Introduction</h2>
+        <p style="font-size: 14px; line-height: 1.6;">You will use Graphical Analysis to record a video of an object falling to the ground from rest. We can analyze the video in order to determine the nature of motion in the vertical direction.</p>
+        
+        <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+            <p style="font-size: 14px; margin: 0;"><strong>Think About It:</strong><br />Based on what you know about falling objects:</p>
+            <ul style="margin-top: 10px;">
+                <li>What predictions would you make about the relationship between position and time?</li>
+                <li>What predictions would you make about the velocity vs time relationship?</li>
+                <li><strong>Sketch out a graph for each prediction.</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="analysis" style="margin: 30px 0;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Analyzing the Motion</h2>
+        
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">Tracking the position of your ball falling in each frame will automatically measure and graph the position and velocity over time.</p>
+            
+            <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <div style="font-weight: bold; margin-bottom: 10px;">Vertical Position (y) vs. Time (t) Graph</div>
+                    <img style="width: 100%; height: auto; border-radius: 4px;" src="https://tempeunion.instructure.com/courses/5706/files/2063709/preview" alt="Position vs Time Graph" />
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <img style="width: 100%; height: auto; border-radius: 4px;" src="https://tempeunion.instructure.com/courses/5706/files/2063674/preview" alt="Additional Analysis" />
+                </div>
+            </div>
+
+            <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+                <h3 style="color: #2d3b45; margin-top: 0;">Understanding Negative Position</h3>
+                <p style="font-size: 14px; line-height: 1.6;">Why does the position vs time graph show the ball ending at a negative position? Look at the dots showing various positions during the fall. We set the origin at the initial position, so all positions below this are negative.</p>
+                
+                <h4 style="color: #2d3b45; margin-top: 15px;">Position Notation:</h4>
+                <ul style="font-size: 14px; line-height: 1.6;">
+                    <li>$$y = \text{vertical position}$$</li>
+                    <li>$$x = \text{horizontal position}$$</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Acceleration Due to Gravity</h3>
+            
+            <p style="font-size: 14px; line-height: 1.6;">We can determine the acceleration in two ways:</p>
+            <ul style="font-size: 14px; line-height: 1.6;">
+                <li>The slope of the position vs time squared graph equals half the acceleration</li>
+                <li>The slope of the velocity vs time graph equals the acceleration</li>
+            </ul>
+
+            <div style="background: #fff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <p style="font-size: 14px; line-height: 1.6;">From our measurements, we found two different ways to calculate acceleration:</p>
+                <div style="margin: 10px 0;">$$\text{Position vs. time}^2\text{ slope} = -5.096\text{ m/s}^2$$</div>
+                <div style="margin: 10px 0;">$$\text{Acceleration} = 2(-5.096\text{ m/s}^2) = -10.2\text{ m/s}^2$$</div>
+                <div style="margin: 10px 0;">$$\text{Velocity vs. time slope} = -9.29\text{ m/s}^2$$</div>
+                <p style="font-size: 14px; line-height: 1.6; margin: 15px 0;">Why do we get two different values? This is normal in real-world measurements. Each method has some experimental error. When we have multiple valid ways to measure something, taking the average often gives us a more accurate result:</p>
+                <div style="margin: 10px 0;">$$\text{Average acceleration} = \frac{-10.2 + (-9.29)}{2} = -9.7\text{ m/s}^2$$</div>
+                <p style="font-size: 14px; line-height: 1.6;">This average is very close to the accepted value, showing that our measurements were quite accurate!</p>
+            </div>
+
+            <div style="background: #fff; border-left: 4px solid #0077CC; padding: 15px; margin: 15px 0;">
+                <p style="font-size: 14px; line-height: 1.6;"><strong>The accepted value for acceleration due to gravity is:</strong></p>
+                <div style="margin: 10px 0; font-size: 16px;">$$a = -9.8\text{ m/s}^2$$</div>
+                <p style="font-size: 14px; line-height: 1.6;">Note: It's reasonable to round to $$-10\text{ m/s}^2$$ for most problems (including AP test). The negative sign indicates that gravity always pulls downward.</p>
+            </div>
+
+            <div style="background: #f5f5f5; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <h4 style="color: #2d3b45; margin-top: 0;">Common Question</h4>
+                <p style="font-size: 14px; line-height: 1.6;"><em>"Why does a paper fall slower than a pen if gravity accelerates all objects equally?"</em></p>
+                <p style="font-size: 14px; line-height: 1.6;">Answer: The paper experiences significant air resistance that counteracts the gravitational pull. Think of air resistance like an upward force pushing against the falling object. A flat piece of paper has more surface area for air to push against than a pen, so it falls more slowly. For now, we'll ignore air resistance effects (we'll study them later in the course).</p>
+            </div>
+        </div>
+
+        <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Up and Down Motion</h3>
+            
+            <p style="font-size: 14px; line-height: 1.6;">What happens when we throw an object straight up? Let's break down the motion:</p>
+            <ul style="font-size: 14px; line-height: 1.6;">
+                <li>Travels up while slowing down (gravity is constantly pulling it back)</li>
+                <li>Reaches maximum height (velocity becomes zero for an instant)</li>
+                <li>Changes direction (this is when velocity changes from positive to negative)</li>
+                <li>Falls back down while speeding up (just like our original falling object)</li>
+            </ul>
+
+            <div style="margin: 20px 0;">
+                <img style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 4px;" src="https://tempeunion.instructure.com/courses/5706/files/2063675/preview" alt="Up and Down Motion Graphs" />
+            </div>
+
+            <div style="background: #fff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <h4 style="color: #2d3b45; margin-top: 0;">Key Observations:</h4>
+                <ul style="font-size: 14px; line-height: 1.6;">
+                    <li>Position vs. time: Shows upward motion (positive slopes getting less steep) then downward motion (negative slopes getting more steep)</li>
+                    <li>Velocity vs. time: Shows positive velocities approaching zero, then negative velocities moving away from zero</li>
+                    <li>Important: The slope of the velocity graph remains constant at $$-9.8\text{ m/s}^2$$ regardless of direction</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="understanding" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0;">Understanding the Graphs</h2>
+        
+        <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-radius: 4px;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Position vs Time Graph</h3>
+            <p style="font-size: 14px; line-height: 1.6;">The negative position indicates that the ball ends below its starting point (origin). This makes sense because we set the initial position as zero, so all positions below this are negative.</p>
+        </div>
+
+        <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-radius: 4px;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Important Notation</h3>
+            <ul style="font-size: 14px; line-height: 1.6;">
+                <li>y = symbol for vertical position</li>
+                <li>x = symbol for horizontal position</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="examples" style="margin: 30px 0;">
+        <h2 style="color: #2d3b45; border-bottom: 2px solid #eee; padding-bottom: 10px;">Practice Examples</h2>
+        
+        <div id="example1" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 1</h3>
+            <p style="font-size: 14px; line-height: 1.6;">A student throws a ball straight up into the air and then catches the ball when it returns to her hand. Which of the following statements best describes the ball when it is at its maximum height?</p>
+            
+            <div style="background: #fff; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <p style="margin: 0;">
+                    a) The velocity is zero. The acceleration is zero.<br />
+                    b) The velocity is zero. The acceleration is negative.<br />
+                    c) The velocity is negative. The acceleration is zero.<br />
+                    d) The velocity is negative. The acceleration is negative.
+                </p>
+            </div>
+
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <p style="margin: 0;">At the moment when an object changes direction, the instantaneous velocity is always zero. The acceleration is always negative — the slope of the velocity vs. time graph never changed. Gravity does not turn off just because someone threw a ball into the air.</p>
+                </div>
+            </details>
+        </div>
+
+        <div id="example2" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 2</h3>
+            <p style="font-size: 14px; line-height: 1.6;">Compare the initial speed of the ball to the final speed of the ball; which is faster?</p>
+
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <p style="margin: 0;">Since the position vs. time graph is a perfect parabola, the slope of the graph at the start time will exactly match the slope of the graph at the end time. The only difference is that the initial slope is positive (upward direction) and the ending slope is negative (downward direction). Since the slope values are the same, the speed of the object is the same.</p>
+                </div>
+            </details>
+        </div>
+
+        <div id="example3" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 3</h3>
+            <p style="font-size: 14px; line-height: 1.6;">A ball is launched from the ground straight up into the air with a speed of 15 m/s.</p>
+            <ol style="font-size: 14px; line-height: 1.6;">
+                <li>What is the maximum height of the ball?</li>
+                <li>How much time does it take the ball to reach its max height?</li>
+                <li>What is the total time spent in the air?</li>
+            </ol>
+
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Part A</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <p style="margin: 0;">Organize the information. You can draw and label a picture or graph, or create a list of known and unknown variables. Always start by organizing the information.</p>
+                    
+                    <div style="margin: 20px 0;">
+                        <img style="max-width: 100%; height: auto; display: block; margin: 1em auto;" src="https://tempeunion.instructure.com/courses/5706/files/2063708/preview" alt="Problem Setup Diagram" />
+                    </div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">While the problem did not explicitly state that the velocity at the max height is zero, you can easily determine that by thinking about the motion of the ball. Similarly, the problem did not explicitly state that the acceleration is -9.8 m/s/s - you are expected to know the acceleration due to gravity. (you don't have to memorize it - but you do need to know to go look up the constant accel value)</p>
+
+                    <p style="font-size: 14px; line-height: 1.6;">Pick your solution strategy. If you are using the velocity graph, start by using the slope to solve for time (remember that it is okay to round the acceleration due to gravity to -10 m/s/s):</p>
+
+                    <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                        <p style="font-size: 14px; line-height: 1.6;">accel = slope = rise / run</p>
+                        <p style="font-size: 14px; line-height: 1.6;">$$(-10\text{ m/s}^2) = (-15\text{ m/s})/t$$</p>
+                        <p style="font-size: 14px; line-height: 1.6;">$$t = 1.5\text{ s}$$</p>
+                    </div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">This is the time to reach the max height. It will take the same amount of time to come back down to the ground. The total time in the air is then 1.5 x 2 = 3.0 seconds</p>
+
+                    <p style="font-size: 14px; line-height: 1.6;">Then use the time to solve for the area under the curve.</p>
+
+                    <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                        <p style="font-size: 14px; line-height: 1.6;">displacement = area of triangle</p>
+                        <p style="font-size: 14px; line-height: 1.6;">$$\Delta y = \frac{1}{2}(1.5\text{ s})(15\text{ m/s})$$</p>
+                        <p style="font-size: 14px; line-height: 1.6;">$$\Delta y = 11.3\text{ m}$$</p>
+                    </div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">Using the kinematics equation as your solving strategy:</p>
+                    <div style="margin: 10px 0;">$$v^2 = v_0^2 + 2a\Delta y$$</div>
+                    <div style="margin: 10px 0;">$$0 = (15)^2 + 2(-10)\Delta y$$</div>
+                    <div style="margin: 10px 0;">$$\Delta y = 11.3\text{ m}$$</div>
+                </div>
+            </details>
+
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Part B</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <p style="margin: 0;">Using the kinematics equation:</p>
+                    <div style="margin: 10px 0;">$$v = at + v_0$$</div>
+                    <div style="margin: 10px 0;">$$0 = -10t + 15$$</div>
+                    <div style="margin: 10px 0;">$$t = 1.5\text{ s}$$</div>
+                </div>
+            </details>
+
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Part C</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <p style="margin: 0;">The total time in the air is double the time to reach max height:</p>
+                    <div style="margin: 10px 0;">$$t_\text{total} = 2 \times 1.5 = 3.0\text{ s}$$</div>
+                </div>
+            </details>
+        </div>
+
+        <div id="example4" style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #2d3b45; margin-top: 0;">Example 4</h3>
+            <p style="font-size: 14px; line-height: 1.6;">A student throws a rock straight down off of a bridge at a speed of 5 m/s. The student measures that it takes 2.5 seconds for the rock to hit the water below.</p>
+            <ol style="font-size: 14px; line-height: 1.6;">
+                <li>What is the height of the bridge?</li>
+                <li>What is the speed of the rock just before it hits the water?</li>
+            </ol>
+
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Example 4a</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <div style="margin: 20px 0;">
+                        <img style="max-width: 100%; height: auto; display: block; margin: 1em auto;" src="https://tempeunion.instructure.com/courses/5706/files/2063673/preview" alt="Bridge Problem Diagram" />
+                    </div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">Using the area method:</p>
+                    <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                        <p style="font-size: 14px; line-height: 1.6;">$$\Delta y = \text{area}_{\text{rectangle}} + \text{area}_{\text{triangle}}$$</p>
+                        <div style="margin: 10px 0;">$$\Delta y = (2.5\text{ s})(-5\text{ m/s}) + \frac{1}{2}(2.5\text{ s})(-30\text{ m/s} - (-5\text{ m/s}))$$</div>
+                        <div style="margin: 10px 0;">$$\Delta y = -43.8\text{ m}$$</div>
+                    </div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">Using the kinematic equation:</p>
+                    <div style="margin: 10px 0;">$$\Delta y = \frac{1}{2}at^2 + v_0t$$</div>
+                    <div style="margin: 10px 0;">$$\Delta y = \frac{1}{2}(-10)(2.5)^2 + (-5)(2.5)$$</div>
+                    <div style="margin: 10px 0;">$$\Delta y = -43.8\text{ m}$$</div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">How is the height of the bridge negative? Remember Δy is the displacement. Since the rock ended up BELOW the starting point, it makes sense that the displacement would be negative. You can ignore that when reporting the height of the bridge.</p>
+                </div>
+            </details>
+
+            <details style="margin-top: 15px;">
+                <summary style="cursor: pointer; color: #0077cc; padding: 10px; background: #f1f8ff; border-radius: 4px;">Show Solution for Example 4b</summary>
+                <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+                    <p style="font-size: 14px; line-height: 1.6;">Graphical methods:</p>
+                    <p style="font-size: 14px; line-height: 1.6;">Solve for the final velocity using the slope of the line.</p>
+                    <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                        <p style="font-size: 14px; line-height: 1.6;">$$\text{accel} = \text{slope} = \frac{\text{rise}}{\text{run}}$$</p>
+                        <p style="font-size: 14px; line-height: 1.6;">$$(-10\text{ m/s}^2) = \frac{v - (-5)}{2.5}$$</p>
+                        <p style="font-size: 14px; line-height: 1.6;">$$v = -30\text{ m/s}$$</p>
+                    </div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">Using the kinematic equation:</p>
+                    <div style="margin: 10px 0;">$$v = at + v_0$$</div>
+                    <div style="margin: 10px 0;">$$v = (-10)(2.5) + (-5)$$</div>
+                    <div style="margin: 10px 0;">$$v = -30\text{ m/s}$$</div>
+
+                    <p style="font-size: 14px; line-height: 1.6;">The negative sign indicates direction (downward).</p>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <div id="resources" style="background: #f5f5f5; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h2 style="color: #2d3b45; margin-top: 0;">Additional Resources</h2>
+        
+        <div style="margin: 20px 0;">
+            <h3 style="color: #2d3b45;">Video Explanations</h3>
+            <!-- More compact video containers -->
+            <div style="max-width: 560px; margin: 15px auto;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 15px 0;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/tKIT68tYKnQ" loading="lazy" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; margin: 15px 0;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/9WWEOP97JpI" loading="lazy" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 20px 0;">
+            <h3 style="color: #2d3b45;">Textbook Reference</h3>
+            <p style="font-size: 14px;">
+                <a style="color: #0077cc; text-decoration: none;" href="https://openstax.org/books/college-physics-ap-courses/pages/2-7-falling-objects">Open Stax Physics - Chapter 2.7: Falling Objects</a>
+            </p>
+            <p style="font-size: 14px; color: #666;">(the high school open stax physics book does not have a discussion specifically for falling objects so once again, the link is for the AP physics book)</p>
+        </div>
+    </div>
+</div> 
