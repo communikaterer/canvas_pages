@@ -1,0 +1,151 @@
+<html>
+<head>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Summary of Class Discussion</title>
+<meta name="identifier" content="g84600b6258762d5213774d3650cde06c"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  <div class="menu-toggle">☰ Menu</div>
+  <div class="menu-links" style="display:none;">
+    <a href="#summary" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Summary</a>
+    <a href="#graph1" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">First Graph</a>
+    <a href="#graph2" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Second Graph</a>
+    <a href="#speed-velocity" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Speed vs Velocity</a>
+    <a href="#equation" style="color:#2F4F4F; text-decoration:underline;">Constant Velocity Equation</a>
+  </div>
+
+  <div id="summary" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Summary of Class Discussion</h2>
+    <p style="font-size: 14px;">The graph for the first data set should look like:</p>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/9373/files/2605578/preview" alt="Graph 1" style="max-width:600px; margin:10px 0;" loading="lazy">
+    </div>
+    <p style="font-size: 14px;">The slope of the line has a number value of 0.037. However, the slope should also include units! Slope is calculated by solving for "rise over run" or "change in y over change in x". The variable on the y-axis is position measured in units of meters. The variable on the x-axis is time measured in units of time. The units for "rise over run" are then meters / seconds.</p>
+    <p style="font-size: 14px;">This is a unit of speed! (Like miles per hour)</p>
+    <p style="font-size: 14px;">The slope of a position vs time graph = speed. In this example, we have a constant slope indicating that we also have a constant speed. The buggy car is traveling forwards 0.037 meters every 1 second.</p>
+    <p style="font-size: 14px;">What about the y-intercept?</p>
+    <p style="font-size: 14px;">The y-intercept on this graph is the position of the car at time zero. Since the car started at position zero, it makes sense to have no y-intercept in the equation for the car.</p>
+  </div>
+
+  <div id="graph2" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Analyzing a Second Graph</h2>
+    <p style="font-size: 14px;">Based on this discussion, what can you say about the motion of the object represented by the following graph?</p>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/9373/files/2605566/preview" alt="Graph 2" style="max-width:600px; margin:10px 0;" loading="lazy">
+    </div>
+    <p style="font-size: 14px;">Let's start with the y-intercept. Remember, the y-intercept represents the starting position (position at time = 0s) for the car. The y-intercept is 0.122 m so the car is starting 0.122 to the right of our zero position.</p>
+    <p style="font-size: 14px;">As time increases, what is happening to the positions? The car is moving closer to zero position! This means that the car is traveling to the left instead of traveling to the right. A positive slope = forward motion (to the right) and a negative slope = backward motion (to the left).</p>
+    <p style="font-size: 14px;">Look at the final position of the car - what do you notice?</p>
+    <p style="font-size: 14px;">The final position is a NEGATIVE position. Can we have negative positions? What would that mean? A negative position is just a way to indicate that the position is to the left of the zero position, similar to a point on a number line.</p>
+    <p style="font-size: 14px;">What about the speed? How fast was this car traveling? The slope is -0.037 m/s. The negative indicates that the motion was backwards but the number value is the same as the car in the first example. The speed has not changed, only the direction of motion.</p>
+  </div>
+
+  <div id="speed-velocity" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Speed vs Velocity</h2>
+    <p style="font-size: 14px;">Many math teachers have a tendency to use these two terms interchangeably, but they do actually represent different things.</p>
+    <p style="font-size: 14px;">Speed = how fast an object moves, completely ignoring direction</p>
+    <p style="font-size: 14px;">Velocity = how fast an object moves AND the direction of the motion</p>
+    <p style="font-size: 14px;">The slope of our position vs time graphs gives us information about direction (based on whether the slope is positive or negative) and the slope gives us information about the speed (the number value of the slope).</p>
+    <p style="font-size: 14px;">The slope of a position vs time graph is VELOCITY - it gives us information about both speed and direction.</p>
+  </div>
+
+  <div id="equation" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Equation for Constant Velocity Motion</h2>
+    <p style="font-size: 14px;">Hopefully, you created a number of test graphs with your data to prove that the best relationship for all of the data sets in this lab is linear. All of the data sets are best described by the equation:</p>
+    <p style="font-size: 14px;">y = mx + b</p>
+    <p style="font-size: 14px;">However, we want to make this equation more specific to our actual data.</p>
+    <p style="font-size: 14px;">What did you graph on the y-axis? Position. You can use P to represent position but scientists like to be more specific. Since our motion was left and right, scientists use the symbol x to represent those left and right positions. Eventually, we'll start analyzing positions of objects flying through the air in which case we'll use the symbol y to represent up and down positions.</p>
+    <p style="font-size: 14px;">What did you graph on the x-axis? Time. Scientists typically use t to represent time.</p>
+    <p style="font-size: 14px;">The slope (m) of the graph is the velocity. We use v to represent velocity.</p>
+    <p style="font-size: 14px;">The y-intercept is the starting position. We've already decided on x for left and right positions but we need to indicate that this is the FIRST position. Scientists do this by adding a subscript. The symbol for starting position is typically x<sub>o</sub>.</p>
+    <p style="font-size: 14px;">Using the correct symbols, the equation that describes the relationship between position and time for constant velocity motion is:</p>
+    <p style="font-size: 14px;">x = vt + x<sub>o</sub></p>
+  </div>
+</div>
+</body>
+</html>
