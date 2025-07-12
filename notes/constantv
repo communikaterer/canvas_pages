@@ -1,0 +1,265 @@
+<html>
+<head>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Constant Velocity Questions and Problem Solving Strategies</title>
+<meta name="identifier" content="g84600b6258762d5213774d3650cde06d"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  <div class="menu-toggle">☰ Menu</div>
+  <div class="menu-links" style="display:none;">
+    <a href="#graphical" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Graphical Strategies</a>
+    <a href="#examples" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Examples</a>
+    <a href="#algebraic" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Algebraic Models</a>
+    <a href="#review" style="color:#2F4F4F; text-decoration:underline;">Review/Video</a>
+  </div>
+
+  <div id="graphical" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Constant Velocity Questions and Problem Solving Strategies</h2>
+    <h3 style="font-size: 1.1em; color:#2d3b45;">Graphical Strategies</h3>
+    <p style="font-size: 14px;">Imagine a person jogging along a road. Each second the person travels 2.0 meters. We can then create a data table showing the person’s position at any moment in time:</p>
+    <table style="border-collapse: collapse; margin: 16px 0;">
+      <tr>
+        <th style="border:1px solid #888; padding:6px 18px; background:#f0f0f0;">time (s)</th>
+        <th style="border:1px solid #888; padding:6px 18px; background:#f0f0f0;">position (m)</th>
+      </tr>
+      <tr><td style="border:1px solid #888; text-align:center;">0</td><td style="border:1px solid #888; text-align:center;">0</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">1</td><td style="border:1px solid #888; text-align:center;">2</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">2</td><td style="border:1px solid #888; text-align:center;">4</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">3</td><td style="border:1px solid #888; text-align:center;">6</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">4</td><td style="border:1px solid #888; text-align:center;">8</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">5</td><td style="border:1px solid #888; text-align:center;">10</td></tr>
+    </table>
+    <p style="font-size: 14px;">If we graph this data with time on the horizontal axis and position on the vertical, we get:</p>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/9373/files/2605579/preview" alt="Jogger Graph 1" style="max-width:500px; margin:10px 0;" loading="lazy">
+    </div>
+    <p style="font-size: 14px;">The positions steadily increase which shows that our jogger is moving forward. The slope of the graph (change in position divided by change in time aka “rise over run”) is 2.0 m/s. This slope is the rate of change of position. This is more frequently referred to as speed. Speed is a scalar measurement; only the value of the slope is considered.</p>
+    <p style="font-size: 14px;">If we include the direction of the motion with the speed then we have a vector measurement called velocity.</p>
+    <p style="font-size: 14px;">In other words: speed is a scalar measurement that describes how fast an object moves. Velocity is a vector measurement that describes how fast an object moves AND the direction of that motion.</p>
+    <p style="font-size: 14px;">In this case, the speed of motion is 2.0 m/s. The velocity of the motion is 2.0 m/s <em>forwards</em>. Also, since the slope of the graph is constant the speed and the velocity are also constant.</p>
+  </div>
+
+  <div id="examples" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="font-size: 1.1em; color:#2d3b45;">More Examples</h3>
+    <p style="font-size: 14px;">Let’s try a slightly more complicated motion. In this case, our jogger starts 21.0 meters to the right of their house. For this example, we’ll call the house zero position. The jogger now moves towards the house 3.0 meters every second.</p>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/9373/files/2605583/preview" alt="Jogger Graph 2" style="max-width:500px; margin:10px 0;" loading="lazy">
+    </div>
+    <p style="font-size: 14px;">The data table that shows the position of our jogger now looks like:</p>
+    <table style="border-collapse: collapse; margin: 16px 0;">
+      <tr>
+        <th style="border:1px solid #888; padding:6px 18px; background:#f0f0f0;">time (s)</th>
+        <th style="border:1px solid #888; padding:6px 18px; background:#f0f0f0;">position (m)</th>
+      </tr>
+      <tr><td style="border:1px solid #888; text-align:center;">0</td><td style="border:1px solid #888; text-align:center;">21</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">1</td><td style="border:1px solid #888; text-align:center;">18</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">2</td><td style="border:1px solid #888; text-align:center;">15</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">3</td><td style="border:1px solid #888; text-align:center;">12</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">4</td><td style="border:1px solid #888; text-align:center;">9</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">5</td><td style="border:1px solid #888; text-align:center;">6</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">6</td><td style="border:1px solid #888; text-align:center;">3</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">7</td><td style="border:1px solid #888; text-align:center;">0</td></tr>
+      <tr><td style="border:1px solid #888; text-align:center;">8</td><td style="border:1px solid #888; text-align:center;">-3</td></tr>
+    </table>
+    <div style="text-align:center;">
+      <img src="https://tempeunion.instructure.com/courses/9373/files/2605575/preview" alt="Jogger Graph 3" style="max-width:500px; margin:10px 0;" loading="lazy">
+    </div>
+    <p style="font-size: 14px;">Notice that the vertical axis intercept shows the starting position of the jogger. The slope of the graph is -3 m/s. This indicates that the jogger is moving to the left towards the house three meters each second.</p>
+    <p style="font-size: 14px;">The speed of the jogger is 3.0 m/s. The velocity of the jogger can be reported as either -3.0 m/s or 3.0 m/s to the left.</p>
+    <p style="font-size: 14px;">Also, notice that at t = 7.0 s the jogger is at position zero. This was the predefined zero location; the jogger is now at the house. At time t = 8.0 s the jogger’s position is -3.0 m. This indicates that the jogger ended their motion 3 meters to the left of the house.</p>
+    <p style="font-size: 14px;">When looking at a position versus time graph, the vertical axis intercept is equal to the starting position. The slope is equal to the velocity. If the slope is positive, the motion is forwards (right). If the slope is negative the motion is backwards (left). This is true regardless of the location of the zero position.</p>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Analyze a Position vs Time Graph</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/9373/files/2605588/preview" alt="Example Graph" style="max-width:400px; margin:10px 0;" loading="lazy">
+        <p style="font-size: 14px;">a) The starting position is equal to the vertical axis intercept (position at time zero) which is 5.0 m</p>
+        <p style="font-size: 14px;">b) The speed is equal to the slope. Pick two data points on the graph and find the change in position divided by the change in time (rise/run). The slope is (5 m) / (2 s) or 2.5 m/s. The speed is therefore 2.5 m/s</p>
+        <p style="font-size: 14px;">c) The velocity is the speed and the direction. Since the slope is positive, the object is moving forwards. The velocity is then 2.5 m/s forwards.</p>
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Distance, Displacement, and Velocity at Different Times</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/9373/files/2605574/preview" alt="Example Graph 2" style="max-width:400px; margin:10px 0;" loading="lazy">
+        <p style="font-size: 14px;">The object moves backwards 20 m at a constant speed for two seconds. The object is motionless for two seconds. The object then moves forwards 15 m at a slower constant speed for three seconds. The total distance traveled is (20 m) + (15 m) = 35 m. The displacement of the object is (-20 m) + (15 m) = -5 m or 5 behind the starting position.</p>
+        <p style="font-size: 14px;">To find the instantaneous velocity at t = 1 second, solve for the slope of the line during that time. Slope is rise / run or change in position / change in time. Pick two points. We'll go with (2, 10) and (0, 30). The slope is then:</p>
+        <p style="font-size: 14px;">= (10 m – 30 m) / (2 s – 0 s) = -10 m/s</p>
+        <p style="font-size: 14px;">At t = 3.0 seconds, the slope is zero which means the velocity is zero.</p>
+        <p style="font-size: 14px;">At t = 5 s, the slope is: v = (25 m – 10 m) / (7 s – 4 s) = +5 m/s</p>
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Comparing Two Objects</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/9373/files/2605587/preview" alt="Objects A and B" style="max-width:400px; margin:10px 0;" loading="lazy">
+        <p style="font-size: 14px;">a) Object A has a larger vertical axis intercept – object A started further ahead. Object B has a negative axis intercept indicating that it started behind the predetermined zero position.</p>
+        <p style="font-size: 14px;">b) Object B has a larger slope – object B is traveling faster. Both objects have a positive slope indicating that both are moving in the forwards direction.</p>
+        <p style="font-size: 14px;">c) The intersection shows where objects A and B are at the same place at the same time. This is the time and place where object B catches up to and passes object A.</p>
+        <p style="font-size: 14px;">d) Even though object B traveled for less time, object B still traveled a greater distance – the difference between the starting and ending positions for B is larger than for A.</p>
+        <img src="https://tempeunion.instructure.com/courses/9373/files/2605584/preview" alt="Objects A and B Distance" style="max-width:400px; margin:10px 0;" loading="lazy">
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Velocity vs Time Graphs</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/9373/files/2605567/preview" alt="Velocity vs Time" style="max-width:400px; margin:10px 0;" loading="lazy">
+        <p style="font-size: 14px;">The area between the line and the horizontal axis can be used to solve for both the distance and the displacement of the car. If we ignore any negative areas (backward motion), the total area is equal to the distance. If we factor in negative areas (backward motion) then the total area is equal to the displacement.</p>
+        <p style="font-size: 14px;">Area = base x height</p>
+        <p style="font-size: 14px;">Displacement = (time) x (velocity)</p>
+        <p style="font-size: 14px;">Δx = (5 s)(20 m/s) = 100 m</p>
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Ball Bouncing Backward</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <img src="https://tempeunion.instructure.com/courses/9373/files/2605581/preview" alt="Ball Bouncing" style="max-width:400px; margin:10px 0;" loading="lazy">
+        <p style="font-size: 14px;">Distance = sum of absolute value of all areas</p>
+        <p style="font-size: 14px;">d = (20 m/s)(2 s) + (20 m/s)(3 s) = (40 m) + (60 m) = 100 m</p>
+        <p style="font-size: 14px;">The ball travels a total distance of 100 m</p>
+        <p style="font-size: 14px;">Displacement = sum of all areas</p>
+        <p style="font-size: 14px;">Δx = (20 m/s)(2 s) + (-20 m/s)(3 s) = (40 m) + (-60 m) = -20 m</p>
+        <p style="font-size: 14px;">The ball’s motion ends 20 m behind its initial position.</p>
+      </div>
+    </details>
+  </div>
+
+  <div id="algebraic" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="font-size: 1.1em; color:#2d3b45;">Algebraic Models</h3>
+    <p style="font-size: 14px;">We have defined velocity as rate of change of position. We have also defined velocity as the slope of a position versus time graph. Mathematically,</p>
+    <p style="font-size: 14px;">Velocity = slope = rise / run</p>
+    <p style="font-size: 14px;">Velocity = (final position – initial position) / (final time – initial time)</p>
+    <p style="font-size: 14px;">v = (x – x<sub>o</sub>) / t</p>
+    <p style="font-size: 14px;">x = vt + x<sub>o</sub></p>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Student Walking Backward</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="font-size: 14px;">A student starts at a position of 10 m and walks backward at a constant rate to a final position of 2 m. This takes 1.5 seconds. What is the speed of the student? What is the velocity of the student?</p>
+        <p style="font-size: 14px;">x = vt + x<sub>o</sub></p>
+        <p style="font-size: 14px;">(2m) = v(1.5 s) + (10 m)</p>
+        <p style="font-size: 14px;">v = -5.3 m/s</p>
+        <p style="font-size: 14px;">Speed has the same magnitude as velocity but the direction is ignored.</p>
+        <p style="font-size: 14px;">Speed = 5.3 m/s</p>
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Car Moving Forwards</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="font-size: 14px;">A car moves forwards at a speed of 20 m/s for 5 seconds. What is the distance the car has traveled? What is its displacement?</p>
+        <p style="font-size: 14px;">x = vt + x<sub>o</sub></p>
+        <p style="font-size: 14px;">x – x<sub>o</sub> = (20 m/s)(5 s)</p>
+        <p style="font-size: 14px;">Δx = 100 m forwards</p>
+        <p style="font-size: 14px;">The distance is also 100 m since the car never changed direction.</p>
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Example: Two Students Meeting</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p style="font-size: 14px;">Two students move towards each other. Student A starts at position zero and moves forwards (right) at a rate of 1.5 m/s. Student B starts at a position of 10 m and moves backwards (left) at a rate of 3 m/s. When and where will the students meet?</p>
+        <p style="font-size: 14px;">Student A: x = (+1.5 m/s) t + 0</p>
+        <p style="font-size: 14px;">Student B: x = (-3 m/s) t + (10 m)</p>
+        <p style="font-size: 14px;">Set the two equations equal to each other and solve for the meet up time:</p>
+        <p style="font-size: 14px;">(+1.5 m/s) t = (-3 m/s) t + (10 m)</p>
+        <p style="font-size: 14px;">1.5t = -3t + 10</p>
+        <p style="font-size: 14px;">4.5t = 10</p>
+        <p style="font-size: 14px;">t = 2.2 seconds</p>
+        <p style="font-size: 14px;">Plug that time into either of the students' motion equations:</p>
+        <p style="font-size: 14px;">x = (1.5 m/s)(2.2 s) = 3.3 m</p>
+        <p style="font-size: 14px;">It's important to remember that this is a POSITION and not a distance. If we want to know how far either of the students traveled, we would need to compare the final position to their initial positions.</p>
+      </div>
+    </details>
+  </div>
+
+  <div id="review" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="font-size: 1.1em; color:#2d3b45;">Additional Examples and/or Review (optional)</h3>
+    <div style="text-align:center; margin-bottom: 16px;">
+      <iframe style="width:100%; max-width:560px; height:315px; border:none; border-radius:8px; background:#eee;" src="https://www.youtube.com/embed/GtoamALPOP0" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>
