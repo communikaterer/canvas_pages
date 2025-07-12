@@ -1,0 +1,155 @@
+<p><span style="font-size: 16px;">Position vs Time for an object speeding up</span></p>
+<p><span style="font-size: 14px;">Consider the following set of position vs time data collected for a an object traveling down a very long ramp (it's a 90 m ramp or just shy of 300 ft)</span></p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605637/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605637" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">The position vs time graph is then:&nbsp;</span></p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605597/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605597" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">The graph appears to form an upwards opening parabola. The general equation for this might be:&nbsp;</span></p>
+<p><span style="font-size: 14px;">y = mx<sup>2</sup>&nbsp;+ b</span></p>
+<p><span style="font-size: 14px;">To test this, we need to manipulate the data and check to see if the resulting test graph is linear. The data on the x axis is time. The position vs time squared data and graph look like:&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605614/preview" alt="" width="633" height="250" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605614" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">Since the test graph is more linear than the original position vs time graph, the guess that we're dealing with a time squared relationship is accurate.&nbsp;</span></p>
+<p><span style="font-size: 14px;">The equation that describes the original position vs time data is&nbsp;</span></p>
+<p><span style="font-size: 14px;">x = mt<sup>2</sup>+b</span></p>
+<p><span style="font-size: 14px;">We can get the m and b values from the test graph to show:&nbsp;</span></p>
+<p><span style="font-size: 14px;">x = (2.5) t<sup>2</sup>&nbsp;+ 0</span>&nbsp;</p>
+<p><span style="font-size: 14px;">Cool. So...what does that mean?&nbsp;</span></p>
+<p><span style="font-size: 14px;">Look back at the original position vs time graph. What do you notice about the shape of the graph? We said top opening parabla, right? This means that the slope of the graph is not constant. This makes sense since we already noted that the slope of a position vs time graph is equal to velocity. If we had a constant slope, we would have a constant velocity which does not match what we saw with the car traveling down the ramp.&nbsp;</span></p>
+<p><span style="font-size: 14px;">Instead, we saw the car getting faster. This means that the slope of the position vs time graph (velocity) should be increasing. Which it is! The following graph shows the slope of lines drawn tangent to the position vs time graph. These slopes are the instantaneous velocities of the car (ie: the velocity at specific instants in time). Notice how the tangent lines are getting steeper and steeper. This matches our car getting faster and faster.&nbsp;</span></p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605615/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605615" data-api-returntype="File" /></p>
+<p><span style="font-size: 14px;">So, the slope of a position vs time graph is still equal to velocity and the y-intercept is still equal to position.&nbsp;</span></p>
+<p><span style="font-size: 14px;">So, what's the signficance of the m value (2.5 in this example) in the equation that models the data? We might be able to get an idea if we look at the units. Slope is rise over run so the slope units on the TEST graph (where we got the m value) are m/s<sup>2</sup>. Hunh. That...doesn't make much sense. Let's put a pin in this for a moment and come back to it later.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;">Velocity vs time</span></p>
+<p><span style="font-size: 14px;">As noted earlier, the slope of a position vs time graph is equal to velocity. We have a changing slope on the position vs time graph which means we have a changing velocity. We can get the instantaneous velocity (velocity at one specific moment in time) by examing the slopes of the tangent lines (see above graph).&nbsp;</span></p>
+<p><span style="font-size: 14px;">If we do that, we get the following velocity vs time data:&nbsp;</span></p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605613/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605613" data-api-returntype="File" /></p>
+<p><span style="font-size: 14px;">Resulting in the following velocity vs time graph:&nbsp;</span>&nbsp;</p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605617/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605617" data-api-returntype="File" /></p>
+<p><span style="font-size: 14px;">After creating various test graphs to check other relationships between velocity and time, it can be concluded that the best straight line is this one - velocity is directly proportional to time. This means that the variables have the generic form of:&nbsp;</span></p>
+<p><span style="font-size: 14px;">y = mx+b</span></p>
+<p><span style="font-size: 14px;">but we can make that equation more specific to this graph:&nbsp;</span></p>
+<p><span style="font-size: 14px;">v = 5t + 0</span></p>
+<p><span style="font-size: 14px;">Alright. We have an equation, but what does it mean?&nbsp;</span></p>
+<p><span style="font-size: 14px;">Let's look at the vertical axis intercept first. The line passes through the origin indicating that at time zero there was no velocity - the object started from rest. The vertical axis intercept on a velocity graph = starting velocity.&nbsp;</span></p>
+<p><span style="font-size: 14px;">What about the slope? The graph shows a slope of5. What units go with that? Slope is rise over run so the units are (m/s) / s. In other words, the value of the slope tells us the change in m/s that occurs every second. In this example, the object has a velocity that increases 5 m/s every second.&nbsp;</span></p>
+<p><span style="font-size: 14px;">The rate at which the velocity increases is called acceleration. The slope of a velocity versus time graph is equal to acceleration!</span></p>
+<p><span style="font-size: 14px;">The general equation that relates velocity and time is then:&nbsp;</span></p>
+<p><span style="font-size: 14px;">v = at + v<sub>o</sub></span></p>
+<p><span style="font-size: 14px;">The symbol used to represent acceleration is "a" and the units are (m/s) / s. However, these units are commonly simplified into m/s<sup>2</sup>. Wait a minute...we saw those units earlier. The units of the slope on the position vs time squared test graph were ALSO m/s<sup>2</sup>. However, the numbers don't match. We just defined acceleration as the slope of a velocity vs time graph which is equal to 5. The slope on the position vs time squared graph was 2.5. The two are related since they have the same units. Since 2.5 is half of 5, we can conclude that the slope of the line on the position vs time squared test graph must be equal to 1/2 acceleration!</span></p>
+<p><span style="font-size: 14px;">The position vs time equation that matched the specific data included here was:&nbsp;</span></p>
+<p><span style="font-size: 14px;"><span>x = (2.5) t</span><sup>2</sup><span>&nbsp;+ 0</span></span></p>
+<p><span style="font-size: 14px;">We can now make this equation work for ANY motion that has a changing velocity!</span></p>
+<p><span style="font-size: 14px;">Replace the 2.5 with 1/2a and replace the 0 with x<sub>o</sub>.</span></p>
+<p><span style="font-size: 14px;"><span>x = 1/2at<sup>2</sup>&nbsp;+ x<sub>o</sub></span></span></p>
+<p><span style="font-size: 14px;">Cool! However, this equation is incomplete. All of this analysis was based on a scenario where the starting velocity is zero. If the object is already moving when the clock starts, it should logically be further ahead when the clock stops compared to an object that was at rest when the clock stopped. Our equation doesn't take that into account so we're not done yet.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;">Area under the velocity graph</span></p>
+<p><span style="font-size: 14px;">We saw with the buggy car that the area under a velocity line is equal to either the distance or displacement depending on whether we pay attention to direction. This is STILL TRUE. However, the area under the line is no longer a rectangle. Now we have a triangle!</span></p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605621/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605621" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">The area of a triangle is:&nbsp;</span></p>
+<p><span style="font-size: 14px;">A = 1/2 base x height</span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 18px;"><span style="line-height: 107%; font-family: Calibri, sans-serif;">&Delta;</span><span style="line-height: 107%; font-family: Calibri, sans-serif;">x&nbsp;</span></span>= 1/2 (time)(velocity)</span></p>
+<p><span style="font-size: 14px;">However, we just found an equation for velocity which is:&nbsp;</span></p>
+<p><span style="font-size: 14px;">v = at + v<sub>o</sub></span></p>
+<p><span style="font-size: 14px;">Substituting in (at + 0) for v into the displacement equation, we get:&nbsp;</span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 18px;"><span style="line-height: 107%; font-family: Calibri, sans-serif;">&Delta;</span><span style="line-height: 107%; font-family: Calibri, sans-serif;">x&nbsp;</span></span><span>= 1/2 (t)(at)</span></span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 18px;"><span style="line-height: 107%; font-family: Calibri, sans-serif;">&Delta;</span><span style="line-height: 107%; font-family: Calibri, sans-serif;">x&nbsp;</span></span>= 1/2 at<sup>2</sup></span></p>
+<p><span style="font-size: 14px;">This is the same equation we derived earlier for displacement as long as the starting velocity is zero! It's just a different way of obtaining the same information.</span></p>
+<p><span style="font-size: 14px;">However, what if the starting velocity is NOT zero? The velocity graph would have a non-zero vertical axis intercept. Something like this:</span></p>
+<p>&nbsp;</p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605611/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605611" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">Solve for the total area by breaking the area into manageable pieces:&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605636/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605636" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">The displacement is then equal to the area of the rectangle + the area of the triangle. We already solved for those areas:&nbsp;</span></p>
+<p><span style="font-size: 14px;"><span><span style="font-size: 18px;"><span style="line-height: 107%; font-family: Calibri, sans-serif;">&Delta;</span><span style="line-height: 107%; font-family: Calibri, sans-serif;">x&nbsp;</span></span><span>= (area triangle) + (area rectangle)</span></span></span></p>
+<p><span style="font-size: 14px;"><span><span style="font-size: 18px;"><span style="line-height: 107%; font-family: Calibri, sans-serif;">&Delta;</span><span style="line-height: 107%; font-family: Calibri, sans-serif;">x&nbsp;</span></span><span>= 1/2 at<sup>2</sup>&nbsp;+ v<sub>o</sub>t</span></span></span></p>
+<p><span style="font-size: 14px;">That's it! That's the final displacement equation! If you want to put this in a form that will let you solve for position instead of displacement:&nbsp;</span></p>
+<p><span style="font-size: 14px;"><span><span><span>x = 1/2 at</span><sup>2</sup><span>&nbsp;+ v</span><sub>o</sub><span>t + x<sub>o</sub></span></span></span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;">Video help: area under a velocity graph</span></p>
+<p><iframe style="background-image: url('/img/iframe.gif');" src="https://www.youtube.com/embed/d-_eqgj5-K8" width="560" height="315" loading="lazy" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;">Velocity vs Position</span></p>
+<p><span style="font-size: 14px;">After graphing the velocity vs position data, you should see what appears to be a sideways opening parabola. Using the example data from&nbsp;<a href="https://tempeunion.instructure.com/courses/9373/file_contents/course%20files/page/2875082043">yesterday's discussion:&nbsp;</a></span></p>
+<p>&nbsp;</p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605618/preview" alt="" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605618" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">In order to test whether this is ACTUALLY a sideways opening parabola, we need to manipulate the data and graph the y<sup>2</sup>&nbsp;= mx+b relationship. If the test graph forms a better straight line, then our guess was correct.&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605616/preview" alt="" width="684" height="243" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605616" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14px;">Based on this test graph, this IS, in fact, a velocity squared proportional to position relationship. This means the equation fits the format of:&nbsp;</span></p>
+<p><span style="font-size: 14px;">y^2 = mx + b</span></p>
+<p><span style="font-size: 14px;">We can then make the equation more specific to this set of variables. Using the test graph we get:</span></p>
+<p><span style="font-size: 14px;">v<sup>2</sup>&nbsp;= (10)x + 0</span></p>
+<p><span style="font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px;">So...what does all of this MEAN?</span></p>
+<p><span style="font-size: 14px;">First, the sideways parabola on the original velocity vs position graph shows that as position increases, so does velocity. However, the two do not increase at the same rate - position increases faster than velocity.&nbsp;</span></p>
+<p><span style="font-size: 14px;">The vertical axis intercept is the value of the velocity when the object is at position zero.&nbsp;</span></p>
+<p><span style="font-size: 14px;">What about the m and b values? What do those numbers tell us about this relationship? Both the m and b values came from the test graph so let's look at the that graph.&nbsp;</span></p>
+<p><span style="font-size: 14px;">What are the units that go with the slope value from the test graph? Remember that slope is rise over run so we have units of (m/s)<sup>2</sup>&nbsp;on the rise and m on the run so (m/s)<sup>2</sup>&nbsp;/ m which simplifies to m/s<sup>2</sup>. These are the units in which we measure acceleration! The slope of the test graph must be related to acceleration.&nbsp;</span></p>
+<p><span style="font-size: 14px;">Remember that the acceleration (defined yesterday as the slope of the velocity vs time graph) was 5.0 m/s<sup>2</sup>. The slope here is double that value. This means that the slope of a velocity squared vs position graph is equal to two times the acceleration.&nbsp;</span></p>
+<p><span style="font-size: 14px;">The vertical axis intercept on the test graph is the SQUARE of the velocity value when the object is at position zero.&nbsp;</span></p>
+<p><span style="font-size: 14px;">We can then rewrite the equation to work for any set of data and not just this specific set of data.&nbsp;</span></p>
+<p><span style="font-size: 14px;"><span>v</span><sup>2</sup><span>&nbsp;= 2ax + v<sub>o</sub><sup>2</sup></span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-size: 16px;">Summary:&nbsp;</span></p>
+<p><span style="font-size: 14px;"><span>Based on the lab data for a car traveling in the forward direction while speeding up, we saw the following:&nbsp;</span></span>&nbsp;</p>
+<p>&nbsp;</p>
+<table class="s_table s_table_border">
+    <tbody>
+        <tr>
+            <td style="text-align: center;"><span style="font-size: 14px;">variables</span></td>
+            <td style="text-align: center;"><span style="font-size: 14px;">original graph</span></td>
+            <td style="text-align: center;"><span style="font-size: 14px;">test graph</span></td>
+            <td style="text-align: center;"><span style="font-size: 14px;">equation</span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-size: 14px;">x and t</span></td>
+            <td style="text-align: center;"><br />
+                <p><span style="font-size: 14px;"><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605634/preview" alt="" width="184" height="195" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605634" data-api-returntype="File" /></span></p>
+            </td>
+            <td style="text-align: center;"><br />
+                <p><span style="font-size: 14px;"><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605619/preview" alt="" width="181" height="200" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605619" data-api-returntype="File" /></span></p>
+            </td>
+            <td style="text-align: center;"><span style="font-size: 14px;">x = 1/2 at<sup>2</sup>&nbsp;+ v<sub>o</sub>t + x<sub>o</sub></span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-size: 14px;">v and t</span></td>
+            <td style="text-align: center;">
+                <p><span style="font-size: 14px;"><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605620/preview" alt="" width="171" height="184" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605620" data-api-returntype="File" /></span></p>
+            </td>
+            <td style="text-align: center;">
+                <p><span style="font-size: 14px;">all other relationship test graphs</span></p>
+                <p><span style="font-size: 14px;">result in a worse straight line</span></p>
+            </td>
+            <td style="text-align: center;"><span style="font-size: 14px;">v = at + v<sub>o</sub></span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-size: 14px;">v and x</span></td>
+            <td style="text-align: center;">
+                <p><span style="font-size: 14px;"><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605638/preview" alt="" width="160" height="164" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605638" data-api-returntype="File" /></span></p>
+            </td>
+            <td style="text-align: center;">
+                <p><span style="font-size: 14px;"><img title="" src="https://tempeunion.instructure.com/courses/9373/files/2605635/preview" alt="" width="218" height="201" data-api-endpoint="https://tempeunion.instructure.com/api/v1/courses/9373/files/2605635" data-api-returntype="File" /></span></p>
+            </td>
+            <td style="text-align: center;"><span style="font-size: 14px;">v<sup>2</sup>&nbsp;= 2ax + v<sub>o</sub><sup>2</sup></span></td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="font-size: 14px;">where:&nbsp;</span></p>
+<p><span style="font-size: 14px;">x = horizontal position</span></p>
+<p><span style="font-size: 14px;">y = vertical position</span></p>
+<p><span style="font-size: 14px;">v = final velocity</span></p>
+<p><span style="font-size: 14px;">v<sub>o</sub> = starting velocity</span></p>
+<p><span style="font-size: 14px;">a = acceleration</span></p>
+<p><span style="font-size: 14px;">t = time</span></p>
