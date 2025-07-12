@@ -1,0 +1,226 @@
+<html>
+<head>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Units of Measurement</title>
+<meta name="identifier" content="g84600b6258762d5213774d3650cde06b"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 2em;
+    background-color: #f5f5f5;
+  }
+
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 0;
+  }
+
+  details[open] summary {
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    background: #2d3b45;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px 12px 0 0;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        const menu = this.nextElementSibling;
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+<div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
+
+  <div class="menu-toggle">☰ Menu</div>
+  <div class="menu-links" style="display:none;">
+    <a href="#si" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">SI Units</a>
+    <a href="#conversion" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Unit Conversions</a>
+    <a href="#metric" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Metric System</a>
+    <a href="#nonmetric" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Non-Metric</a>
+    <a href="#density" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Density as a Conversion</a>
+    <a href="#practice" style="color:#2F4F4F; text-decoration:underline;">Practice</a>
+  </div>
+
+  <div id="si" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Units of Measurement (SI Units)</h2>
+    <p style="font-size:1.1em;">
+      All SI (System International, aka the metric system) units of measurement boil down to various combinations of seven basic units:
+      <strong>seconds, kilograms, meters, kelvin, ampere, moles,</strong> and <strong>candela</strong>.
+    </p>
+    <p style="font-size:1.1em;">
+      For example, a unit of pressure you may be familiar with is kPa (kilopascals). A pascal is really just a quick way of writing: <span style="font-family:monospace;">kg / (s²·m)</span>.
+    </p>
+    <p style="font-size:1.1em;">
+      <strong>How are these units defined?</strong> The definition of what constitutes "one" of each type of measurement has changed several times over the years!
+    </p>
+    <ul style="font-size:1.1em; margin-left:18px;">
+      <li>
+        <strong>Second:</strong> In 1960, defined as 1/31,556,925.9747 of the year 1900. In 1967, redefined based on vibrations of a cesium atom. Updated again in 2019 for more specificity.
+      </li>
+      <li>
+        <strong>Kilogram:</strong> For a long time, defined by a platinum-iridium alloy chunk in a vault. In 2018, redefined based on Planck's constant.
+      </li>
+    </ul>
+    <p style="font-size:1.1em;">
+      These changing definitions don't affect everyday measurements, but they matter for scientists working in high-precision fields.
+    </p>
+  </div>
+
+  <div id="conversion" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Unit Conversions</h2>
+    <p style="font-size:1.1em;">
+      Why are there so many different ways to measure the same thing? Partly for ease of reporting and partly because different countries and organizations developed their own systems.
+    </p>
+    <p style="font-size:1.1em;">
+      Scientists must be able to switch between different measuring units. Even professionals can make mistakes: in 1999, NASA lost its $125 million Mars Climate Orbiter due to a failure to convert between metric and English measurement systems.
+    </p>
+  </div>
+
+  <div id="metric" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Metric System & Prefixes</h2>
+    <p style="font-size:1.1em;">
+      Metric measurements use prefixes attached to units to indicate factors of 10. This allows easy conversion by moving the decimal left or right.
+    </p>
+    <table style="margin: 12px auto; border-collapse: collapse;">
+      <tr><th style="padding:4px 10px;">Prefix</th><th style="padding:4px 10px;">Symbol</th><th style="padding:4px 10px;">Factor</th></tr>
+      <tr><td>tera</td><td>T</td><td>10<sup>12</sup></td></tr>
+      <tr><td>giga</td><td>G</td><td>10<sup>9</sup></td></tr>
+      <tr><td>mega</td><td>M</td><td>10<sup>6</sup></td></tr>
+      <tr><td>kilo</td><td>k</td><td>10<sup>3</sup></td></tr>
+      <tr><td>hecto</td><td>H</td><td>10<sup>2</sup></td></tr>
+      <tr><td>deca</td><td>D</td><td>10<sup>1</sup></td></tr>
+      <tr><td>base</td><td>b</td><td>1</td></tr>
+      <tr><td>deci</td><td>d</td><td>10<sup>-1</sup></td></tr>
+      <tr><td>centi</td><td>c</td><td>10<sup>-2</sup></td></tr>
+      <tr><td>milli</td><td>m</td><td>10<sup>-3</sup></td></tr>
+      <tr><td>micro</td><td>u</td><td>10<sup>-6</sup></td></tr>
+      <tr><td>nano</td><td>n</td><td>10<sup>-9</sup></td></tr>
+    </table>
+    <p style="font-size:1.1em;">
+      <strong>Examples:</strong><br>
+      2000 meters = 2 km (kilo = 1000)<br>
+      0.05 meters = 5 cm (centi = 0.01)<br>
+      500 HL = 50,000,000 mL (move decimal 5 places)<br>
+      3.4 cg = 0.0034 Dg (move decimal 3 places)
+    </p>
+    <p style="font-size:1.1em;">
+      For more practice, search for "practice metric unit conversions" online.
+    </p>
+  </div>
+
+  <div id="nonmetric" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Non-Metric Unit Conversions</h2>
+    <p style="font-size:1.1em;">
+      Non-metric conversions are more involved than just moving a decimal. We'll use the <strong>fraction method</strong> (dimensional analysis).
+    </p>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Show/Hide Example: Miles to Feet</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          Convert 0.05 miles to feet (5280 ft = 1 mile):<br>
+          <span style="font-family:monospace;">0.05 miles × (5280 ft / 1 mile) = 264 ft</span>
+        </p>
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Show/Hide Example: Miles to Meters</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          Convert 0.050 miles to meters (1.00 m = 3.28 ft):<br>
+          <span style="font-family:monospace;">0.050 miles × (5280 ft / 1 mile) × (1 m / 3.28 ft) ≈ 80.5 m</span>
+        </p>
+      </div>
+    </details>
+    <p style="font-size:1.1em;">
+      You can chain several conversions together using this method.
+    </p>
+  </div>
+
+  <div id="density" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h2 style="color:#2d3b45; font-size:1.25em; margin-top:0;">Density as a Conversion Factor</h2>
+    <p style="font-size:1.1em;">
+      Density shows the relationship between an object's mass and volume. For example, if a material has a density of 8.0 g/mL, there are 8.0 grams in every 1 mL of volume.
+    </p>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Show/Hide Example: Mass to Volume</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          Given 3.5 g of a material with density 8.0 g/mL:<br>
+          <span style="font-family:monospace;">3.5 g × (1 mL / 8.0 g) = 0.44 mL</span>
+        </p>
+      </div>
+    </details>
+    <details>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px;">Show/Hide Example: Volume to Mass</summary>
+      <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
+        <p>
+          Given 25.0 mL of a fluid with density 1.50 g/mL:<br>
+          <span style="font-family:monospace;">25.0 mL × (1.50 g / 1 mL) = 37.5 g</span>
+        </p>
+      </div>
+    </details>
+  </div>
+
+  <div id="practice" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
+    <h3 style="color:#2d3b45; font-size:1.1em;">Practice Problems</h3>
+    <ol style="font-size:1.1em;">
+      <li>How many
