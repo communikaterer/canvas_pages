@@ -1,5 +1,16 @@
 <html>
 <head>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
@@ -82,10 +93,10 @@
   
   <div class="menu-toggle">☰ Menu</div>
 <div class="menu-links" style="display:none;">
-      <a href="#summary" style="color:#fff; text-decoration:underline; margin-right:18px;">Summary of Results</a>
-      <a href="#keq" style="color:#fff; text-decoration:underline; margin-right:18px;">Kinetic Energy Equation</a>
-      <a href="#examples" style="color:#fff; text-decoration:underline; margin-right:18px;">Examples</a>
-      <a href="#energyconservation" style="color:#fff; text-decoration:underline;">Energy Conservation</a>
+      <a href="#summary" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Summary of Results</a>
+      <a href="#keq" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Kinetic Energy Equation</a>
+      <a href="#examples" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Examples</a>
+      <a href="#energyconservation" style="color:#2F4F4F; text-decoration:underline;">Energy Conservation</a>
     </div>
   </div>
 
@@ -106,13 +117,8 @@
       where \[m\] and \[b\] are the slope and y-intercept from the linear test graph.
     </p>
     <details>
-      <summary>
-        <div style="padding: 12px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC; font-size:15px; cursor:pointer; ">
-          Significance of y-intercept and slope
-        </div>
-      </summary>
-      <div style="margin-top:10px;">
-        <p style="font-size:1.1em;">
+      Significance of y-intercept and slope
+    
           <strong>Y-intercept:</strong> The y-intercept is the amount of kinetic energy when the object's speed is zero. Since kinetic energy is defined as the energy stored in an object's motion, zero speed means zero kinetic energy. The y-intercept should be zero by definition! If you get a significant y-intercept, this indicates significant error in the data.
         </p>
         <p style="font-size:1.1em;">
@@ -125,7 +131,6 @@
         <p style="font-size:1.1em;">
           This tells us the slope is related to mass. In most cases, the slope value is about half the mass of the object. The slope of the linear test graph represents half the mass of the moving object.
         </p>
-      </div>
     </details>
   </div>
 
