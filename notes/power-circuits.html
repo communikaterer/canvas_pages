@@ -1,8 +1,17 @@
 <html>
 <head>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+<script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>Test Power (circuits)</title>
 <meta name="identifier" content="g0ef4800168f47440fe039d4c60c7bb79"/>
@@ -83,10 +92,10 @@
   
   <div class="menu-toggle">☰ Menu</div>
 <div class="menu-links" style="display:none;">
-      <a href="#intro" style="color:#fff; text-decoration:underline; margin-right:18px;">Power Basics</a>
-      <a href="#ex1" style="color:#fff; text-decoration:underline; margin-right:18px;">Bulb Brightness</a>
-      <a href="#ex2" style="color:#fff; text-decoration:underline; margin-right:18px;">Series Circuit Power</a>
-      <a href="#ex3" style="color:#fff; text-decoration:underline;">Energy Cost Example</a>
+      <a href="#intro" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Power Basics</a>
+      <a href="#ex1" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Bulb Brightness</a>
+      <a href="#ex2" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Series Circuit Power</a>
+      <a href="#ex3" style="color:#2F4F4F; text-decoration:underline;">Energy Cost Example</a>
     </div>
   </div>
 
@@ -114,14 +123,14 @@
       Where <strong>I</strong> is current (amps) and <strong>V</strong> is voltage (volts).
     </p>
     <p style="font-size:1.1em;">
-      Using Ohm's Law (\[V = IR\]), we get other forms:
+      Using Ohm's Law ($V = IR$), we get other forms:
     </p>
     <div style="font-size:1.2em; text-align:center; margin-bottom:14px;">
       \[ P = IV = I^2R = \frac{V^2}{R} \]
     </div>
     <p style="font-size:1.1em;">
-      <strong>Series:</strong> Same current, so \[P \propto R\] (higher resistance = more power).<br>
-      <strong>Parallel:</strong> Same voltage, so \[P \propto \frac{1}{R}\] (lower resistance = more power).
+      <strong>Series:</strong> Same current, so $P \propto R$ (higher resistance = more power).<br>
+      <strong>Parallel:</strong> Same voltage, so $P \propto \frac{1}{R}$ (lower resistance = more power).
     </p>
   </div>
 
