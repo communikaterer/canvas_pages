@@ -1,6 +1,21 @@
 <html>
 <head>
-<script type="text/javascript" id="MathJax-script" async
+<script>
+  window.MathJax = {
+    tex: {
+      macros: {
+        spacedalign: [
+          "\\begin{align*} \\rule{0pt}{1.5em} #1 \\rule{0pt}{1.5em} \\end{align*}",
+          1
+        ]
+      },
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+  <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -83,10 +98,10 @@
   
   <div class="menu-toggle">☰ Menu</div>
 <div class="menu-links" style="display:none;">
-      <a href="#parts" style="color:#fff; text-decoration:underline; margin-right:18px;">Parts of a Wave</a>
-      <a href="#period" style="color:#fff; text-decoration:underline; margin-right:18px;">Period vs Frequency</a>
-      <a href="#freq" style="color:#fff; text-decoration:underline; margin-right:18px;">Frequency vs Wavelength</a>
-      <a href="#resources" style="color:#fff; text-decoration:underline;">More Examples</a>
+      <a href="#parts" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Parts of a Wave</a>
+      <a href="#period" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Period vs Frequency</a>
+      <a href="#freq" style="color:#2F4F4F; text-decoration:underline; margin-right:18px;">Frequency vs Wavelength</a>
+      <a href="#resources" style="color:#2F4F4F; text-decoration:underline;">More Examples</a>
     </div>
   </div>
 
@@ -159,15 +174,20 @@
       <br>
       \[ f = \frac{1}{T} \qquad T = \frac{1}{f} \]
     </p>
+    <br>
+    <p><strong>Example problem:</strong> A student moves her hand up and down 20 times in 5 seconds.<br></p>
     <details>
-      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Example</summary>
+      <summary style="background:#0077CC; color:#fff; border:none; padding:7px 16px; border-radius:5px; font-size:15px; cursor:pointer; margin-bottom:10px; ">Show/Hide Solution</summary>
       <div style="padding: 15px; background: #fff; margin-top: 10px; border-left: 4px solid #0077CC;">
         <p>
-          <strong>Example:</strong> A student moves her hand up and down 20 times in 5 seconds.<br>
           <strong>Frequency:</strong>
-          \[ f = \frac{20}{5} = 4\,\text{Hz} \]
+          \[ f = \text{number of waves produced each 1 second} \]
+            \[ f = \frac{20 \text{waves}}{5 \text{seconds}} \]
+            \[ f = 4\,\text{Hz} \]
           <strong>Period:</strong>
-          \[ T = \frac{1}{4} = 0.25\,\text{s} \]
+          \[ T = \frac{1}{f} \]
+          \[ T = \frac{1}{4 \text{Hz}} \]
+          \[ T = 0.25\,\text{s} \]
         </p>
       </div>
     </details>
