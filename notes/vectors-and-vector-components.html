@@ -6,15 +6,19 @@
   <title>Units of Measurement</title>
 
   <!-- MathJax Config -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+ <script>
+  window.MathJax = {
+    tex: {
+      macros: {
+        spacedalign: ["\\[\\\\[1.5em]\\\\begin{align*}#1\\\\end{align*}\\\\[1.5em]\\]", 1]
       },
-      svg: { fontCache: 'global' }
-    };
-  </script>
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
   <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
@@ -85,22 +89,7 @@
         menu.style.display = (menu.style.display === "block") ? "none" : "block";
       });
     });
-  </script>
-  
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    MathJax.startup.promise.then(() => {
-      document.querySelectorAll("mjx-container").forEach(el => {
-        const tex = el.textContent || "";
-        if (tex.includes("\\frac") || tex.includes("align")) {
-          el.style.marginTop = "2em";
-          el.style.marginBottom = "2em";
-        }
-      });
-    });
-  });
-</script>
-  
+  </script> 
 </head>
 <body>
 
