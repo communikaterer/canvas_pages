@@ -18,6 +18,19 @@
   <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    MathJax.startup.promise.then(() => {
+      document.querySelectorAll("mjx-container").forEach(el => {
+        const tex = el.textContent || "";
+        if (tex.includes("\\frac") || tex.includes("align")) {
+          el.style.marginTop = "1.5em";
+          el.style.marginBottom = "1.5em";
+        }
+      });
+    });
+  });
+</script>
 
   <!-- Collapsible Menu + Custom Styling -->
   <style>
