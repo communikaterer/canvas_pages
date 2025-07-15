@@ -1,8 +1,18 @@
 <html>
 <head>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+<!-- MathJax from CDN (Netlify will NOT strip this) -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>Test vectors and vector components</title>
 <meta name="identifier" content="g4e1e68e807ec9eb7f6155e74ffc1c4b0"/>
@@ -127,14 +137,18 @@
           <img src="https://tempeunion.instructure.com/courses/232/files/239799/preview" alt="vector diagram" style="max-width:380px; margin:10px 0;" loading="lazy">
           <br>
           <strong>North component:</strong><br>
-          \[ \sin(30^\circ) = \frac{\text{north}}{60} \]
-          \[ \text{north} = 60 \times \sin(30^\circ) = 30\,\text{mi/hr} \]
+    <p>We know the hypotenuse of this triangle. The north component is opposite of the hypotenuse.</p>
+          \[ \sin(\theta) = \frac{\text{opp}}{hyp} \]
+          \[ \sin(30^\circ) = \frac{\text{north component}}{60 \text{mi/hr}} \]
+          \[ \text{north component} = 60 \text{mi/hr}\times \sin(30^\circ) = 30\,\text{mi/hr} \]
           <br>
           <strong>East component:</strong><br>
-          \[ \cos(30^\circ) = \frac{\text{east}}{60} \]
-          \[ \text{east} = 60 \times \cos(30^\circ) = 52\,\text{mi/hr} \]
+    <p>We know the hypotenuse of this triangle. The east component is adjacent of the hypotenuse.</p>
+          \[ \cos(\theta) = \frac{\text{adj}}{hyp} \]
+          \[ \cos(30^\circ) = \frac{\text{east component}}{60\text{mi/hr}} \]
+          \[ \text{east component} = 60 \text{mi/hr} \times \cos(30^\circ) = 52\,\text{mi/hr} \]
           <br>
-          <strong>The student is traveling 52 mi/hr east and 30 mi/hr north.</strong>
+          <strong>The student is traveling 52 mi/hr to the east and 30 mi/hr to the north.</strong>
         </p>
   </div>
 
@@ -154,18 +168,19 @@
   
   <div id="solve" style="background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 22px; margin: 22px auto; max-width: 900px;">
     <h3 style="color:#2d3b45; font-size:1.15em;">Using Components to Solve for the Vector</h3>
-     <p>
+     <p>Sometimes, we are given the the measurements in component form and asked to solve for the vector form. 
+       <p>
           <strong>Example:</strong> A student walks 40 m west and 20 m south. What is their displacement?
           <br>
        <p>Start by sketching a diagram.</p><br>
           <img src="https://tempeunion.instructure.com/courses/232/files/239806/preview" alt="component diagram" style="max-width:380px; margin:10px 0;" loading="lazy">
           <br>
-          <strong>Step 1: Find the magnitude using Pythagorean Theorem:</strong><br>
-          displacement=√(40)2+(20)2=44.7m \text{displacement} = \sqrt{(40)^2 + (20)^2} = 44.7\,\text{m} 
+          <strong>Step 1: Find the magnitude using the Pythagorean Theorem:</strong><br>
+          $$ \text{displacement} = \sqrt{(40)^2 + (20)^2} = 44.7\,\text{m} 
           <br>
-          <strong>Step 2: Find direction (trig):</strong><br>
-          $0 \tan\theta = \frac{20}{40}$ 
-          $\theta = \tan^{-1}(0.5) = 26.6^\circ $
+          <strong>Step 2: Find direction (using trig):</strong><br>
+          $$0 \tan\theta = \frac{20}{40}$$
+          $$\theta = \tan^{-1}(0.5) = 26.6^\circ $$
           <br>
           <strong>Direction:</strong> Since both components are negative (west and south), the angle is 206.6° (measured from the positive x-axis, counterclockwise).
         </p>
