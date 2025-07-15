@@ -1,91 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- MathJax from CDN (Netlify will NOT strip this) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Units of Measurement</title>
+
+  <!-- MathJax Config -->
   <script>
     window.MathJax = {
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']]
       },
-      svg: {
-        fontCache: 'global'
-      }
+      svg: { fontCache: 'global' }
     };
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Test vectors and vector components</title>
-<meta name="identifier" content="g4e1e68e807ec9eb7f6155e74ffc1c4b0"/>
-<meta name="editing_roles" content="teachers"/>
-<meta name="workflow_state" content="active"/>
-<style>
-  body {
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
-    margin: 2em;
-    background-color: #f5f5f5;
-  }
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 
-  a {
-    color: #007acc;
-    text-decoration: none;
-  }
+  <!-- Collapsible Menu + Custom Styling -->
+  <style>
+    body {
+      font-family: Georgia, Palatino, serif;
+      background: #f7f9fa;
+      margin: 0;
+      padding: 2em;
+      line-height: 1.8;
+      color: #2d3b45;
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
+    h1, h2, h3 {
+      color: #2d3b45;
+      border-bottom: 2px solid #2d3b45;
+      padding-bottom: 0.2em;
+    }
 
-  .card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  }
+    a {
+      color: #0077CC;
+    }
 
-  summary {
-    font-weight: bold;
-    cursor: pointer;
-    margin: 1em 0;
-  }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      margin: 1em 0;
+    }
 
-  details[open] summary {
-    margin-bottom: 0.5em;
-  }
+    details[open] summary {
+      margin-bottom: 0.5em;
+    }
 
-  .menu-toggle {
-    background: #2d3b45;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+    .menu-toggle {
+      background: #2d3b45;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-  .menu-links a {
-    display: inline-block;
-    color: #2F4F4F;
-    margin: 10px 12px 0 0;
-    text-decoration: underline;
-  }
-</style>
+    .menu-links {
+      display: none;
+      margin-top: 12px;
+    }
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggles = document.querySelectorAll(".menu-toggle");
-    toggles.forEach(function (toggle) {
+    .menu-links a {
+      display: inline-block;
+      color: #2F4F4F;
+      margin: 10px 12px 0 0;
+      text-decoration: underline;
+    }
+
+    mjx-container[jax="CHTML"] {
+      line-height: 1.4 !important;
+      margin: 1em 0;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu-links");
       toggle.addEventListener("click", function () {
-        const menu = this.nextElementSibling;
-        if (menu.style.display === "block") {
-          menu.style.display = "none";
-        } else {
-          menu.style.display = "block";
-        }
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
       });
     });
-  });
-</script>
+  </script>
 </head>
 <body>
+
 
 
 <div style="font-family: Georgia, Palatino, serif; background: #f7f9fa; margin:0; padding:0;">
