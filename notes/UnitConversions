@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Units of Measurement</title>
+
+  <!-- MathJax Config -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <!-- Collapsible Menu + Custom Styling -->
+  <style>
+    body {
+      font-family: Georgia, Palatino, serif;
+      background: #f7f9fa;
+      margin: 0;
+      padding: 2em;
+      line-height: 1.6;
+      color: #2d3b45;
+    }
+
+    h1, h2, h3 {
+      color: #2d3b45;
+      border-bottom: 2px solid #2d3b45;
+      padding-bottom: 0.2em;
+    }
+
+    a {
+      color: #0077CC;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      margin: 1em 0;
+    }
+
+    details[open] summary {
+      margin-bottom: 0.5em;
+    }
+
+    .menu-toggle {
+      background: #2d3b45;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .menu-links {
+      display: none;
+      margin-top: 12px;
+    }
+
+    .menu-links a {
+      display: inline-block;
+      color: white;
+      margin: 10px 12px 0 0;
+      text-decoration: underline;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggles = document.querySelectorAll(".menu-toggle");
+      toggles.forEach(function (toggle) {
+        toggle.addEventListener("click", function () {
+          const menu = this.nextElementSibling;
+          menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <div class="menu-toggle">☰ Menu</div>
+  <div class="menu-links">
+    <a href="#si">SI Units</a>
+    <a href="#conversion">Unit Conversions</a>
+    <a href="#metric">Metric System</a>
+    <a href="#nonmetric">Non-Metric</a>
+    <a href="#density">Density as a Conversion</a>
+    <a href="#practice">Practice</a>
+  </div>
+
+  <h1 id="si">Units of Measurement</h1>
+  <p>All SI (System International aka the metric system) units of measurement boil down to various combinations of seven basic units: seconds, kilograms, meters, kelvin, ampere, moles, and candela.</p>
+  <p>For example, a unit of pressure that you may be familiar with is kPa or kilopascals. A pascal is a unit that is really just a quick way of writing: \( \frac{kg}{s^2 \cdot m} \). Don't worry, you don't need to know that for the test, it's just cool.</p>
+  <p>...</p>
+
+  <h2 id="conversion">Unit Conversions</h2>
+  <p>...</p>
+
+  <h2 id="metric">Metric</h2>
+  <p>...</p>
+
+  <h2 id="nonmetric">Non-metric</h2>
+  <p>...</p>
+
+  <h2 id="density">Density as a Conversion Factor</h2>
+  <p>...</p>
+
+  <h2 id="practice">Practice</h2>
+  <ol>
+    <li>How many inches are in 0.25 miles? (medium difficulty)<br>(5280 ft = 1 mile, 12 in = 1 ft)</li>
+    <li>How many cubic meters does 805 g of a material occupy if its density is 0.15 g/mL? (hard)<br>(1 mL = 1 cubic centimeter)</li>
+  </ol>
+
+  <h3>Answers:</h3>
+  <ol>
+    <li>15,840 inches</li>
+    <li>0.0054 m³</li>
+  </ol>
+
+</body>
+</html>
