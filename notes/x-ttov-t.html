@@ -1,0 +1,304 @@
+<!-- Cleaned up and modernized Velocity Graphs page -->
+<html>
+<head>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Velocity Graphs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+  body {
+    font-family: Georgia, Palatino, serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 24px 8px 48px 8px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(45,59,69,0.07);
+    padding: 28px 22px 22px 22px;
+    margin-bottom: 28px;
+    transition: box-shadow 0.2s;
+  }
+  .card hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 32px 0 24px 0;
+  }
+  h1, h2, h3 {
+    color: #2d3b45;
+    font-family: Georgia, Palatino, serif;
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 2.1em;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0.2em;
+  }
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.7em;
+  }
+  .center {
+    text-align: center;
+  }
+  .highlight {
+    color: #0077CC;
+    font-weight: bold;
+  }
+  .explanation {
+    color: #34495e;
+    font-size: 1.04em;
+    margin-top: 0.5em;
+  }
+  details summary {
+    font-family: Georgia, Palatino, serif;
+    font-size: 1em;
+    color: #0077CC;
+    cursor: pointer;
+    margin: 0.7em 0 0.3em 0;
+    padding-left: 0.5em;
+    outline: none;
+  }
+  details[open] summary {
+    font-weight: bold;
+  }
+  details > div {
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  table.graph-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
+    margin: 0 auto 1.5em auto;
+    background: none;
+  }
+  table.graph-table td {
+    vertical-align: top;
+    border: none;
+    padding: 0 1.5em 0 0.5em;
+    width: 50%;
+  }
+  @media (max-width: 700px) {
+    .container {
+      padding: 8px 2vw 24px 2vw;
+    }
+    .card {
+      padding: 16px 4vw 18px 4vw;
+    }
+    table.graph-table, table.graph-table tr, table.graph-table td {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+    table.graph-table td {
+      margin-bottom: 1.5em;
+    }
+  }
+  .menu-toggle {
+    background: #2d3b45;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    display: inline-block;
+  }
+  .menu-links {
+    display: none;
+    background: #2d3b45;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 18px;
+    padding: 10px 0 10px 10px;
+  }
+  .menu-links a {
+    color: #fff;
+    margin-right: 18px;
+    text-decoration: underline;
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu-links");
+    if (toggle && menu) {
+      toggle.addEventListener("click", function () {
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      });
+    }
+  });
+</script>
+</head>
+<body>
+<div class="container">
+
+  <div class="menu-toggle">☰ Menu</div>
+  <div class="menu-links">
+    <a href="#pos-time">Position vs Time</a>
+    <a href="#vel-time">Velocity vs Time</a>
+    <a href="#neg-vel">Negative Velocity</a>
+    <a href="#summary">Summary</a>
+  </div>
+
+  <h1>Velocity Graphs</h1>
+
+  <div class="card" id="pos-time">
+    <h2 class="center">Position vs Time: Interpreting the Graph</h2>
+    <table class="graph-table">
+      <tr>
+        <td>
+          <img src="https://tempeunion.instructure.com/courses/9373/files/2605572/preview" alt="Position vs Time Graph" style="display:block; margin:0 auto; max-width:100%; height:auto;">
+        </td>
+        <td>
+          <div style="margin-bottom: 1em;">
+            <span class="explanation">What can we conclude about the motion of the object? How do you know?</span>
+          </div>
+          <details>
+            <summary><em>Click here to check your answer</em></summary>
+            <div>
+              <span class="highlight">Answer:</span>
+              <span class="explanation">
+                Based on the value of the y-intercept, at time zero, the object is at a position of 5 m. The object then moves forward at a constant speed of 3 m/s. We know the object moves forward because the slope is positive, we know the speed is constant because the slope is constant, and we know that the speed is 3 m/s based on the steepness of the slope. The speed of 3 m/s means that for every 1 second that passes, the object will move forwards another 3 m. This is slightly less than 10 ft per second. If the object in motion was a person, they'd have to be running!
+              </span>
+            </div>
+          </details>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card" id="vel-time">
+    <h2 class="center">Velocity vs Time: What Does It Look Like?</h2>
+    <div class="center" style="margin-bottom: 1em;">
+      <span style="font-size: 1.1em;">What if we want to represent this motion as a velocity vs time graph instead of a position vs time graph? What would that look like?</span>
+    </div>
+    <table class="graph-table">
+      <tr>
+        <td>
+          <div>
+            <span class="explanation">We know the velocity is a constant $$+3\,\mathrm{m/s}$$.<br><br>
+            If we graphed <strong>velocity vs. time</strong>, what would it look like?</span>
+            <details>
+              <summary><em>Click here to check your answer</em></summary>
+              <div>
+                <img src="https://tempeunion.instructure.com/courses/9373/files/2605565/preview" alt="Velocity vs Time Graph" style="display:block; margin:0 auto; max-width:100%; height:auto;">
+              </div>
+            </details>
+          </div>
+        </td>
+        <td>
+          <span class="explanation">Why?</span>
+          <details>
+            <summary><em>Click here to check your answer</em></summary>
+            <div>
+              <span class="explanation">
+                There is no relationship between velocity and time—the velocity remains the same at every moment in time for these 6 seconds.
+              </span>
+            </div>
+          </details>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card" id="neg-vel">
+    <h2 class="center">Negative Velocity: What Changes?</h2>
+    <div class="center" style="margin-bottom: 1em;">
+      <span style="font-size: 1.1em;">What would be different if the object had started at the same position, but had moved backwards at a rate of 3 m/s? <br>
+      What would the <span class="highlight">position vs. time</span> <em><u>and</u></em> <span class="highlight">velocity vs. time</span> graphs look like?</span>
+    </div>
+    <table class="graph-table">
+      <tr>
+        <td>
+          <strong><span style="color: #34495e; text-decoration: underline;">Position-Time Graph of a Person Going -3 m/s</span></strong>
+          <div style="margin-top: 0.5em;">
+            <span class="explanation">Can you describe the motion of the person?</span>
+            <details>
+              <summary><em>Click here to check your answer</em></summary>
+              <div>
+                <span class="explanation">
+                  If the person starts at a position of 5 m and then moves backward 3 m in the first second, then the person's position at time = 1 s will be 2 m. After another second of travel, the person's position would be -1 m and so on. We would end up with the same y-intercept and the same slope value but the slope would be a constant negative 3 instead of positive.
+                </span>
+              </div>
+            </details>
+          </div>
+          <div style="margin-top: 1em;">
+            <span class="explanation">Can you describe the shape of the <strong>position-time graph</strong>?</span>
+            <details>
+              <summary><em>Click here to check your answer</em></summary>
+              <div>
+                <img src="https://tempeunion.instructure.com/courses/9373/files/2605569/preview" alt="Position-Time Negative Slope" style="max-width:100%; height:auto;">
+              </div>
+            </details>
+          </div>
+        </td>
+        <td>
+          <strong><span style="color: #34495e; text-decoration: underline;">Velocity-Time Graph of a Person Going -3 m/s</span></strong>
+          <div style="margin-top: 0.5em;">
+            <span class="explanation">Can you describe the shape of the <strong>velocity-time graph</strong>?</span>
+            <details>
+              <summary><em>Click here to check your answer</em></summary>
+              <div>
+                <span class="explanation" style="padding-left: 1.5em;">
+                  The velocity graph would then be a constant $$-3\,\mathrm{m/s}$$.
+                </span>
+                <img src="https://tempeunion.instructure.com/courses/9373/files/2605570/preview" alt="Velocity-Time Negative" style="max-width:100%; height:auto; margin-top: 1em;">
+              </div>
+            </details>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card" id="summary">
+    <h2 class="center">Summary: Interpreting Velocity Graphs</h2>
+    <div class="center" style="margin-bottom: 1em;">
+      <span style="font-size: 1.1em;">
+        <span class="highlight">All positive velocities represent forward motion.</span><br>
+        <span class="highlight">All negative velocities represent backward motion.</span>
+      </span>
+    </div>
+    <div class="center" style="margin-bottom: 1.5em;">
+      <span style="font-size: 1.1em;">Based on that, describe the motion of the object represented by the following velocity vs. time graph:</span>
+    </div>
+    <table class="graph-table">
+      <tr>
+        <td>
+          <img src="https://tempeunion.instructure.com/courses/9373/files/2605576/preview" alt="Velocity vs Time Example" style="display:block; margin:0 auto; max-width:100%; height:auto;">
+        </td>
+        <td>
+          <span class="explanation">
+            In this graph, the object is moving backwards (to the left) 5 meters every second for 2 seconds. Then the object instantaneously changes direction and is now moving forward (to the right) 5 meters every second for 4 seconds.
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
