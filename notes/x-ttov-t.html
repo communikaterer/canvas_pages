@@ -1,4 +1,3 @@
-<!-- Cleaned up and modernized Velocity Graphs page -->
 <html>
 <head>
 <script>
@@ -141,6 +140,25 @@
     display: inline-block;
     margin-bottom: 6px;
   }
+  .question-box {
+    background: #eaf4fb;
+    border-left: 5px solid #0077CC;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    font-size: 1.08em;
+    color: #2d3b45;
+    display: flex;
+    align-items: flex-start;
+  }
+  .question-box .q-icon {
+    font-size: 1.4em;
+    margin-right: 10px;
+    color: #0077CC;
+    flex-shrink: 0;
+    line-height: 1.2;
+  }
 </style>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -175,8 +193,9 @@
           <img src="https://tempeunion.instructure.com/courses/9373/files/2605572/preview" alt="Position vs Time Graph" style="display:block; margin:0 auto; max-width:100%; height:auto;">
         </td>
         <td>
-          <div style="margin-bottom: 1em;">
-            <span class="explanation">What can we conclude about the motion of the object? How do you know?</span>
+          <div class="question-box">
+            <span class="q-icon">❓</span>
+            <span>What can we conclude about the motion of the object? How do you know?</span>
           </div>
           <details>
             <summary><em>Click here to check your answer</em></summary>
@@ -200,19 +219,23 @@
     <table class="graph-table">
       <tr>
         <td>
-          <div>
-            <span class="explanation">We know the velocity is a constant $$+3\,\mathrm{m/s}$$.<br><br>
+          <div class="question-box">
+            <span class="q-icon">❓</span>
+            <span>We know the velocity is a constant $$+3\,\mathrm{m/s}$$.<br>
             If we graphed <strong>velocity vs. time</strong>, what would it look like?</span>
-            <details>
-              <summary><em>Click here to check your answer</em></summary>
-              <div>
-                <img src="https://tempeunion.instructure.com/courses/9373/files/2605565/preview" alt="Velocity vs Time Graph" style="display:block; margin:0 auto; max-width:100%; height:auto;">
-              </div>
-            </details>
           </div>
+          <details>
+            <summary><em>Click here to check your answer</em></summary>
+            <div>
+              <img src="https://tempeunion.instructure.com/courses/9373/files/2605565/preview" alt="Velocity vs Time Graph" style="display:block; margin:0 auto; max-width:100%; height:auto;">
+            </div>
+          </details>
         </td>
         <td>
-          <span class="explanation">Why?</span>
+          <div class="question-box">
+            <span class="q-icon">❓</span>
+            <span>Why?</span>
+          </div>
           <details>
             <summary><em>Click here to check your answer</em></summary>
             <div>
@@ -236,41 +259,44 @@
       <tr>
         <td>
           <strong><span style="color: #34495e; text-decoration: underline;">Position-Time Graph of a Person Going -3 m/s</span></strong>
-          <div style="margin-top: 0.5em;">
-            <span class="explanation">Can you describe the motion of the person?</span>
-            <details>
-              <summary><em>Click here to check your answer</em></summary>
-              <div>
-                <span class="explanation">
-                  If the person starts at a position of 5 m and then moves backward 3 m in the first second, then the person's position at time = 1 s will be 2 m. After another second of travel, the person's position would be -1 m and so on. We would end up with the same y-intercept and the same slope value but the slope would be a constant negative 3 instead of positive.
-                </span>
-              </div>
-            </details>
+          <div class="question-box">
+            <span class="q-icon">❓</span>
+            <span>Can you describe the motion of the person?</span>
           </div>
-          <div style="margin-top: 1em;">
-            <span class="explanation">Can you describe the shape of the <strong>position-time graph</strong>?</span>
-            <details>
-              <summary><em>Click here to check your answer</em></summary>
-              <div>
-                <img src="https://tempeunion.instructure.com/courses/9373/files/2605569/preview" alt="Position-Time Negative Slope" style="max-width:100%; height:auto;">
-              </div>
-            </details>
+          <details>
+            <summary><em>Click here to check your answer</em></summary>
+            <div>
+              <span class="explanation">
+                If the person starts at a position of 5 m and then moves backward 3 m in the first second, then the person's position at time = 1 s will be 2 m. After another second of travel, the person's position would be -1 m and so on. We would end up with the same y-intercept and the same slope value but the slope would be a constant negative 3 instead of positive.
+              </span>
+            </div>
+          </details>
+          <div class="question-box">
+            <span class="q-icon">❓</span>
+            <span>Can you describe the shape of the <strong>position-time graph</strong>?</span>
           </div>
+          <details>
+            <summary><em>Click here to check your answer</em></summary>
+            <div>
+              <img src="https://tempeunion.instructure.com/courses/9373/files/2605569/preview" alt="Position-Time Negative Slope" style="max-width:100%; height:auto;">
+            </div>
+          </details>
         </td>
         <td>
           <strong><span style="color: #34495e; text-decoration: underline;">Velocity-Time Graph of a Person Going -3 m/s</span></strong>
-          <div style="margin-top: 0.5em;">
-            <span class="explanation">Can you describe the shape of the <strong>velocity-time graph</strong>?</span>
-            <details>
-              <summary><em>Click here to check your answer</em></summary>
-              <div>
-                <span class="explanation" style="padding-left: 1.5em;">
-                  The velocity graph would then be a constant $$-3\,\mathrm{m/s}$$.
-                </span>
-                <img src="https://tempeunion.instructure.com/courses/9373/files/2605570/preview" alt="Velocity-Time Negative" style="max-width:100%; height:auto; margin-top: 1em;">
-              </div>
-            </details>
+          <div class="question-box">
+            <span class="q-icon">❓</span>
+            <span>Can you describe the shape of the <strong>velocity-time graph</strong>?</span>
           </div>
+          <details>
+            <summary><em>Click here to check your answer</em></summary>
+            <div>
+              <span class="explanation" style="padding-left: 1.5em;">
+                The velocity graph would then be a constant $$-3\,\mathrm{m/s}$$.
+              </span>
+              <img src="https://tempeunion.instructure.com/courses/9373/files/2605570/preview" alt="Velocity-Time Negative" style="max-width:100%; height:auto; margin-top: 1em;">
+            </div>
+          </details>
         </td>
       </tr>
     </table>
@@ -293,12 +319,12 @@
           <img src="https://tempeunion.instructure.com/courses/9373/files/2605576/preview" alt="Velocity vs Time Example" style="display:block; margin:0 auto; max-width:100%; height:auto;">
         </td>
         <td>
+          <div class="question-box">
+            <span class="q-icon">❓</span>
+            <span>What is happening in this graph? Describe the motion.</span>
+          </div>
           <span class="explanation">
             In this graph, the object is moving backwards (to the left) 5 meters every second for 2 seconds. Then the object instantaneously changes direction and is now moving forward (to the right) 5 meters every second for 4 seconds.
           </span>
         </td>
       </tr>
-    </table>
-  </div>
-
-</div>
